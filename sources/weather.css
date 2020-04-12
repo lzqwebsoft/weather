@@ -1,0 +1,8155 @@
+@charset "UTF-8";
+
+.last-item {
+	border-right: none!important
+}
+
+#ascrail2000-hr {
+	margin-top: 8px
+}
+
+.drawTF {
+	position: absolute;
+	top: 129px;
+	left: 6px
+}
+
+.blueFor-container {
+	position: relative;
+	width: 687px
+}
+
+.blueFor-container .more_left {
+	width: 33px;
+	height: 60px;
+	position: absolute;
+	top: 197px;
+	right: -2px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -924px -200px;
+	z-index: 2222;
+	cursor: pointer
+}
+
+.blueFor-container .more_left:hover {
+	background-position: -924px -300px
+}
+
+.blueFor-container .more_right {
+	width: 33px;
+	height: 60px;
+	position: absolute;
+	top: 197px;
+	left: 0;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -874px -200px;
+	z-index: 2222
+}
+
+.blueFor-container .more_right:hover {
+	background-position: -874px -300px
+}
+
+.blueFor-container .click_wrap,.blueFor-container .click_wrap_f {
+	position: absolute;
+	top: 207px;
+	left: 2px;
+	height: 133px;
+	z-index: 2222
+}
+
+.blueFor-container .click_wrap li,.blueFor-container .click_wrap_f li {
+	width: 85px;
+	height: 133px;
+	cursor: pointer;
+	float: left
+}
+
+.blueFor-container .date-container {
+	height: 62px;
+	color: #999
+}
+
+.blueFor-container .date-container .date-item {
+	position: relative;
+	cursor: pointer;
+	width: 85px;
+	height: 68px;
+	float: left;
+	text-align: center;
+	background-color: #eef7fd;
+	border-right: 1px solid #dce7ef
+}
+
+.blueFor-container .date-container .date-item .date-bottom-blue {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 85px;
+	height: 4px;
+	border-right: 1px solid #4085e4;
+	background-color: #458ff1
+}
+
+.blueFor-container .date-container .date-item .date-bottom-active {
+	background-color: #e8914c
+}
+
+.blueFor-container .date-container .date-item .date-bottom-activea {
+	background-color: #e8914c
+}
+
+.blueFor-container .date-container .date-item .date {
+	height: 28px;
+	margin-top: 5px;
+	line-height: 28px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #252525
+}
+
+.blueFor-container .date-container .date-item .date-info {
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	color: #7d7d7d
+}
+
+.blueFor-container .date-container .active .date {
+	color: #3783c2!important
+}
+
+.blueFor-container .date-container .active .date-info {
+	color: #3783c2!important
+}
+
+.blueFor-container .date-container .hover .date {
+	color: #f68d3b!important
+}
+
+.blueFor-container .date-container .hover .date-info {
+	color: #f68d3b!important
+}
+
+.blue-container {
+	height: 326px;
+	margin-top: 8px;
+	border-bottom: 4px solid #c0d9f2;
+	position: relative;
+	color: #7d7d7d
+}
+
+.blue-container .drawTwo-container {
+	width: 687px;
+	position: absolute;
+	top: 200px;
+	left: 0
+}
+
+.blue-container .blue-item {
+	cursor: pointer;
+	width: 85px;
+	height: 310px;
+	background-color: #fff;
+	position: relative;
+	margin: 0 1px 1px 0;
+	float: left;
+	padding-top: 15px
+}
+
+.blue-container .blue-item .item-icon {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px
+}
+
+.blue-container .blue-item .weather-info {
+	height: 33px;
+	line-height: 18px;
+	overflow: hidden;
+	font-size: 12px;
+	padding: 0 5px;
+	text-align: center
+}
+
+.blue-container .blue-item .curve-container {
+	height: 140px
+}
+
+.blue-container .blue-item .wind-container {
+	height: 20px;
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 19px;
+	background-color: rgba(235,235,235,0.1)
+}
+
+.blue-container .blue-item .wind-info {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 12px;
+	background-color: rgba(235,235,235,0.1)
+}
+
+.blue-container .blue-item .item-active {
+	position: absolute;
+	bottom: -28px;
+	left: 0;
+	width: 85px;
+	height: 28px;
+	background: url("https://i.tq121.com.cn/i/weather2017/down.png") no-repeat center
+}
+
+.blue-container .blue-item .item-active-71d {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 85px;
+	height: 4px;
+	background: #e8914c
+}
+
+.blue-container .blue-item-last {
+	margin-right: 0
+}
+
+.blue-container .active {
+	background-color: #e1edfa
+}
+
+.sky {
+	color: #fff
+}
+
+.sky .lv1 {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#0e7fdf,endColorStr=#69b8f0);
+	background: -ms-linear-gradient(top,#0e7fdf,#69b8f0);
+	background: -moz-linear-gradient(top,#0e7fdf,#69b8f0);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#0e7fdf),to(#69b8f0));
+	background: -o-linear-gradient(top,#0e7fdf,#69b8f0)
+}
+
+.sky .lv2 {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#50b2fb,endColorStr=#a6d4f6);
+	background: -ms-linear-gradient(top,#50b2fb,#a6d4f6);
+	background: -moz-linear-gradient(top,#50b2fb,#a6d4f6);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#50b2fb),to(#a6d4f6));
+	background: -o-linear-gradient(top,#50b2fb,#a6d4f6)
+}
+
+.sky .lv3 {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#88a9ca,endColorStr=#bcd3e3);
+	background: -ms-linear-gradient(top,#88a9ca,#bcd3e3);
+	background: -moz-linear-gradient(top,#88a9ca,#bcd3e3);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#88a9ca),to(#bcd3e3));
+	background: -o-linear-gradient(top,#88a9ca,#bcd3e3)
+}
+
+.sky .lv4 {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#999691,endColorStr=#c5c5c5);
+	background: -ms-linear-gradient(top,#999691,#c5c5c5);
+	background: -moz-linear-gradient(top,#999691,#c5c5c5);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#999691),to(#c5c5c5));
+	background: -o-linear-gradient(top,#999691,#c5c5c5)
+}
+
+.sky .yesterday {
+	background: #fdfdfd
+}
+
+.sky .info-style {
+	color: #969292
+}
+
+.details-container {
+	width: 660px;
+	height: 400px;
+	clear: both;
+	padding: 0 14px 0 13px
+}
+
+.details-container .header-container {
+	height: 73px;
+	line-height: 73px;
+	clear: both;
+	position: relative
+}
+
+.details-container .header-container .title {
+	margin: 0 15px 0 9px;
+	font-size: 18px;
+	color: #252525
+}
+
+.details-container .header-container .text {
+	margin-right: 56px;
+	font-size: 12px;
+	color: #ccc
+}
+
+.details-container .header-container .sunup {
+	margin-right: 11px;
+	color: #999;
+	font-size: 12px;
+	position: relative;
+	padding-right: 23px
+}
+
+.details-container .header-container .sunup .sunup-icon {
+	position: absolute;
+	top: -5px;
+	*top: 0;
+	_top: 0;
+	left: -30px;
+	width: 26px;
+	height: 25px;
+	display: inline-block;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat center
+}
+
+.details-container .header-container .sunup .up {
+	background-position: -479px -59px
+}
+
+.details-container .header-container .sunup .down {
+	background-position: -481px -96px
+}
+
+.details-container .header-container .sunup .time {
+	margin-left: 5px;
+	color: #e8914c
+}
+
+.details-container .header-container .blue-switch {
+	position: absolute;
+	padding-right: 25px;
+	margin-left: 108px;
+	font-size: 14px;
+	color: #356db7;
+	top: 2px;
+	left: 445px
+}
+
+.details-container .header-container .blue-switch .switch-icon {
+	position: absolute;
+	top: -1px;
+	right: -10px;
+	display: inline-block;
+	width: 46px;
+	height: 20px;
+	background: url("https://i.tq121.com.cn/i/weather2017/switch-g.png") no-repeat center;
+	cursor: pointer
+}
+
+.details-container .header-container .blue-switch .turn {
+	background-image: url(https://i.tq121.com.cn/i/weather2017/weather.png);
+	background-repeat: no-repeat;
+	display: block;
+	background-position: -382px -18px;
+	margin-left: 5px;
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+	right: -29px;
+	float: left;
+	height: 22px;
+	width: 48px
+}
+
+.details-container .header-container .blue-switch .turn i {
+	background-image: url(https://i.tq121.com.cn/i/weather2017/weather.png);
+	background-repeat: no-repeat;
+	display: block;
+	background-position: -380px -80px;
+	height: 21px;
+	width: 18px;
+	position: absolute;
+	left: 22px;
+	margin-left: 3px;
+	top: 1px
+}
+
+.details-container .header-container .blue-switch .off {
+	background-position: -382px -48px
+}
+
+.details-container .content-container {
+	position: relative;
+	height: 304px;
+	width: 100%;
+	overflow: hidden;
+	color: #666;
+	font-size: 12px
+}
+
+.details-container .content-container .scroll-container {
+	width: 1306px
+}
+
+.details-container .content-container .scroll-container .houers-container {
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	background-color: #f2f2f5;
+	padding-left: 10px
+}
+
+.details-container .content-container .scroll-container .houers-container .houer-item {
+	float: left;
+	width: 54px;
+	color: #252525
+}
+
+.details-container .content-container .scroll-container .houers-container .active {
+	color: #fff;
+	background: url("https://i.tq121.com.cn/i/weather2017/houer-bg.png") no-repeat center
+}
+
+.details-container .content-container .scroll-container .details-houers-container {
+	padding-left: 10px
+}
+
+.details-container .content-container .scroll-container .details-houers-container .details-item {
+	float: left;
+	width: 53px;
+	border-right: 1px solid #fff;
+	padding-top: 25px
+}
+
+.details-container .content-container .scroll-container .details-houers-container .details-item .item-icon {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin: 0 auto
+}
+
+.details-container .content-container .scroll-container .details-houers-container .details-item .curor {
+	height: 141px
+}
+
+.details-container .content-container .scroll-container .details-houers-container .details-item .wind-info,.details-container .content-container .scroll-container .details-houers-container .details-item .wind-js {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden
+}
+
+.details-container .content-container .scroll-container .details-houers-container .item-one {
+	background-color: #fbfbfb
+}
+
+.details-container .content-container .scroll-container .details-houers-container .active {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat;
+	background-position: -63px -740px
+}
+
+.details-container .content-container .scroll-container .content-shade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1300px;
+	padding-left: 10px
+}
+
+.details-container .content-container .scroll-container .content-shade li {
+	width: 54px;
+	height: 300px;
+	float: left
+}
+
+.details-container .content-container .scroll-container .content-shade .active {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#c5c5c5,endColorStr=#999691);
+	background: -moz-linear-gradient(top,#c5c5c5,#999691);
+	background: -webkit-gradient(linear,0 0,0 100%,from(#c5c5c5),to(#999691))
+}
+
+.details-container .three-container {
+	position: relative;
+	height: 304px;
+	width: 100%;
+	overflow: hidden;
+	color: #666
+}
+
+.details-container .three-container .houers-container {
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	background-color: #f2f2f5
+}
+
+.details-container .three-container .houers-container .houer-item {
+	float: left;
+	width: 82px
+}
+
+.details-container .three-container .houers-container .active {
+	color: #fff;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat;
+	background-position: -596px -139px
+}
+
+.details-container .three-container .details-houers-container .details-item {
+	float: left;
+	width: 81px;
+	border-right: 1px solid #fff;
+	padding-top: 25px
+}
+
+.details-container .three-container .details-houers-container .details-item .item-icon {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px
+}
+
+.details-container .three-container .details-houers-container .details-item .curor {
+	height: 141px
+}
+
+.details-container .three-container .details-houers-container .details-item .wind-info,.details-container .three-container .details-houers-container .details-item .wind-js {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center
+}
+
+.details-container .three-container .details-houers-container .item-one {
+	background-color: #fbfbfb
+}
+
+.details-container .three-container .details-houers-container .last-details-item {
+	border-right: 0
+}
+
+.details-container .three-container .details-houers-container .active {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat;
+	background-position: -253px -767px
+}
+
+.details-container .three-container .drawTE {
+	width: 650px;
+	height: 141px;
+	position: absolute;
+	top: 129px;
+	left: 6px
+}
+
+.details-container .three-container .three-content-shade {
+	position: absolute;
+	top: 0;
+	left: 1px
+}
+
+.details-container .three-container .three-content-shade li {
+	width: 82px;
+	height: 300px;
+	float: left
+}
+
+#drawO,#drawOFF {
+	position: absolute;
+	top: -65px;
+	z-index: 10
+}
+
+.backccc {
+	background: #dce7ef
+}
+
+#blueFor-container .date-container .date-item {
+	width: 97px
+}
+
+#blueFor-container .date-container .date-item .date-bottom-blue {
+	width: 97px
+}
+
+#blue-container .blue-item {
+	width: 97px
+}
+
+#blue-container .blue-item .item-active {
+	width: 97px
+}
+
+#blue-container .blue-item {
+	width: 97px
+}
+
+#curve {
+	display: none
+}
+
+.w_zhoumo .active {
+	background: #e1edfa!important
+}
+
+.w_zhoumo .activeborder {
+	border-bottom: 4px solid #e8914c;
+	color: #1f6ebd
+}
+
+#noCursor li {
+	cursor: auto
+}
+
+#noCursorTime li {
+	cursor: auto
+}
+
+#noCursorItem .blue-item {
+	cursor: auto
+}
+
+@charset "UTF-8";
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal
+}
+
+.weather_image {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat
+}
+
+.L_weather {
+	width: 1000px;
+	margin: 0 auto
+}
+
+.weather_left {
+	width: 680px
+}
+
+.weather_right {
+	width: 300px
+}
+
+.weather_tab {
+	background: #043567;
+	height: 40px;
+	margin-bottom: 10px
+}
+
+.weather_tab a {
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	margin-top: 9px;
+	width: 140px;
+	color: #fff;
+	font-size: 18px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #18437b
+}
+
+.weather_tab a:hover {
+	background: #20589f;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 0
+}
+
+.weather_tab a.m {
+	background: #f68d3b;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 0
+}
+
+.weather_shzs {
+	background: #fff;
+	border: 1px solid #eee;
+	margin-bottom: 10px
+}
+
+.weather_shzs h1 {
+	padding: 10px 20px 0;
+	font-size: 18px;
+	height: 30px;
+	font-weight: normal
+}
+
+.weather_shzs h1 b {
+	float: left;
+	color: #252525;
+	display: block;
+	font-weight: normal
+}
+
+.weather_shzs h1 span {
+	float: right;
+	font-size: 12px;
+	color: #7d7d7d;
+	margin-top: 5px;
+	display: none
+}
+
+.weather_shzs h1 a {
+	width: 125px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	margin-left: 15px;
+	background: #f8cc46;
+	display: none;
+	float: left
+}
+
+.ad {
+	width: 680px;
+	height: 90px;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.weather_shzs ul li {
+	float: left;
+	width: 112.6px;
+	height: 120px;
+	position: relative
+}
+
+.weather_shzs_1d ul li {
+	float: left;
+	width: 112.6px;
+	height: 120px;
+	position: relative
+}
+
+.weather_shzs ul li h2 {
+	color: #7d7d7d;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 10px
+}
+
+.weather_shzs ul li h2.weather_air {
+	left: 0;
+	position: absolute;
+	top: -20px;
+	width: 100%;
+	height: 30px
+}
+
+.weather_shzs_1d ul li.m h2.weather_air {
+	background: #fff
+}
+
+.dis {
+	display: none
+}
+
+.weather_shzs ul li img {
+	width: 30px;
+	position: absolute;
+	right: 15px;
+	top: 10px
+}
+
+.weather_shzs_1d ul li.m {
+	background: #fff
+}
+
+.weather_shzs ul li span {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -794px -270px;
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 69px;
+	margin-top: 20px
+}
+
+.weather_shzs ul li span.gm {
+	background-position: -794px -200px
+}
+
+.weather_shzs ul li span.cy {
+	background-position: -794px -340px
+}
+
+.weather_shzs ul li span.cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li span.cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li span.cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li span.cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li span.cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li:hover span.cy {
+	background-position: -794px -561px
+}
+
+.weather_shzs ul li:hover span.cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li:hover span.cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li:hover span.cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li:hover span.cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li:hover span.cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li span.xc {
+	background-position: -884px -480px
+}
+
+.weather_shzs ul li span.yd {
+	background-position: -884px -410px
+}
+
+.weather_shzs ul li span.ks {
+	background-position: -794px -410px
+}
+
+.weather_shzs ul li.m .uv {
+	background-position: -794px -270px
+}
+
+.weather_shzs ul li.m .gm {
+	background-position: -794px -200px
+}
+
+.weather_shzs ul li.m .cy {
+	background-position: -794px -340px
+}
+
+.weather_shzs ul li.m .cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li.m .cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li.m .cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li.m .cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li.m .cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs ul li.m .xc {
+	background-position: -884px -480px
+}
+
+.weather_shzs ul li.m .yd {
+	background-position: -884px -410px
+}
+
+.weather_shzs ul li.m .ks {
+	background-position: -794px -410px
+}
+
+.weather_shzs_1d ul li span {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -794px -270px;
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 69px;
+	margin-top: 20px
+}
+
+.weather_shzs_1d ul li span.gm {
+	cursor: pointer;
+	background: url(https://i.tq121.com.cn/i/weather2015/index/jfpc.png) no-repeat
+}
+
+.weather_shzs_1d ul li span.cy {
+	background-position: -794px -340px
+}
+
+.weather_shzs_1d ul li span.cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li span.cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li span.cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li span.cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li span.cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li:hover span.cy {
+	background-position: -794px -561px
+}
+
+.weather_shzs_1d ul li:hover span.cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li:hover span.cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li:hover span.cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li:hover span.cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li:hover span.cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li span.xc {
+	background-position: -884px -480px
+}
+
+.weather_shzs_1d ul li span.yd {
+	background-position: -884px -410px
+}
+
+.weather_shzs_1d ul li span.bl {
+	background: url(https://i.tq121.com.cn/i/weather2017/xt.png) no-repeat
+}
+
+.weather_shzs ul li span.bl {
+	background: url(https://i.tq121.com.cn/i/weather2017/xt.png) no-repeat
+}
+
+.weather_shzs_1d ul li span.ks {
+	background-position: -794px -410px
+}
+
+.weather_shzs_1d ul li.m .uv {
+	background-position: -794px -270px
+}
+
+.weather_shzs_1d ul li.m .gm {
+	background: url(https://i.tq121.com.cn/i/weather2015/index/jfpc1.png) no-repeat
+}
+
+.weather_shzs_1d ul li.m .cy {
+	background-position: -794px -340px
+}
+
+.weather_shzs_1d ul li.m .cyIcon1 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur1.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li.m .cyIcon2 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur2.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li.m .cyIcon3 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur3.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li.m .cyIcon4 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur4.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li.m .cyIcon5 {
+	background: url(http://i.i8tq.com/weather2018/cy/pc/new/cur5.png?20180606)no-repeat center top;
+	background-size: 60px auto
+}
+
+.weather_shzs_1d ul li.m .xc {
+	background-position: -884px -480px
+}
+
+.weather_shzs_1d ul li.m .yd {
+	background-position: -884px -410px
+}
+
+.weather_shzs_1d ul li.m .ks {
+	background-position: -794px -410px
+}
+
+.weather_shzs .shzsSevenDay {
+	width: 500px;
+	float: left;
+	margin-left: 30px
+}
+
+.weather_shzs .shzsSevenDay ul li {
+	font-size: 12px;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) -204px -513px;
+	width: 52px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	float: left;
+	margin-left: 18px;
+	color: #252525;
+	margin-top: 4px;
+	cursor: pointer
+}
+
+.weather_shzs .shzsSevenDay ul li:hover {
+	color: #1f6ebd
+}
+
+.weather_shzs .shzsSevenDay ul li.cur {
+	background-position: -205px -473px;
+	color: #fff
+}
+
+.weather_shzs .lv {
+	clear: both;
+	display: none;
+	background: #fff;
+	height: 140px
+}
+
+.weather_shzs_1d .lv {
+	clear: both;
+	display: none;
+	background: #fff;
+	height: 140px
+}
+
+.weather_shzs .lv dl {
+	width: 113px;
+	float: left
+}
+
+.weather_shzs .lv dl dt em {
+	font-size: 16px;
+	color: #252525;
+	text-align: center;
+	display: block
+}
+
+.weather_shzs .lv dl dt p i {
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: #ccc;
+	margin-right: 6px;
+	display: block;
+	float: left;
+	margin-top: 10px
+}
+
+.weather_shzs .lv dl dt p .active {
+	background: #e8914c
+}
+
+.weather_shzs .lv dl {
+	padding-top: 15px
+}
+
+.weather_shzs .lv dl dt p {
+	text-align: center;
+	height: 30px;
+	margin-left: 29px
+}
+
+.weather_shzs .lv dl dd {
+	color: #7d7d7d;
+	font-size: 12px;
+	text-align: left;
+	line-height: 18px;
+	width: 85px;
+	margin: 0 auto
+}
+
+.weather_product dl {
+	width: 328px;
+	border: 1px solid #eee;
+	float: left;
+	overflow: hidden
+}
+
+.weather_product dl dt {
+	width: 100%;
+	height: 260px
+}
+
+.weather_product dl dt img {
+	height: 100%;
+	width: auto;
+	transition: transform 2s
+}
+
+.weather_product dl dt img:hover {
+	transform: scale(1.2,1.2)
+}
+
+.weather_product dl dd {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	background: #1f6ebd;
+	cursor: pointer;
+	position: relative;
+	z-index: 999
+}
+
+.weather_product dl dd:hover {
+	background: #0b5aa9
+}
+
+.weather_product dl dd a {
+	color: #fff
+}
+
+.weather_product {
+	height: 300px;
+	margin-bottom: 10px
+}
+
+.history {
+	margin-bottom: 10px
+}
+
+.weather_left .around ul li {
+	border: 1px solid #6bb0d9;
+	border-bottom: 0 solid #6bb0d9;
+	float: left;
+	font-size: 14px;
+	height: 60px;
+	line-height: 60px;
+	margin-right: 2px;
+	width: 338px
+}
+
+.weather_left .around ul li:nth-child(odd) {
+	margin-right: 0;
+	border-right: 0 solid #6bb0d9
+}
+
+.weather_left .around ul {
+	width: 690px;
+	display: none;
+	float: left;
+	border-bottom: 1px solid #eee
+}
+
+.weather_left .around ul li a {
+	cursor: pointer;
+	display: block;
+	text-decoration: none
+}
+
+.weather_left .around ul li a:hover {
+	background: #eaf4ff
+}
+
+.weather_left .around ul li {
+	border: 1px solid #eee;
+	border-bottom: 0 solid #6bb0d9;
+	background: #fff
+}
+
+.weather_left .around ul li span {
+	float: left;
+	margin-left: 21px;
+	overflow: hidden;
+	text-decoration: none;
+	color: #333;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 115px
+}
+
+.weather_left .around ul li .img {
+	float: left;
+	text-decoration: none;
+	width: 80px
+}
+
+.weather_left .around ul li .img em {
+	color: #6bb0d9;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+	width: 10px
+}
+
+.weather_left .around ul li .img big {
+	display: inline-block;
+	float: left;
+	height: 35px;
+	width: 35px;
+	margin: 12px 2px 0 2px
+}
+
+.weather_left .around ul li i {
+	background: 0;
+	display: inline-block;
+	margin-left: 17px;
+	text-decoration: none;
+	font-size: 16px;
+	font-style: normal;
+	color: #252525
+}
+
+.weather_left .around ul li i b {
+	color: #1f6ebd;
+	font-weight: normal;
+	padding-left: 7px
+}
+
+.weather_left .around ul li i b em {
+	color: #dfdfdf
+}
+
+.weather_left .around h1 span {
+	font-size: 18px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	width: 80px;
+	margin-left: 20px;
+	height: 50px;
+	color: #252525;
+	text-align: center
+}
+
+.weather_left .around h1 span.m {
+	border-bottom: 2px solid #ff8f27;
+	color: #ff8f27
+}
+
+.weather_left .around h1 b {
+	float: right;
+	font-size: 12px;
+	display: block;
+	height: 60px;
+	font-weight: normal;
+	margin-right: 10px;
+	line-height: 60px;
+	color: #7d7d7d;
+	display: none
+}
+
+.weather_left .around h1 {
+	height: 60px;
+	line-height: 60px
+}
+
+.weather_left .around {
+	background: #fbfbfb;
+	margin-bottom: 10px;
+	float: left;
+	width: 680px;
+	overflow: hidden
+}
+
+.weather_gdt {
+	margin-bottom: 20px;
+	border: 1px solid #eee
+}
+
+.weather_g {
+	padding-top: 0;
+	margin-left: 0;
+	margin-bottom: 10px
+}
+
+.weather_list ul li a {
+	font-size: 14px;
+	line-height: 25px;
+	margin-left: 15px
+}
+
+.pic_more a {
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	width: 280px;
+	margin: 0 auto;
+	text-align: right;
+	color: #7d7d7d
+}
+
+.weather_hot {
+	background: #fff;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 1px solid #eee
+}
+
+.weather_hot .weather_rd {
+	background: #fff
+}
+
+.weather_hot .weather_rd ul li {
+	overflow: hidden;
+	height: 49px;
+	border-bottom: 1px solid #efefef;
+	line-height: 49px
+}
+
+.weather_hot .weather_rd ul li:last-child {
+	border-bottom: 0
+}
+
+.weather_hot .weather_rd ul li:hover {
+	background: #eaf4ff
+}
+
+.weather_hot .weather_rd ul li a {
+	font-size: 14px;
+	display: block;
+	width: 240px;
+	float: right
+}
+
+.weather_hot .weather_rd ul li a:hover {
+	color: #252525
+}
+
+.weather_hot .weather_rd ul li span {
+	float: left;
+	width: 23px;
+	line-height: 24px;
+	margin-left: 5px;
+	margin-top: 13px;
+	text-align: center;
+	height: 24px;
+	display: inline
+}
+
+.weather_hot .weather_rd ul li span {
+	background-position: -712px -19px;
+	color: #fff
+}
+
+.weather_hot .weather_rd ul li.move span {
+	background-position: -712px -60px;
+	color: #fff
+}
+
+.weather_hot .weather_rd h1 {
+	font-size: 20px;
+	background-position: -712px -60px;
+	color: #0f2e58
+}
+
+.weather_hot .weather_rd h1 b {
+	color: #252525;
+	float: left;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: normal
+}
+
+.weather_hot .weather_rd h1 i {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin-top: 20px;
+	background-position: -670px -20px;
+	float: left;
+	display: none
+}
+
+.weather_hot .weather_rd h1 span {
+	display: block;
+	padding-top: 20px;
+	float: right
+}
+
+.weather_hot .weather_rd h1 span a {
+	display: block;
+	float: left;
+	width: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #999
+}
+
+.weather_hot .weather_rd h1 span a.m {
+	color: #f68d3b
+}
+
+.weather_hot .weather_rd h1 span a:hover {
+	color: #f68d3b
+}
+
+.ads {
+	height: 250px;
+	margin-bottom: 10px;
+	overflow: hidden
+}
+
+.weather_ly ul {
+	margin-top: 0
+}
+
+.weather_ly ul li {
+	height: 32px;
+	line-height: 32px
+}
+
+.weather_ly ul li a {
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin-left: 10px
+}
+
+.weather_ly>ul li a {
+	width: 270px;
+	overflow: hidden
+}
+
+.weather_ly ul li span {
+	float: left;
+	margin-left: 10px;
+	display: block;
+	background-position: -950px -37px;
+	height: 30px;
+	width: 9px
+}
+
+.weather_ly {
+	margin-bottom: 10px
+}
+
+.weather_ldimg {
+	padding: 10px;
+	background: #dfdfdf;
+	margin-bottom: 10px
+}
+
+.weather_tg {
+	height: 170px;
+	width: 300px;
+	margin-bottom: 10px
+}
+
+.weather_rmjd {
+	height: auto;
+	margin-bottom: 10px;
+	margin-top: 0
+}
+
+.rmjd_tab {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) -939px -674px #1f6ebd;
+	height: 50px;
+	line-height: 50px
+}
+
+.rmjd_tab span {
+	color: #fff;
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 14px
+}
+
+.weather_rmjd table {
+	background: #fff
+}
+
+.weather_rmjd table tr td {
+	text-align: center;
+	font-size: 14px;
+	border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0
+}
+
+.weather_rmjd table {
+	border-right: 1px solid #ebebeb
+}
+
+.weather_rmjd table tr:hover {
+	background: #fadd7b
+}
+
+.weather_jq {
+	height: 50px;
+	background: #eaf4ff;
+	position: relative;
+	top: -1px;
+	z-index: 100
+}
+
+.weather_jq div {
+	width: 80px;
+	float: left;
+	cursor: pointer;
+	position: relative
+}
+
+.weather_jq div span {
+	display: block;
+	float: left;
+	height: 50px;
+	width: 67px;
+	text-align: center;
+	line-height: 50px
+}
+
+.weather_jq div i {
+	background-position: -948px -17px;
+	float: right;
+	height: 10px;
+	width: 13px;
+	margin-top: 20px;
+	position: relative;
+	right: 5px
+}
+
+.weather_jq div.weather_search {
+	background-position: -907px -9px;
+	float: right;
+	height: 20px;
+	margin-right: 15px;
+	margin-top: 14px;
+	width: 20px
+}
+
+.weather_jq div ul {
+	position: absolute;
+	top: 49px;
+	background: #eaf4ff;
+	display: none;
+	width: 80px;
+	max-height: 185px!important
+}
+
+.weather_jq div ul li {
+	width: 80px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #c4def6
+}
+
+.weather_jq div ul li:last-child {
+	border-bottom: 0 solid #c4def6
+}
+
+.weather_jq div ul li:hover {
+	background: #c4def6
+}
+
+.weather_jq div.weather_search:hover {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll -907px -9px
+}
+
+.weather_jq .weather_select_jq div {
+	width: 90px!important
+}
+
+.weather_jq .weather_select_jq ul {
+	width: 90px!important
+}
+
+.weather_jq .weather_select_jq ul li {
+	width: 90px!important
+}
+
+.scroll-container-scenic li {
+	width: 90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.scenic_name {
+	overflow: hidden
+}
+
+.weather_qg h2 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	background: #eee;
+	margin-bottom: 5px
+}
+
+.weather_qg p a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	background: #fff;
+	margin-bottom: 5px
+}
+
+.weather_qg h3 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	background: #eee;
+	margin-bottom: 5px
+}
+
+.weather_qxcp {
+	margin-bottom: 10px
+}
+
+.weather_qxcp h1 {
+	color: #252525;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px
+}
+
+.weather_qxcp h1 i {
+	float: right;
+	display: block;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -281px -360px;
+	margin-top: 8px;
+	width: 210px;
+	height: 28px
+}
+
+.weather_ly h1 {
+	color: #252525;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px
+}
+
+.weather_ly h1 i {
+	float: right;
+	display: block;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -281px -360px;
+	margin-top: 8px;
+	width: 210px;
+	height: 28px
+}
+
+.weather_rmjd h1 {
+	color: #252525;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px
+}
+
+.weather_rmjd h1 i {
+	float: right;
+	display: block;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -281px -360px;
+	margin-top: 8px;
+	width: 210px;
+	height: 28px
+}
+
+#scroll {
+	width: 680px;
+	height: 250px;
+	overflow: hidden;
+	position: relative
+}
+
+.btn {
+	position: absolute;
+	bottom: 108px;
+	width: 30px;
+	height: 61px;
+	display: block;
+	overflow: hidden;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat;
+	cursor: pointer;
+	text-indent: -999em;
+	z-index: 10
+}
+
+#btn_prev {
+	left: 7px;
+	background-position: -874px -199px
+}
+
+#btn_next {
+	right: 7px;
+	background-position: -924px -199px
+}
+
+#btn_prev:hover {
+	background-position: -874px -299px
+}
+
+#btn_next:hover {
+	background-position: -924px -299px
+}
+
+#slider_bar {
+	width: 60%;
+	height: 22px;
+	position: absolute;
+	top: 18px;
+	text-align: center;
+	z-index: 100;
+	margin: 0 20%
+}
+
+#slider_bar a {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	overflow: hidden;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -826px -109px;
+	margin: 0 3px;
+	cursor: pointer
+}
+
+#slider_bar a.cur,#slider_bar a:hover {
+	background-position: -806px -109px
+}
+
+#scroll .child {
+	width: 680px;
+	height: 419px;
+	position: relative;
+	top: 0;
+	z-index: 10;
+	display: block;
+	float: left
+}
+
+#scroll .child dl dt ul li a img {
+	width: 160px;
+	height: 120px
+}
+
+#scroll .child dl dt ul li {
+	position: relative;
+	width: 160px;
+	height: 120px;
+	float: left;
+	margin-left: 7px;
+	margin-bottom: 10px;
+	display: inline;
+	overflow: hidden
+}
+
+#scroll_wrapper {
+	position: relative;
+	top: 0
+}
+
+.weather_gqtj {
+	height: 320px;
+	border: 1px solid #eee;
+	background: #fff;
+	position: relative;
+	margin-bottom: 10px;
+	overflow: hidden
+}
+
+.weather_gqtj h1 {
+	text-indent: 20px;
+	font-size: 18px;
+	height: 60px;
+	line-height: 60px;
+	color: #252525
+}
+
+#scroll .child dl dt {
+	float: left;
+	width: 336px
+}
+
+#scroll .child dl dd {
+	width: 330px;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	overflow: hidden
+}
+
+#scroll .child dl dt ul li b {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather_line_black.png) repeat-x
+}
+
+#scroll .child dl dd b {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	font-weight: normal;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather_line_black.png) repeat-x;
+	padding: 5px 0
+}
+
+.weather_case h1 {
+	font-size: 18px;
+	height: 60px;
+	text-indent: 14px;
+	line-height: 60px;
+	color: #252525;
+	background: #fff;
+	margin-left: 0;
+	padding-left: 7px
+}
+
+.weather_case {
+	background: #fff;
+	border: 1px solid #eee;
+	margin-bottom: 10px
+}
+
+#scrollPic {
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	z-index: 0;
+	margin-left: -1px
+}
+
+#scrollPic ul.bigImg {
+	width: 1200px;
+	position: absolute;
+	margin-top: 0
+}
+
+#scrollPic ul.bigImg li {
+	float: left;
+	width: 300px;
+	text-align: center
+}
+
+#scrollPic ul.bigImg li a img {
+	width: 300px;
+	height: 225px
+}
+
+#scrollPic ul.botIcon {
+	left: 0;
+	position: absolute;
+	top: 240px;
+	width: 110px
+}
+
+#scrollPic ul.botIcon li {
+	cursor: pointer;
+	float: left;
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat -826px -109px;
+	font: 0
+}
+
+#scrollPic ul.botIcon li.on {
+	background-position: -806px -109px
+}
+
+#scrollPic p,#scrollPic .bottomBg {
+	bottom: 0;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	position: absolute;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 25px
+}
+
+#scrollPic p {
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	z-index: 1
+}
+
+#scrollPic .bottomBg {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather_line_black.png) repeat-x;
+	margin-bottom: 25px
+}
+
+.pic .weather_image {
+	display: none
+}
+
+.pic:hover .weather_image {
+	display: block
+}
+
+.pic .rollLeft,.pic .rollRight {
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 61px;
+	position: absolute;
+	top: 70px;
+	width: 30px
+}
+
+.pic .rollLeft {
+	background-position: -874px -199px;
+	left: 0
+}
+
+.pic .rollLeft:hover {
+	background-position: -874px -299px
+}
+
+.pic .rollRight {
+	background-position: -924px -199px;
+	right: 0
+}
+
+.pic .rollRight:hover {
+	background-position: -924px -299px
+}
+
+.scrollPic {
+	height: 225px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	margin: 0 auto
+}
+
+.scrollPic ul.bigImg {
+	width: 1200px;
+	position: absolute
+}
+
+.scrollPic ul.bigImg li {
+	float: left
+}
+
+.scrollPic ul.bigImg li img {
+	width: 300px;
+	height: 225px
+}
+
+.scrollPic ul.botIcon {
+	left: 0;
+	position: absolute;
+	top: 180px;
+	width: 110px
+}
+
+.scrollPic ul.botIcon li {
+	cursor: pointer;
+	float: left;
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	background-position: -175px -73px;
+	font: 0
+}
+
+.scrollPic ul.botIcon li.on {
+	background-position: -175px -92px
+}
+
+.scrollPic p,.scrollPic .bottomBg {
+	bottom: 0;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	position: absolute;
+	width: 100%
+}
+
+.scrollPic p {
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	z-index: 1
+}
+
+.scrollPic .bottomBg {
+	background: url(https://i.tq121.com.cn/i/weather2017/weather_line_black.png) repeat-x
+}
+
+.scrollPic ul.bigImg li {
+	float: left;
+	text-align: center;
+	width: 300px;
+	height: 225px
+}
+
+.weather_lygdt {
+	padding: 0 0 10px 0
+}
+
+.scrollPic ul.bigImg li a {
+	margin: 0
+}
+
+.weather_case ul li {
+	cursor: pointer;
+	zoom: 1;
+	height: 123px;
+	position: relative;
+	background: url("https://i.tq121.com.cn/i/weather2017/dateShu.png") repeat-y scroll 54px center
+}
+
+.weather_case ul li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden
+}
+
+.weather_case ul li p.weather_y {
+	text-align: right;
+	float: left;
+	font-size: 16px;
+	padding-right: 3px;
+	height: 20px;
+	line-height: 20px
+}
+
+.weather_case ul li img {
+	float: left;
+	margin-top: 22px
+}
+
+.weather_case ul li div {
+	position: relative;
+	float: left;
+	margin-top: 18px;
+	margin-left: 20px;
+	height: 90px;
+	width: 410px;
+	cursor: pointer
+}
+
+.weather_case ul li div h2 {
+	font-size: 16px;
+	width: 409px;
+	color: #252525;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: bold
+}
+
+.weather_case ul li div h2 a {
+	color: #076ea8
+}
+
+.weather_case ul li a:hover p {
+	color: #252525
+}
+
+.weather_case ul li div p {
+	font-size: 12px;
+	line-height: 20px;
+	height: 62px;
+	overflow: hidden;
+	width: 420px;
+	margin-top: 5px;
+	cursor: pointer;
+	color: #666
+}
+
+.weather_case ul li div a.xq {
+	position: absolute;
+	right: 23px;
+	bottom: 0;
+	font-size: 13px;
+	color: #8abb4a
+}
+
+.weather_case ul li a {
+	display: block;
+	height: 123px
+}
+
+.weather_case ul li p.weather_y {
+	cursor: pointer;
+	width: 100px;
+	margin: 52px 4px 0 4px;
+	color: #6d6d6d
+}
+
+.weather_case ul li.ons {
+	background: #fbfbfb url("https://i.tq121.com.cn/i/weather2017/dateShu.png") repeat-y scroll 54px center
+}
+
+.weather_case ul li.on {
+	background: #eaf4ff url("https://i.tq121.com.cn/i/weather2017/dateShu.png") repeat-y scroll 54px center
+}
+
+.weather_case ul li.on div p {
+	color: #252525
+}
+
+.weather_case ul li p.weather_y span {
+	margin-left: 20px;
+	display: block;
+	width: 60px;
+	height: 28px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-position: -760px -59px;
+	float: left
+}
+
+.weather_case ul li p.weather_y b {
+	display: none;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background-position: -856px -16px;
+	margin-top: 3px
+}
+
+.weather_case ul li.on p.weather_y span {
+	background-position: -760px -19px
+}
+
+.weather_case ul li.on p.weather_y b {
+	background-position: -856px -46px
+}
+
+.weather_mores {
+	height: 35px;
+	line-height: 35px
+}
+
+.weather_mores a {
+	display: block;
+	text-align: center;
+	background: #fbfbfb;
+	height: 35px;
+	line-height: 35px
+}
+
+.tong {
+	width: 1000px;
+	height: 90px;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.weather_location {
+	height: 30px;
+	line-height: 30px;
+	position: relative
+}
+
+.weather_location .updateTime {
+	float: right;
+	font-size: 12px;
+	color: #7d7d7d;
+	height: 30px;
+	line-height: 34px
+}
+
+.town_wrap {
+	position: absolute;
+	top: 220px;
+	left: 626px
+}
+
+.town_wrap span i {
+	background-position: -739px -94px;
+	padding: 8px
+}
+
+.weather_location {
+	width: 1000px;
+	margin: 0 auto
+}
+
+.weather_location a {
+	font-size: 14px;
+	float: left
+}
+
+.weather_location span i {
+	background-position: -739px -94px;
+	padding: 8px
+}
+
+.weather_location span {
+	cursor: pointer
+}
+
+.weather_lo_box {
+	display: none;
+	width: 200px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	height: 185px;
+	z-index: 99
+}
+
+.weather_lo_box a {
+	display: block;
+	text-align: center;
+	width: 33%;
+	float: left
+}
+
+.weather_lo_box_pro {
+	width: 235px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	left: 45px;
+	top: 25px;
+	height: 170px;
+	z-index: 99
+}
+
+.weather_lo_box_pro a {
+	display: block;
+	text-align: center;
+	width: 33%;
+	float: left
+}
+
+.weather_lo_to {
+	width: 300px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	left: 45px;
+	top: 25px;
+	height: 100px;
+	z-index: 99
+}
+
+#weather_lo {
+	left: 101px
+}
+
+.weather_lo_to a {
+	display: block;
+	text-align: center;
+	width: 50%;
+	float: left
+}
+
+.weather_rd ul {
+	display: none;
+	height: auto
+}
+
+.weather_zdsk {
+	height: 310px;
+	margin-bottom: 10px;
+	border: 1px solid #eee
+}
+
+.weather_his {
+	height: auto;
+	background: #fff;
+	margin-bottom: 10px;
+	border: 1px solid #eee
+}
+
+.weather_his h1 {
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	color: #043467;
+	text-indent: 20px
+}
+
+.weather_his .weather_table tr th {
+	height: 40px;
+	line-height: 40px;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;
+	background: #d5e7fc
+}
+
+.weather_his .weather_table {
+	width: 332px
+}
+
+.weather_his .weather_table tr th span {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold
+}
+
+.weather_his .weather_table tr {
+	background: #f2f8ff
+}
+
+.weather_his .weather_table tr td {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+	border-right: 1px solid #fff
+}
+
+.weather_his dl dt {
+	background-position: -858px -89px;
+	width: 83px;
+	height: 83px
+}
+
+.weather_his dl dt span {
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	height: 30px;
+	line-height: 35px;
+	display: block
+}
+
+.weather_his dl dt b {
+	font-size: 36px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	display: block
+}
+
+.weather_his dl {
+	height: 84px;
+	width: 100%;
+	position: relative
+}
+
+.weather_his dl dd {
+	float: right;
+	padding-left: 45px;
+	height: 80px;
+	width: 580px;
+	background: #8ec2f2;
+	margin-top: 2px
+}
+
+.weather_his dl dt {
+	position: absolute;
+	top: 0;
+	left: 15px
+}
+
+.weather_his dl dd p {
+	width: 152px;
+	height: 50px;
+	padding: 0 20px;
+	margin: 15px 0;
+	float: left;
+	border-right: 1px solid #fddda1
+}
+
+.weather_his dl dd p span {
+	color: #f58d39;
+	text-align: right;
+	float: left;
+	padding-top: 3px;
+	width: 70px;
+	display: block;
+	font-size: 12px
+}
+
+.weather_his dl dd p span em {
+	color: #333;
+	display: block;
+	font-size: 16px
+}
+
+.weather_his dl dd p b {
+	line-height: 52px;
+	float: right;
+	display: block;
+	font-size: 30px;
+	font-weight: normal
+}
+
+.weather_over {
+	width: 678px;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+#scroll .child dl dt ul li a img {
+	transition: all 1.2s;
+	transition: all 1.2s
+}
+
+#scroll .child dl dt ul li:hover img {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+#scroll .child dl dd a img {
+	transition: all 1.2s;
+	transition: all 1.2s
+}
+
+#scroll .child dl dd a:hover img {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+.weather_pplm {
+	background: #fff;
+	height: 440px;
+	margin-bottom: 10px;
+	border: 1px solid #dfdfdf
+}
+
+.weather_lmz {
+	width: 375px;
+	float: left;
+	height: 245px;
+	background-position: -361px -832px
+}
+
+.weather_lmz dl {
+	height: 245px;
+	position: relative
+}
+
+.weather_lmz dl dt {
+	float: right;
+	margin-top: 18px
+}
+
+.weather_lmy {
+	width: 280px;
+	margin-left: 15px;
+	float: left
+}
+
+.weather_lmz dl dd {
+	position: absolute;
+	right: 20px;
+	bottom: 0
+}
+
+.weather_lmz dl dd a {
+	margin-bottom: 12px;
+	font-size: 16px;
+	color: #fff;
+	display: block
+}
+
+.weather_lmz dl dd a:hover {
+	color: #ee842f
+}
+
+.weather_lmz dl dd a.wea_sjd {
+	display: block;
+	margin-left: 91px;
+	width: 110px;
+	height: 20px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	background: #b95700;
+	line-height: 20px
+}
+
+.weather_lmy h1 a {
+	font-size: 18px;
+	color: #ff5c00
+}
+
+.weather_lmy h1 a:hover {
+	color: #ee842f
+}
+
+.weather_lmy h1 {
+	line-height: 20px;
+	margin-top: 35px;
+	margin-bottom: 15px
+}
+
+.weather_lmy p {
+	font-size: 12px;
+	color: #7d7d7d;
+	margin-bottom: 10px
+}
+
+.weather_lmy ul li {
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px
+}
+
+.weather_lmy ul li i {
+	width: 20px;
+	height: 10px;
+	float: left;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -801px -109px;
+	position: relative;
+	top: 10px
+}
+
+.weather_lmlist {
+	width: 255px;
+	height: 137px;
+	background: #f2f2f5;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left
+}
+
+.weather_lmlist p a {
+	font-size: 14px
+}
+
+.weather_lmlist p {
+	line-height: 28px
+}
+
+.weather_lmlist p i {
+	width: 20px;
+	height: 10px;
+	float: left;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -801px -109px;
+	position: relative;
+	top: 10px
+}
+
+.weather_lmlist {
+	padding-top: 15px
+}
+
+.weather_lmcy {
+	width: 400px;
+	position: relative;
+	height: 137px;
+	float: left;
+	margin-left: 10px;
+	padding-top: 15px;
+	display: inline;
+	background: #f2f2f5;
+	margin-top: 10px
+}
+
+.weather_lmcy dl {
+	width: 375px;
+	margin: 0 auto
+}
+
+.weather_lmcy dl dt {
+	width: 225px;
+	font-size: 12px;
+	float: left;
+	color: #7d7d7d
+}
+
+.weather_lmcy dl dd {
+	float: right;
+	width: 140px;
+	height: 105px
+}
+
+.weather_lmcy dl dd a img {
+	width: 140px;
+	height: 105px
+}
+
+.weather_lmcy dl dd.wea_piao {
+	position: absolute;
+	left: 0;
+	text-indent: 14px;
+	bottom: 0;
+	height: 70px;
+	width: 355px;
+	background-position: -764px -994px
+}
+
+.weather_lmcy dl dd.wea_piao h1 a {
+	background: #043567;
+	font-size: 14px;
+	display: block;
+	width: 105px;
+	height: 20px;
+	float: right;
+	text-align: center;
+	color: #fff
+}
+
+.weather_lmcy dl dd.wea_piao h1 {
+	height: 20px;
+	padding-top: 8px;
+	width: 300px;
+	margin-bottom: 5px
+}
+
+.weather_lmcy dl dd.wea_piao h2 {
+	color: #fff;
+	font-size: 18px
+}
+
+.weather_lmcy dl dd.wea_piao h2 a {
+	color: #fff;
+	font-size: 18px
+}
+
+.weather_lmcy dl dd.wea_piao h2 a:hover {
+	color: #ee842f
+}
+
+#weather_qg h2 a,#weather_qg h3 a {
+	display: block;
+	font-size: 14px
+}
+
+#weather_qg h2,#weather_qg h3 {
+	height: auto
+}
+
+.weather_rmjd .hotSpot ul li {
+	height: 40px;
+	cursor: pointer;
+	float: left
+}
+
+.weather_rmjd .hotSpot ul li span {
+	display: block;
+	float: left;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center
+}
+
+.weather_rmjd .hotSpot ul li:hover {
+	background: #eaf4ff
+}
+
+.weather_rmjd .hotSpot ul {
+	background: #fff none repeat scroll 0 0;
+	border-right: 1px solid #ebebeb;
+	height: 240px
+}
+
+.weather_rmjd .hotSpot ul li span.name {
+	width: 68px
+}
+
+.weather_rmjd .hotSpot ul li span.name a:hover {
+	color: #252525
+}
+
+.weather_rmjd .hotSpot ul li span.weather {
+	width: 89px
+}
+
+.weather_rmjd .hotSpot ul li span.weather a {
+	display: block;
+	overflow: hidden;
+	width: 89px;
+	height: 19px
+}
+
+.weather_rmjd .hotSpot ul li span.wd {
+	width: 79px
+}
+
+.weather_rmjd .hotSpot ul li span.zs {
+	width: 59px
+}
+
+.w_zhoumo .w_tup {
+	width: 66px;
+	height: 79px;
+	display: block;
+	margin: 0 auto 20px
+}
+
+.w_zhoumo dl {
+	width: 340px;
+	height: auto;
+	border-right: 1px solid #eceef1;
+	margin-bottom: 10px;
+	float: left;
+	border-bottom: 4px solid #c0d9f2
+}
+
+.w_zhoumo .w_tup {
+	background-image: url(https://i.tq121.com.cn/i/weather2017/weather_icon_b_66.png)
+}
+
+.w_zhoumo dl dt {
+	background: #eef7fd;
+	height: 60px;
+	margin-bottom: 25px;
+	border-bottom: 4px solid #458ff1
+}
+
+.w_zhoumo dl dt span {
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 7px;
+	font-size: 18px;
+	text-align: center
+}
+
+.w_zhoumo dl dt b {
+	font-size: 12px;
+	color: #7d7d7d;
+	width: 135px;
+	margin-left: 35px;
+	float: left;
+	font-weight: normal;
+	text-align: center;
+	display: block
+}
+
+.w_zhoumo dl.w_border {
+	border-left: 1px solid #eceef1;
+	border-right: 1px solid #eceef1
+}
+
+.w_zhoumo dl dd .w_xx {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_flfx {
+	color: #7d7d7d
+}
+
+.w_zhoumo dl dd p {
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_zhoumo dl dd .w_wend {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_zhoumo dl dd .w_richu {
+	margin-bottom: 0;
+	height: 60px;
+	clear: both;
+	line-height: 60px;
+	background: #fbfbfb;
+	color: #7d7d7d
+}
+
+.w_zhoumo dl dd .w_richu em {
+	color: #e8914c;
+	padding-left: 10px
+}
+
+.w_zhoumo dl dd p.w_flfx_t {
+	margin-bottom: 10px
+}
+
+.w_zhoumo dl dd ul li {
+	float: left;
+	width: 135px
+}
+
+.w_zhoumo dl dd ul {
+	margin-left: 35px
+}
+
+.w_zhoumo dl dd ul li.w_line {
+	background: url(https://i.tq121.com.cn/i/weather2017/line.png) no-repeat right center
+}
+
+.w_zhoumo dl dd .w_wend em {
+	color: #7d7d7d;
+	font-size: 16px
+}
+
+.w_zhoumo dl dd .w_richu span {
+	display: block;
+	float: left;
+	width: 135px;
+	background: url(https://i.tq121.com.cn/i/weather2017/rcrl.png) no-repeat
+}
+
+.w_zhoumo dl dd .w_richu span.w_rc {
+	background-position: 1px 19px;
+	padding-left: 9px;
+	margin-left: 41px
+}
+
+.w_zhoumo dl dd .w_richu span.w_rl {
+	background-position: 1px -23px;
+	padding-left: 9px
+}
+
+.w_jingdian .w_tup {
+	width: 66px;
+	height: 79px;
+	display: block;
+	margin: 0 auto 20px
+}
+
+.w_jingdian dl {
+	width: 226px;
+	height: auto;
+	margin-bottom: 10px;
+	float: left;
+	border-bottom: 4px solid #c0d9f2
+}
+
+.w_jingdian .w_tup {
+	background-image: url(https://i.tq121.com.cn/i/weather2017/weather_icon_b_66.png)
+}
+
+.w_jingdian dl dt {
+	background: #eef7fd;
+	height: 60px;
+	margin-bottom: 25px;
+	border-bottom: 4px solid #458ff1
+}
+
+.w_jingdian dl dt span {
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 7px;
+	font-size: 18px;
+	text-align: center
+}
+
+.w_jingdian dl dt b {
+	font-size: 12px;
+	color: #7d7d7d;
+	font-weight: normal;
+	text-align: center;
+	display: block
+}
+
+.w_jingdian dl.w_border {
+	border-left: 1px solid #eceef1;
+	border-right: 1px solid #eceef1
+}
+
+.w_jingdian dl dd .w_xx {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_jingdian dl dd p {
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_jingdian dl dd .w_wend {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.w_jingdian dl dd .w_richu {
+	margin-bottom: 0;
+	height: 60px;
+	line-height: 60px;
+	background: #fbfbfb;
+	color: #7d7d7d;
+	background: url(https://i.tq121.com.cn/i/weather2017/rcrl.png) no-repeat 40px 20px
+}
+
+.w_jingdian dl dd .w_richu em {
+	color: #e8914c;
+	padding-left: 10px
+}
+
+.w_jingdian dl dd p.w_riluo {
+	margin-bottom: 0;
+	height: 60px;
+	line-height: 60px;
+	background: #fbfbfb;
+	color: #7d7d7d;
+	background: url(https://i.tq121.com.cn/i/weather2017/rcrl.png) no-repeat 40px -23px
+}
+
+.w_jingdian dl dd p.w_riluo em {
+	color: #e8914c;
+	padding-left: 10px
+}
+
+.w_jingdian dl dd p.w_flfx_t {
+	margin-bottom: 10px
+}
+
+.weather_rmjd .hotSpot h3 {
+	display: none
+}
+
+.weather_rmjd .hotSpot h4 {
+	display: none
+}
+
+.ad3 {
+	clear: both
+}
+
+#weather_lo1 {
+	width: 160px
+}
+
+#weather_lo1 a {
+	width: 100%
+}
+
+#blueFor-container .blue-item {
+	width: 97px
+}
+
+.succ {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 2px;
+	color: #252525;
+	height: 90px;
+	left: 50%;
+	margin-left: 70px;
+	margin-top: -62px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 160px;
+	z-index: 3
+}
+
+.succ h1 {
+	font-size: 20px;
+	margin-top: 30px
+}
+
+.succ p {
+	font-size: 12px;
+	margin-left: 0;
+	margin-top: 0
+}
+
+.succ .img {
+	background-position: -1179px -761px;
+	height: 41px;
+	left: 9px;
+	top: 30px;
+	width: 75px;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather.png) no-repeat;
+	background-position: -1179px -761px
+}
+
+.around h1 span:hover {
+	color: #f68d3d
+}
+
+.hotSpot .weather a:hover {
+	color: #252525
+}
+
+.pic_more a:hover {
+	color: #5f5f5f
+}
+
+.weather_location .wela,.weather_location .citySelect,.weather_location .areaSelect,.weather_location .areaSelect {
+	position: relative;
+	float: left
+}
+
+.weather_location div i {
+	background-position: -739px -94px;
+	padding: 8px
+}
+
+.ty {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 259px;
+	background: #f68d3b;
+	width: 75px;
+	height: 27px;
+	line-height: 27px;
+	color: #fff;
+	text-align: center;
+	border-radius: 24px
+}
+
+.ty:hover {
+	background: #ff7800;
+	color: #fff
+}
+
+.tys {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 259px;
+	background: #f2f2f5;
+	border: 1px solid #e2e2e2;
+	width: 75px;
+	height: 27px;
+	line-height: 27px;
+	color: #bebebe;
+	text-align: center;
+	border-radius: 24px
+}
+
+.tys:hover {
+	background: #e0e0e8;
+	color: #bebebe
+}
+
+.weather_code {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.oldPortBtn {
+	margin-right: 508px;
+	position: fixed;
+	right: 50%;
+	top: 550px;
+	background: url("https://i.tq121.com.cn/i/weather2015/city/oldPort.png");
+	width: 47px;
+	height: 55px;
+	cursor: pointer
+}
+
+.oldPortBtn:hover {
+	background: url("https://i.tq121.com.cn/i/weather2015/city/oldPortCur.png")
+}
+
+.scroll-container-qg {
+	width: 420px;
+	height: 180px;
+	padding: 10px 0 0 10px;
+	font-size: 14px
+}
+
+.containera {
+	padding: 10px;
+	width: 420px
+}
+
+.containera a {
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	display: block;
+	float: left;
+	padding: 1px 5px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.weather_lo {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: 99;
+	font-size: 14px;
+	display: none;
+	padding-bottom: 10px
+}
+
+#weatherScrollContainer {
+	width: 160px;
+	height: 385px;
+	overflow: hidden;
+	padding: 10px 0 10px 10px
+}
+
+#weatherScrollContainer a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.flx_show {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 100px;
+	float: left;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -720px -179px;
+	cursor: pointer;
+	z-index: 9999999999999999999999999
+}
+
+.flx_left {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 100px;
+	float: left;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -650px -179px;
+	cursor: pointer;
+	z-index: 9999999999999999999999999
+}
+
+.flxfoot {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 200px;
+	width: 100%;
+	z-index: 999999999999999999999999
+}
+
+.flxfoot .wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: #1b4774
+}
+
+.flxfoot .wrap .content {
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto
+}
+
+.flxfoot .wrap .content .erweim {
+	position: absolute;
+	left: 135px;
+	bottom: 20px;
+	width: 142px;
+	height: 180px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -619px -308px
+}
+
+.flxfoot .wrap .content .wx,.flxfoot .wrap .content .wb {
+	position: absolute;
+	bottom: 24px;
+	width: 53px;
+	height: 53px
+}
+
+.flxfoot .wrap .content .wx {
+	left: 647px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -718px -499px
+}
+
+.flxfoot .wrap .content .wb {
+	left: 733px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -806px -499px
+}
+
+.flxfoot .wrap .content .text {
+	position: absolute;
+	left: 312px;
+	bottom: 24px;
+	width: 282px;
+	height: 39px;
+	background: url("https://i.tq121.com.cn/i/weather2017/flex.png") no-repeat center
+}
+
+.flxfoot .wrap .content .clone {
+	position: absolute;
+	left: 888px;
+	bottom: 64px;
+	width: 24px;
+	height: 24px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat;
+	background-position: -546px -382px;
+	cursor: pointer
+}
+
+.sky .icons_bg {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_w.png") no-repeat
+}
+
+.sky .icons_bg_t {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_b.png") no-repeat
+}
+
+.yesterday .icons_bg_t {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_g.png") no-repeat
+}
+
+.sky .yesterday .icons_bg_t {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_g.png") no-repeat
+}
+
+.icons_bg {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_b.png") no-repeat
+}
+
+.icons_bg_t {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_b.png") no-repeat
+}
+
+.housr_icons {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_b.png") no-repeat
+}
+
+.housr_icons_w {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_wNow.png") no-repeat
+}
+
+.weather_icon_d40s {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40s.png") no-repeat
+}
+
+.weather_icon_d40s_b {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40s_b.png") no-repeat
+}
+
+.weather_icon_d40m {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40m.png") no-repeat
+}
+
+.weather_icon_d40m_b {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40m_b.png") no-repeat
+}
+
+.weather_icon_d40l {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40l.png") no-repeat
+}
+
+.weather_icon_d40l_b {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather_icon_d40l_b.png") no-repeat
+}
+
+.wind-icon {
+	display: inline-block;
+	height: 18px;
+	width: 25px;
+	background: url(https://i.tq121.com.cn/i/weather2017/weather_icon_fx.png) no-repeat
+}
+
+.N {
+	background-position: 0 -25px
+}
+
+.S {
+	background-position: -25px -25px
+}
+
+.E {
+	background-position: -50px -25px
+}
+
+.W {
+	background-position: -75px -25px
+}
+
+.NW {
+	background-position: -104px -25px
+}
+
+.NE {
+	background-position: -135px -25px
+}
+
+.SW {
+	background-position: -158px -25px
+}
+
+.SE {
+	background-position: -181px -25px
+}
+
+.WW {
+	background-position: -206px -25px
+}
+
+.NWW {
+	background-position: -238px -25px
+}
+
+.yesterday .S {
+	background-position: -25px -53px
+}
+
+.yesterday .N {
+	background-position: -0px -53px
+}
+
+.yesterday .W {
+	background-position: -75px -53px
+}
+
+.yesterday .E {
+	background-position: -50px -53px
+}
+
+.yesterday .NE {
+	background-position: -135px -53px
+}
+
+.yesterday .NW {
+	background-position: -104px -53px
+}
+
+.yesterday .SW {
+	background-position: -158px -53px
+}
+
+.yesterday .SE {
+	background-position: -181px -53px
+}
+
+.yesterday .WW {
+	background-position: -206px -53px
+}
+
+.yesterday .NWW {
+	background-position: -238px -53px
+}
+
+.sky .S {
+	background-position: -25px 0
+}
+
+.sky .N {
+	background-position: 0 0
+}
+
+.sky .W {
+	background-position: -75px 0
+}
+
+.sky .E {
+	background-position: -50px 0
+}
+
+.sky .NE {
+	background-position: -135px 0
+}
+
+.sky .NW {
+	background-position: -104px 0
+}
+
+.sky .SE {
+	background-position: -181px 0
+}
+
+.sky .SW {
+	background-position: -158px 0
+}
+
+.sky .WW {
+	background-position: -206px -25px
+}
+
+.sky .NWW {
+	background-position: -238px 0
+}
+
+.sky .yesterday .S {
+	background-position: -25px -53px
+}
+
+.sky .yesterday .N {
+	background-position: -0px -53px
+}
+
+.sky .yesterday .W {
+	background-position: -75px -53px
+}
+
+.sky .yesterday .E {
+	background-position: -50px -53px
+}
+
+.sky .yesterday .NE {
+	background-position: -135px -53px
+}
+
+.sky .yesterday .NW {
+	background-position: -104px -53px
+}
+
+.sky .yesterday .SE {
+	background-position: -181px -53px
+}
+
+.sky .yesterday .SW {
+	background-position: -158px -53px
+}
+
+.sky .yesterday .WW {
+	background-position: -206px -53px
+}
+
+.sky .yesterday .NWW {
+	background-position: -238px -53px
+}
+
+.sky .yesterday .d00 {
+	background-position: 0 0
+}
+
+.sky .yesterday .d01 {
+	background-position: -78px 0
+}
+
+.sky .yesterday .d02 {
+	background-position: -160px 0
+}
+
+.sky .yesterday .d03 {
+	background-position: -240px 0
+}
+
+.sky .yesterday .d04 {
+	background-position: -320px 0
+}
+
+.sky .yesterday .d05 {
+	background-position: -400px 0
+}
+
+.sky .yesterday .d06 {
+	background-position: -480px 0
+}
+
+.sky .yesterday .d07 {
+	background-position: -560px 0
+}
+
+.sky .yesterday .d08 {
+	background-position: -640px 0
+}
+
+.sky .yesterday .d09 {
+	background-position: -720px 0
+}
+
+.sky .yesterday .d10 {
+	background-position: -800px 0
+}
+
+.sky .yesterday .d11 {
+	background-position: -880px 0
+}
+
+.sky .yesterday .d12 {
+	background-position: 0 -80px
+}
+
+.sky .yesterday .d13 {
+	background-position: -80px -80px
+}
+
+.sky .yesterday .d14 {
+	background-position: -160px -80px
+}
+
+.sky .yesterday .d15 {
+	background-position: -240px -80px
+}
+
+.sky .yesterday .d16 {
+	background-position: -320px -80px
+}
+
+.sky .yesterday .d17 {
+	background-position: -400px -80px
+}
+
+.sky .yesterday .d18 {
+	background-position: -480px -80px
+}
+
+.sky .yesterday .d19 {
+	background-position: -560px -80px
+}
+
+.sky .yesterday .d20 {
+	background-position: -640px -80px
+}
+
+.sky .yesterday .d21 {
+	background-position: -720px -80px
+}
+
+.sky .yesterday .d22 {
+	background-position: -800px -80px
+}
+
+.sky .yesterday .d23 {
+	background-position: -880px -80px
+}
+
+.sky .yesterday .d24 {
+	background-position: 0 -160px
+}
+
+.sky .yesterday .d25 {
+	background-position: -80px -160px
+}
+
+.sky .yesterday .d26 {
+	background-position: -160px -160px
+}
+
+.sky .yesterday .d27 {
+	background-position: -240px -160px
+}
+
+.sky .yesterday .d28 {
+	background-position: -320px -160px
+}
+
+.sky .yesterday .d29 {
+	background-position: -400px -160px
+}
+
+.sky .yesterday .d30 {
+	background-position: -480px -160px
+}
+
+.sky .yesterday .d31 {
+	background-position: -560px -160px
+}
+
+.sky .yesterday .d53 {
+	background-position: -640px -160px
+}
+
+.sky .yesterday .d99 {
+	background-position: -720px -160px
+}
+
+.sky .yesterday .d32 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .d49 {
+	background-position: -880px -160px
+}
+
+.sky .yesterday .d54 {
+	background-position: 0 -240px
+}
+
+.sky .yesterday .d55 {
+	background-position: -80px -240px
+}
+
+.sky .yesterday .d56 {
+	background-position: -160px -240px
+}
+
+.sky .yesterday .d57 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .d58 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .d301 {
+	background-position: -400px -240px
+}
+
+.sky .yesterday .d302 {
+	background-position: -480px -240px
+}
+
+.sky .yesterday .d97 {
+	background-position: -400px -240px
+}
+
+.sky .yesterday .d98 {
+	background-position: -480px -240px
+}
+
+.sky .yesterday .n00 {
+	background-position: -560px -240px
+}
+
+.sky .yesterday .n02 {
+	background-position: -160px 0
+}
+
+.sky .yesterday .n01 {
+	background-position: -640px -240px
+}
+
+.sky .yesterday .n03 {
+	background-position: -720px -240px
+}
+
+.sky .yesterday .n04 {
+	background-position: -320px 0
+}
+
+.sky .yesterday .n05 {
+	background-position: -400px 0
+}
+
+.sky .yesterday .n06 {
+	background-position: -480px 0
+}
+
+.sky .yesterday .n07 {
+	background-position: -560px 0
+}
+
+.sky .yesterday .n08 {
+	background-position: -640px 0
+}
+
+.sky .yesterday .n09 {
+	background-position: -720px 0
+}
+
+.sky .yesterday .n10 {
+	background-position: -800px 0
+}
+
+.sky .yesterday .n11 {
+	background-position: -880px 0
+}
+
+.sky .yesterday .n12 {
+	background-position: 0 -80px
+}
+
+.sky .yesterday .n13 {
+	background-position: -80px -80px
+}
+
+.sky .yesterday .n14 {
+	background-position: -160px -80px
+}
+
+.sky .yesterday .n15 {
+	background-position: -240px -80px
+}
+
+.sky .yesterday .n16 {
+	background-position: -320px -80px
+}
+
+.sky .yesterday .n17 {
+	background-position: -400px -80px
+}
+
+.sky .yesterday .n18 {
+	background-position: -480px -80px
+}
+
+.sky .yesterday .n19 {
+	background-position: -560px -80px
+}
+
+.sky .yesterday .n20 {
+	background-position: -640px -80px
+}
+
+.sky .yesterday .n21 {
+	background-position: -720px -80px
+}
+
+.sky .yesterday .n22 {
+	background-position: -800px -80px
+}
+
+.sky .yesterday .n23 {
+	background-position: -880px -80px
+}
+
+.sky .yesterday .n24 {
+	background-position: 0 -160px
+}
+
+.sky .yesterday .n25 {
+	background-position: -80px -160px
+}
+
+.sky .yesterday .n26 {
+	background-position: -160px -160px
+}
+
+.sky .yesterday .n27 {
+	background-position: -240px -160px
+}
+
+.sky .yesterday .n28 {
+	background-position: -320px -160px
+}
+
+.sky .yesterday .n29 {
+	background-position: -400px -160px
+}
+
+.sky .yesterday .n30 {
+	background-position: -480px -160px
+}
+
+.sky .yesterday .n31 {
+	background-position: -560px -160px
+}
+
+.sky .yesterday .n53 {
+	background-position: -640px -160px
+}
+
+.sky .yesterday .n99 {
+	background-position: -720px -160px
+}
+
+.sky .yesterday .n32 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .n49 {
+	background-position: -880px -160px
+}
+
+.sky .yesterday .n54 {
+	background-position: 0 -240px
+}
+
+.sky .yesterday .n55 {
+	background-position: -80px -240px
+}
+
+.sky .yesterday .n56 {
+	background-position: -160px -240px
+}
+
+.sky .yesterday .n57 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .n58 {
+	background-position: -800px -160px
+}
+
+.sky .yesterday .n301 {
+	background-position: -400px -240px
+}
+
+.sky .yesterday .n302 {
+	background-position: -480px -240px
+}
+
+.sky .yesterday .n97 {
+	background-position: -400px -240px
+}
+
+.sky .yesterday .n98 {
+	background-position: -480px -240px
+}
+
+.sky .d00 {
+	background-position: 0 0
+}
+
+.sky .d01 {
+	background-position: -78px 0
+}
+
+.sky .d02 {
+	background-position: -160px 0
+}
+
+.sky .d03 {
+	background-position: -240px 0
+}
+
+.sky .d04 {
+	background-position: -320px 0
+}
+
+.sky .d05 {
+	background-position: -400px 0
+}
+
+.sky .d06 {
+	background-position: -480px 0
+}
+
+.sky .d07 {
+	background-position: -560px 0
+}
+
+.sky .d08 {
+	background-position: -640px 0
+}
+
+.sky .d09 {
+	background-position: -720px 0
+}
+
+.sky .d10 {
+	background-position: -800px 0
+}
+
+.sky .d11 {
+	background-position: -880px 0
+}
+
+.sky .d12 {
+	background-position: 0 -80px
+}
+
+.sky .d13 {
+	background-position: -80px -80px
+}
+
+.sky .d14 {
+	background-position: -160px -80px
+}
+
+.sky .d15 {
+	background-position: -240px -80px
+}
+
+.sky .d16 {
+	background-position: -320px -80px
+}
+
+.sky .d17 {
+	background-position: -400px -80px
+}
+
+.sky .d18 {
+	background-position: -480px -80px
+}
+
+.sky .d19 {
+	background-position: -560px -80px
+}
+
+.sky .d20 {
+	background-position: -640px -80px
+}
+
+.sky .d21 {
+	background-position: -720px -80px
+}
+
+.sky .d22 {
+	background-position: -800px -80px
+}
+
+.sky .d23 {
+	background-position: -880px -80px
+}
+
+.sky .d24 {
+	background-position: 0 -160px
+}
+
+.sky .d25 {
+	background-position: -80px -160px
+}
+
+.sky .d26 {
+	background-position: -160px -160px
+}
+
+.sky .d27 {
+	background-position: -240px -160px
+}
+
+.sky .d28 {
+	background-position: -320px -160px
+}
+
+.sky .d29 {
+	background-position: -400px -160px
+}
+
+.sky .d30 {
+	background-position: -480px -160px
+}
+
+.sky .d31 {
+	background-position: -560px -160px
+}
+
+.sky .d53 {
+	background-position: -640px -160px
+}
+
+.sky .d99 {
+	background-position: -720px -160px
+}
+
+.sky .d32 {
+	background-position: -800px -160px
+}
+
+.sky .d49 {
+	background-position: -880px -160px
+}
+
+.sky .d54 {
+	background-position: 0 -240px
+}
+
+.sky .d55 {
+	background-position: -80px -240px
+}
+
+.sky .d56 {
+	background-position: -160px -240px
+}
+
+.sky .d57 {
+	background-position: -800px -160px
+}
+
+.sky .d58 {
+	background-position: -800px -160px
+}
+
+.sky .d301 {
+	background-position: -400px -240px
+}
+
+.sky .d302 {
+	background-position: -480px -240px
+}
+
+.sky .d97 {
+	background-position: -400px -240px
+}
+
+.sky .d98 {
+	background-position: -480px -240px
+}
+
+.sky .n00 {
+	background-position: -560px -240px
+}
+
+.sky .n02 {
+	background-position: -160px 0
+}
+
+.sky .n01 {
+	background-position: -640px -240px
+}
+
+.sky .n03 {
+	background-position: -720px -240px
+}
+
+.sky .n04 {
+	background-position: -320px 0
+}
+
+.sky .n05 {
+	background-position: -400px 0
+}
+
+.sky .n06 {
+	background-position: -480px 0
+}
+
+.sky .n07 {
+	background-position: -560px 0
+}
+
+.sky .n08 {
+	background-position: -640px 0
+}
+
+.sky .n09 {
+	background-position: -720px 0
+}
+
+.sky .n10 {
+	background-position: -800px 0
+}
+
+.sky .n11 {
+	background-position: -880px 0
+}
+
+.sky .n12 {
+	background-position: 0 -80px
+}
+
+.sky .n13 {
+	background-position: -800px -240px
+}
+
+.sky .n14 {
+	background-position: -160px -80px
+}
+
+.sky .n15 {
+	background-position: -240px -80px
+}
+
+.sky .n16 {
+	background-position: -320px -80px
+}
+
+.sky .n17 {
+	background-position: -400px -80px
+}
+
+.sky .n18 {
+	background-position: -480px -80px
+}
+
+.sky .n19 {
+	background-position: -560px -80px
+}
+
+.sky .n20 {
+	background-position: -640px -80px
+}
+
+.sky .n21 {
+	background-position: -720px -80px
+}
+
+.sky .n22 {
+	background-position: -800px -80px
+}
+
+.sky .n23 {
+	background-position: -880px -80px
+}
+
+.sky .n24 {
+	background-position: 0 -160px
+}
+
+.sky .n25 {
+	background-position: -80px -160px
+}
+
+.sky .n26 {
+	background-position: -160px -160px
+}
+
+.sky .n27 {
+	background-position: -240px -160px
+}
+
+.sky .n28 {
+	background-position: -320px -160px
+}
+
+.sky .n29 {
+	background-position: -400px -160px
+}
+
+.sky .n30 {
+	background-position: -480px -160px
+}
+
+.sky .n31 {
+	background-position: -560px -160px
+}
+
+.sky .n53 {
+	background-position: -640px -160px
+}
+
+.sky .n99 {
+	background-position: -720px -160px
+}
+
+.sky .n32 {
+	background-position: -800px -160px
+}
+
+.sky .n49 {
+	background-position: -880px -160px
+}
+
+.sky .n54 {
+	background-position: 0 -240px
+}
+
+.sky .n55 {
+	background-position: -80px -240px
+}
+
+.sky .n56 {
+	background-position: -160px -240px
+}
+
+.sky .n57 {
+	background-position: -800px -160px
+}
+
+.sky .n58 {
+	background-position: -800px -160px
+}
+
+.sky .n301 {
+	background-position: -400px -240px
+}
+
+.sky .n302 {
+	background-position: -480px -240px
+}
+
+.sky .n97 {
+	background-position: -400px -240px
+}
+
+.sky .n98 {
+	background-position: -480px -240px
+}
+
+.d0 {
+	background-position: 0 0
+}
+
+.d1 {
+	background-position: -78px 0
+}
+
+.d2 {
+	background-position: -160px 0
+}
+
+.d3 {
+	background-position: -240px 0
+}
+
+.d4 {
+	background-position: -320px 0
+}
+
+.d5 {
+	background-position: -400px 0
+}
+
+.d6 {
+	background-position: -480px 0
+}
+
+.d7 {
+	background-position: -560px 0
+}
+
+.d8 {
+	background-position: -640px 0
+}
+
+.d9 {
+	background-position: -720px 0
+}
+
+.d00 {
+	background-position: 0 0
+}
+
+.d01 {
+	background-position: -78px 0
+}
+
+.d02 {
+	background-position: -160px 0
+}
+
+.d03 {
+	background-position: -240px 0
+}
+
+.d04 {
+	background-position: -320px 0
+}
+
+.d05 {
+	background-position: -400px 0
+}
+
+.d06 {
+	background-position: -480px 0
+}
+
+.d07 {
+	background-position: -560px 0
+}
+
+.d08 {
+	background-position: -640px 0
+}
+
+.d09 {
+	background-position: -720px 0
+}
+
+.d10 {
+	background-position: -800px 0
+}
+
+.d11 {
+	background-position: -880px 0
+}
+
+.d12 {
+	background-position: 0 -80px
+}
+
+.d13 {
+	background-position: -80px -80px
+}
+
+.d14 {
+	background-position: -160px -80px
+}
+
+.d15 {
+	background-position: -240px -80px
+}
+
+.d16 {
+	background-position: -320px -80px
+}
+
+.d17 {
+	background-position: -400px -80px
+}
+
+.d18 {
+	background-position: -480px -80px
+}
+
+.d19 {
+	background-position: -560px -80px
+}
+
+.d20 {
+	background-position: -640px -80px
+}
+
+.d21 {
+	background-position: -720px -80px
+}
+
+.d22 {
+	background-position: -800px -80px
+}
+
+.d23 {
+	background-position: -880px -80px
+}
+
+.d24 {
+	background-position: 0 -160px
+}
+
+.d25 {
+	background-position: -80px -160px
+}
+
+.d26 {
+	background-position: -160px -160px
+}
+
+.d27 {
+	background-position: -240px -160px
+}
+
+.d28 {
+	background-position: -320px -160px
+}
+
+.d29 {
+	background-position: -400px -160px
+}
+
+.d30 {
+	background-position: -480px -160px
+}
+
+.d31 {
+	background-position: -560px -160px
+}
+
+.d53 {
+	background-position: -640px -160px
+}
+
+.d99 {
+	background-position: -720px -160px
+}
+
+.d32 {
+	background-position: -800px -160px
+}
+
+.d49 {
+	background-position: -880px -160px
+}
+
+.d54 {
+	background-position: 0 -240px
+}
+
+.d55 {
+	background-position: -80px -240px
+}
+
+.d56 {
+	background-position: -160px -240px
+}
+
+.d57 {
+	background-position: -800px -160px
+}
+
+.d58 {
+	background-position: -800px -160px
+}
+
+.d301 {
+	background-position: -400px -240px
+}
+
+.d302 {
+	background-position: -480px -240px
+}
+
+.d97 {
+	background-position: -400px -240px
+}
+
+.d98 {
+	background-position: -480px -240px
+}
+
+.n0 {
+	background-position: -560px -240px
+}
+
+.n2 {
+	background-position: -160px 0
+}
+
+.n1 {
+	background-position: -640px -240px
+}
+
+.n3 {
+	background-position: -720px -240px
+}
+
+.n4 {
+	background-position: -320px 0
+}
+
+.n5 {
+	background-position: -400px 0
+}
+
+.n6 {
+	background-position: -480px 0
+}
+
+.n7 {
+	background-position: -560px 0
+}
+
+.n8 {
+	background-position: -640px 0
+}
+
+.n9 {
+	background-position: -720px 0
+}
+
+.n00 {
+	background-position: -560px -240px
+}
+
+.n02 {
+	background-position: -160px 0
+}
+
+.n01 {
+	background-position: -640px -240px
+}
+
+.n03 {
+	background-position: -720px -240px
+}
+
+.n04 {
+	background-position: -320px 0
+}
+
+.n05 {
+	background-position: -400px 0
+}
+
+.n06 {
+	background-position: -480px 0
+}
+
+.n07 {
+	background-position: -560px 0
+}
+
+.n08 {
+	background-position: -640px 0
+}
+
+.n09 {
+	background-position: -720px 0
+}
+
+.n10 {
+	background-position: -800px 0
+}
+
+.n11 {
+	background-position: -880px 0
+}
+
+.n12 {
+	background-position: 0 -80px
+}
+
+.n13 {
+	background-position: -800px -240px
+}
+
+.n14 {
+	background-position: -160px -80px
+}
+
+.n15 {
+	background-position: -240px -80px
+}
+
+.n16 {
+	background-position: -320px -80px
+}
+
+.n17 {
+	background-position: -400px -80px
+}
+
+.n18 {
+	background-position: -480px -80px
+}
+
+.n19 {
+	background-position: -560px -80px
+}
+
+.n20 {
+	background-position: -640px -80px
+}
+
+.n21 {
+	background-position: -720px -80px
+}
+
+.n22 {
+	background-position: -800px -80px
+}
+
+.n23 {
+	background-position: -880px -80px
+}
+
+.n24 {
+	background-position: 0 -160px
+}
+
+.n25 {
+	background-position: -80px -160px
+}
+
+.n26 {
+	background-position: -160px -160px
+}
+
+.n27 {
+	background-position: -240px -160px
+}
+
+.n28 {
+	background-position: -320px -160px
+}
+
+.n29 {
+	background-position: -400px -160px
+}
+
+.n30 {
+	background-position: -480px -160px
+}
+
+.n31 {
+	background-position: -560px -160px
+}
+
+.n53 {
+	background-position: -640px -160px
+}
+
+.n99 {
+	background-position: -720px -160px
+}
+
+.n32 {
+	background-position: -800px -160px
+}
+
+.n49 {
+	background-position: -880px -160px
+}
+
+.n54 {
+	background-position: 0 -240px
+}
+
+.n55 {
+	background-position: -80px -240px
+}
+
+.n56 {
+	background-position: -160px -240px
+}
+
+.n57 {
+	background-position: -800px -160px
+}
+
+.n58 {
+	background-position: -800px -160px
+}
+
+.n301 {
+	background-position: -400px -240px
+}
+
+.n302 {
+	background-position: -480px -240px
+}
+
+.n97 {
+	background-position: -400px -240px
+}
+
+.n98 {
+	background-position: -480px -240px
+}
+
+.yesterday .d00 {
+	background-position: 0 0
+}
+
+.yesterday .d01 {
+	background-position: -78px 0
+}
+
+.yesterday .d02 {
+	background-position: -160px 0
+}
+
+.yesterday .d03 {
+	background-position: -240px 0
+}
+
+.yesterday .d04 {
+	background-position: -320px 0
+}
+
+.yesterday .d05 {
+	background-position: -400px 0
+}
+
+.yesterday .d06 {
+	background-position: -480px 0
+}
+
+.yesterday .d07 {
+	background-position: -560px 0
+}
+
+.yesterday .d08 {
+	background-position: -640px 0
+}
+
+.yesterday .d09 {
+	background-position: -720px 0
+}
+
+.yesterday .d10 {
+	background-position: -800px 0
+}
+
+.yesterday .d11 {
+	background-position: -880px 0
+}
+
+.yesterday .d12 {
+	background-position: 0 -80px
+}
+
+.yesterday .d13 {
+	background-position: -80px -80px
+}
+
+.yesterday .d14 {
+	background-position: -160px -80px
+}
+
+.yesterday .d15 {
+	background-position: -240px -80px
+}
+
+.yesterday .d16 {
+	background-position: -320px -80px
+}
+
+.yesterday .d17 {
+	background-position: -400px -80px
+}
+
+.yesterday .d18 {
+	background-position: -480px -80px
+}
+
+.yesterday .d19 {
+	background-position: -560px -80px
+}
+
+.yesterday .d20 {
+	background-position: -640px -80px
+}
+
+.yesterday .d21 {
+	background-position: -720px -80px
+}
+
+.yesterday .d22 {
+	background-position: -800px -80px
+}
+
+.yesterday .d23 {
+	background-position: -880px -80px
+}
+
+.yesterday .d24 {
+	background-position: 0 -160px
+}
+
+.yesterday .d25 {
+	background-position: -80px -160px
+}
+
+.yesterday .d26 {
+	background-position: -160px -160px
+}
+
+.yesterday .d27 {
+	background-position: -240px -160px
+}
+
+.yesterday .d28 {
+	background-position: -320px -160px
+}
+
+.yesterday .d29 {
+	background-position: -400px -160px
+}
+
+.yesterday .d30 {
+	background-position: -480px -160px
+}
+
+.yesterday .d31 {
+	background-position: -560px -160px
+}
+
+.yesterday .d53 {
+	background-position: -640px -160px
+}
+
+.yesterday .d99 {
+	background-position: -720px -160px
+}
+
+.yesterday .d32 {
+	background-position: -800px -160px
+}
+
+.yesterday .d49 {
+	background-position: -880px -160px
+}
+
+.yesterday .d54 {
+	background-position: 0 -240px
+}
+
+.yesterday .d55 {
+	background-position: -80px -240px
+}
+
+.yesterday .d56 {
+	background-position: -160px -240px
+}
+
+.yesterday .d57 {
+	background-position: -800px -160px
+}
+
+.yesterday .d58 {
+	background-position: -800px -160px
+}
+
+.yesterday .d301 {
+	background-position: -400px -240px
+}
+
+.yesterday .d302 {
+	background-position: -480px -240px
+}
+
+.yesterday .d97 {
+	background-position: -400px -240px
+}
+
+.yesterday .d98 {
+	background-position: -480px -240px
+}
+
+.yesterday .n00 {
+	background-position: -560px -240px
+}
+
+.yesterday .n02 {
+	background-position: -160px 0
+}
+
+.yesterday .n01 {
+	background-position: -640px -240px
+}
+
+.yesterday .n03 {
+	background-position: -720px -240px
+}
+
+.yesterday .n04 {
+	background-position: -320px 0
+}
+
+.yesterday .n05 {
+	background-position: -400px 0
+}
+
+.yesterday .n06 {
+	background-position: -480px 0
+}
+
+.yesterday .n07 {
+	background-position: -560px 0
+}
+
+.yesterday .n08 {
+	background-position: -640px 0
+}
+
+.yesterday .n09 {
+	background-position: -720px 0
+}
+
+.yesterday .n10 {
+	background-position: -800px 0
+}
+
+.yesterday .n11 {
+	background-position: -880px 0
+}
+
+.yesterday .n12 {
+	background-position: 0 -80px
+}
+
+.yesterday .n13 {
+	background-position: -800px -240px
+}
+
+.yesterday .n14 {
+	background-position: -160px -80px
+}
+
+.yesterday .n15 {
+	background-position: -240px -80px
+}
+
+.yesterday .n16 {
+	background-position: -320px -80px
+}
+
+.yesterday .n17 {
+	background-position: -400px -80px
+}
+
+.yesterday .n18 {
+	background-position: -480px -80px
+}
+
+.yesterday .n19 {
+	background-position: -560px -80px
+}
+
+.yesterday .n20 {
+	background-position: -640px -80px
+}
+
+.yesterday .n21 {
+	background-position: -720px -80px
+}
+
+.yesterday .n22 {
+	background-position: -800px -80px
+}
+
+.yesterday .n23 {
+	background-position: -880px -80px
+}
+
+.yesterday .n24 {
+	background-position: 0 -160px
+}
+
+.yesterday .n25 {
+	background-position: -80px -160px
+}
+
+.yesterday .n26 {
+	background-position: -160px -160px
+}
+
+.yesterday .n27 {
+	background-position: -240px -160px
+}
+
+.yesterday .n28 {
+	background-position: -320px -160px
+}
+
+.yesterday .n29 {
+	background-position: -400px -160px
+}
+
+.yesterday .n30 {
+	background-position: -480px -160px
+}
+
+.yesterday .n31 {
+	background-position: -560px -160px
+}
+
+.yesterday .n53 {
+	background-position: -640px -160px
+}
+
+.yesterday .n99 {
+	background-position: -720px -160px
+}
+
+.yesterday .n32 {
+	background-position: -800px -160px
+}
+
+.yesterday .n49 {
+	background-position: -880px -160px
+}
+
+.yesterday .n54 {
+	background-position: 0 -240px
+}
+
+.yesterday .n55 {
+	background-position: -80px -240px
+}
+
+.yesterday .n56 {
+	background-position: -160px -240px
+}
+
+.yesterday .n57 {
+	background-position: -800px -160px
+}
+
+.yesterday .n58 {
+	background-position: -800px -160px
+}
+
+.yesterday .n301 {
+	background-position: -400px -240px
+}
+
+.yesterday .n302 {
+	background-position: -480px -240px
+}
+
+.yesterday .n97 {
+	background-position: -400px -240px
+}
+
+.yesterday .n98 {
+	background-position: -480px -240px
+}
+
+img {
+	vertical-align: middle
+}
+
+.calendarModel {
+	width: 1000px;
+	border-bottom: 4px solid #bfdbee;
+	float: left;
+	padding-bottom: 15px
+}
+
+.calendarLeft {
+	width: 680px;
+	float: left;
+	position: relative
+}
+
+.calenderAll {
+	width: 680px
+}
+
+.calendarLeft i {
+	display: none
+}
+
+.calendarLeft:hover i {
+	display: block
+}
+
+.calendarLeft .turnLeftBtn {
+	background: url(https://i.tq121.com.cn/i/weather2017/leftBtn.png) no-repeat;
+	cursor: pointer;
+	height: 59px;
+	position: absolute;
+	left: 3px;
+	top: 210px;
+	width: 30px;
+	z-index: 11
+}
+
+.calendarLeft .turnRightBtn {
+	background: url(https://i.tq121.com.cn/i/weather2017/rightBtn.png) no-repeat;
+	cursor: pointer;
+	height: 59px;
+	position: absolute;
+	right: -1px;
+	top: 210px;
+	width: 30px;
+	z-index: 11
+}
+
+.calenderAll thead tr {
+	width: 100%
+}
+
+.calenderAll thead tr th {
+	height: 45px;
+	line-height: 45px;
+	width: 97px;
+	float: left;
+	text-align: center;
+	color: #206dbd;
+	font-size: 16px;
+	font-weight: normal
+}
+
+.calenderAll thead tr .weekend {
+	color: #ffb676
+}
+
+.calenderAll tbody {
+	border-bottom: 1px solid #d9e1eb;
+	float: left
+}
+
+.calenderAll tbody tr {
+	width: 680px;
+	border: 1px solid #d9e1eb;
+	float: left;
+	border-bottom: 0;
+	border-right: 0
+}
+
+.calenderAll tbody tr td {
+	position: relative;
+	width: 97px;
+	height: 76px;
+	float: left;
+	border-right: 1px solid #d9e1eb;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+.calenderAll tbody tr td h2 {
+	margin: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: transparent none repeat scroll 0 center;
+	height: 30px
+}
+
+.calenderAll tbody tr td h2 span {
+	font-size: 20px;
+	font-weight: normal;
+	margin-right: 2px;
+	padding-left: 2px;
+	color: #5d5d5d;
+	float: left
+}
+
+.calenderAll tbody tr td h2 span.nongli {
+	color: #a3abaf;
+	float: right;
+	font-size: 12px;
+	margin-top: 6px
+}
+
+.calenderAll tbody tr .festival h2 span.nongli {
+	color: #ffb676
+}
+
+.calenderAll tbody tr td.history h2 span.nongli {
+	color: #a3abaf
+}
+
+.calenderAll tbody tr td.today h2 span.nongli {
+	color: #fff
+}
+
+.calenderAll tbody tr td .w_xian {
+	margin-top: 30px;
+	display: block;
+	width: 91px
+}
+
+.calenderAll tbody tr td .w_xian p {
+	font-size: 13px;
+	height: 25px;
+	text-align: right;
+	margin: 0
+}
+
+.calenderAll tbody tr td .w_xian p span.max {
+	color: #aeaeae;
+	font-size: 16px
+}
+
+.calenderAll tbody tr td .w_xian p span.min {
+	color: #aeaeae;
+	font-size: 13px
+}
+
+.calenderAll tbody tr td .w_xian a {
+	text-decoration: none
+}
+
+.calenderAll tbody tr td .w_xian a span.tubiao {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll 44px 2px;
+	color: #aeaeae;
+	display: block;
+	font-size: 13px;
+	text-align: right
+}
+
+.calenderAll tbody tr td .w_xian a span.tubiaoRain {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -50px 2px;
+	color: #aeaeae;
+	display: block;
+	font-size: 13px;
+	text-align: right
+}
+
+.calenderAll tbody tr td .w_xian a span.tubiao .unit {
+	font-size: 13px
+}
+
+.calenderAll tbody tr td .sleepWork {
+	margin-top: 50px;
+	margin-left: 5px;
+	width: 25px;
+	height: 20px;
+	float: left;
+	position: absolute
+}
+
+.calenderAll tbody tr td .sleepWork i {
+	display: block;
+	height: 18px;
+	width: 18px
+}
+
+.calenderAll tbody tr td .sleepWork i.work {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -160px 0
+}
+
+.calenderAll tbody tr td .sleepWork i.xiu {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -240px 0
+}
+
+.calenderAll tbody tr td.today .sleepWork i.work {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -320px 0
+}
+
+.calenderAll tbody tr td.today .sleepWork i.xiu {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -400px 0
+}
+
+.calenderAll tbody tr td.history .sleepWork i.xiu {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -240px -77px
+}
+
+.calenderAll tbody tr td .tempDiv {
+	margin-top: 30px;
+	width: 65px;
+	height: 46px;
+	float: right
+}
+
+.calenderAll tbody tr td .tempDiv .tempImg {
+	width: 25px;
+	height: 46px;
+	float: left
+}
+
+.calenderAll tbody tr td .tempDiv .tempImg i {
+	width: 20px;
+	height: 23px;
+	float: left;
+	display: block
+}
+
+.calenderAll tbody tr td .tempDiv .tempImgS {
+	width: 25px;
+	height: 24px;
+	margin-top: 12px;
+	float: left
+}
+
+.calenderAll tbody tr td .tempDiv .tempImgS i {
+	width: 22px;
+	height: 22px;
+	float: left;
+	display: block
+}
+
+.calenderAll tbody tr td .tempDiv .tempNum {
+	width: 40px;
+	height: 46px;
+	float: left;
+	line-height: 23px;
+	text-align: center;
+	font-size: 16px
+}
+
+.calenderAll tbody tr td .tempDiv .tempNum .tempMax {
+	color: #f58d39;
+	float: left;
+	position: relative;
+	top: -2px
+}
+
+.calenderAll tbody tr td.today .tempDiv .tempNum .tempMax {
+	color: #fff;
+	float: left;
+	position: relative;
+	top: -2px
+}
+
+.calenderAll tbody tr td .tempDiv .tempNum .tempMin {
+	color: #73b0ef;
+	float: left;
+	position: relative;
+	top: -2px
+}
+
+.calenderAll tbody tr td.today .tempDiv .tempNum .tempMin {
+	color: #fff;
+	float: left;
+	position: relative;
+	top: -2px
+}
+
+.calenderAll tbody tr .history {
+	background: #f3f9fe;
+	margin-bottom: 0
+}
+
+.calenderAll tbody tr .history .nowDay {
+	color: #d2d7db
+}
+
+.calenderAll tbody tr .weekend .nowDay {
+	color: #cc5a5a
+}
+
+.calenderAll tbody tr .today {
+	background: #206cbc
+}
+
+.calenderAll tbody tr .today .w_xian p span.max {
+	color: #fff
+}
+
+.calenderAll tbody tr .today .w_xian p span.min {
+	color: #fff
+}
+
+.calenderAll tbody tr td.today .w_xian a span.tubiao {
+	color: #fff
+}
+
+.calenderAll tbody tr .today .nowDay {
+	color: #fff
+}
+
+.calenderAll tbody tr td:hover {
+	border: 1px solid #5e95cf;
+	cursor: pointer;
+	box-sizing: border-box
+}
+
+.calendarRight {
+	width: 300px;
+	float: left;
+	padding: 0 10px
+}
+
+.calendarRight .dateBar {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	float: left
+}
+
+.calendarRight .dateBar .dateSelect {
+	background: #143664;
+	float: left;
+	width: 252px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 24px;
+	border-radius: 15px
+}
+
+.calendarRight .dateBar .dateSelect a {
+	float: left;
+	height: 30px;
+	width: 65px;
+	cursor: pointer;
+	position: relative
+}
+
+.calendarRight .dateBar .dateSelect a.year {
+	float: left;
+	width: 80px;
+	height: 30px;
+	margin-left: 20px;
+	margin-left: 50px
+}
+
+.calendarRight .dateBar .dateSelect a p {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	color: #a2a2a2;
+	font-size: 14px
+}
+
+.calendarRight .dateBar .dateSelect a p:hover {
+	color: #fff;
+	font-size: 16px
+}
+
+.calendarRight .dateBar .dateSelect a .showYearBox {
+	width: 80px;
+	max-height: 200px;
+	background: #143664;
+	position: absolute;
+	top: 29px;
+	z-index: 9;
+	border-radius: 0 0 8px 8px;
+	overflow: hidden
+}
+
+.calendarRight .dateBar .dateSelect a .showMonthBox {
+	width: 65px;
+	max-height: 200px;
+	background: #143664;
+	position: absolute;
+	top: 29px;
+	z-index: 9;
+	border-radius: 0 0 8px 8px;
+	overflow: hidden;
+	overflow-y: scroll
+}
+
+.calendarRight .dateBar .dateSelect a .showDayBox {
+	width: 65px;
+	max-height: 200px;
+	background: #143664;
+	position: absolute;
+	top: 29px;
+	z-index: 9;
+	border-radius: 0 0 8px 8px;
+	overflow: hidden
+}
+
+.calendarRight .dateBar .dateSelect span {
+	color: #fff;
+	float: left
+}
+
+.calendarRight .dateBar .dateSelect span.dateNum {
+	padding-left: 8px
+}
+
+.calendarRight .dateBar .dateSelect .moreDownBtn {
+	width: 24px;
+	height: 30px;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/dateUp.png) no-repeat center center
+}
+
+.calendarRight .dateBar .dateSelect a.cur .moreDownBtn {
+	width: 24px;
+	height: 30px;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/dateDown.png) no-repeat center center
+}
+
+.calendarRight .weekDate {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	color: #6b6b6b
+}
+
+.calendarRight .weekDate .nongli {
+	margin-left: 10px
+}
+
+.calendarRight .weekDate .week {
+	margin-right: 25px;
+	margin-left: 10px
+}
+
+.calendarRight .maxMinWeather {
+	width: 100%;
+	float: left
+}
+
+.calendarRight .maxMinWeather .maxMinPic {
+	text-align: center;
+	float: left;
+	margin-left: 12px
+}
+
+.calendarRight .maxMinWeather .maxMinPic .weatherIconL {
+	width: 70px;
+	height: 77px;
+	float: left
+}
+
+.calendarRight .maxMinWeather .maxMinPic .fenLine {
+	width: 14px;
+	height: 48px;
+	float: left;
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/fen.png") no-repeat scroll center center;
+	margin-top: 29px
+}
+
+.calendarRight .maxMinWeather .maxMinPic .weatherIconM {
+	width: 40px;
+	height: 45px;
+	float: left;
+	margin-top: 32px
+}
+
+.calendarRight .maxMinWeather .tempAll {
+	width: 150px;
+	float: right;
+	margin-top: 15px
+}
+
+.calendarRight .maxMinWeather .tempAll .tempMinMax {
+	width: 150px;
+	height: 40px
+}
+
+.calendarRight .maxMinWeather .tempAll .tempMinMax span {
+	font-size: 21px;
+	color: #6c6c6c;
+	position: relative;
+	bottom: -5px
+}
+
+.calendarRight .maxMinWeather .tempAll .tempMinMax .unit {
+	font-size: 16px;
+	bottom: -6px;
+	margin-right: 5px
+}
+
+.calendarRight .maxMinWeather .tempAll .wind {
+	width: 140px;
+	line-height: 20px
+}
+
+.calendarRight .maxMinWeather .tempAll .wind span {
+	margin-right: 10px;
+	font-size: 16px;
+	color: #818181
+}
+
+.calendarRight .dateTag {
+	width: 100%;
+	height: 26px;
+	float: left;
+	margin-top: 15px
+}
+
+.calendarRight .dateTag .tags {
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	border-radius: 15px;
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 20px
+}
+
+.calendarRight .dateTag .tags.color01 {
+	background: #949cc8
+}
+
+.calendarRight .dateTag .tags.color02 {
+	background: #daca74
+}
+
+.calendarRight .dateTag .tags.color03 {
+	background: #cdb3e7
+}
+
+.calendarRight .fitUnFit {
+	width: 100%;
+	height: 70px;
+	float: left;
+	margin-top: 10px
+}
+
+.calendarRight .fitUnFit .fit {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	float: left
+}
+
+.calendarRight .fitUnFit span {
+	font-size: 16px;
+	color: #a8a8a8;
+	margin-left: 16px
+}
+
+.calendarRight .fitUnFit i {
+	height: 24px;
+	width: 24px;
+	display: block;
+	float: left;
+	margin-top: 5px
+}
+
+.calendarRight .fitUnFit i.fitIcon {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -558px 0
+}
+
+.calendarRight .fitUnFit i.uFitIcon {
+	background: transparent url("https://i.tq121.com.cn/i/weather2017/d40Icon.png") no-repeat scroll -479px 0
+}
+
+.calendarRight .historyTitle {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	font-size: 20px;
+	color: #043467;
+	margin-top: 19px
+}
+
+.calendarRight .historyDiv {
+	width: 100%;
+	height: 86px;
+	float: left;
+	border: 1px solid #e2e8f0;
+	padding-top: 10px;
+	background: #f9fcff
+}
+
+.calendarRight .historyDiv .historyLi {
+	width: 150px;
+	height: 43px;
+	float: left
+}
+
+.calendarRight .historyDiv .historyLi .mainContent {
+	width: 140px;
+	height: 26px;
+	float: left;
+	padding-left: 10px;
+	color: #a8a8a8;
+	line-height: 26px;
+	text-align: left
+}
+
+.calendarRight .historyDiv .historyLi .mainContent .typeName {
+	font-size: 14px
+}
+
+.calendarRight .historyDiv .historyLi .mainContent .typeNum {
+	font-size: 22px
+}
+
+.calendarRight .historyDiv .historyLi .mainContent .typeUnit {
+	font-size: 22px
+}
+
+.calendarRight .historyDiv .historyLi .tipMsg {
+	margin-left: 10px;
+	float: left;
+	font-size: 12px;
+	color: #f58d39;
+	display: none
+}
+
+#historyMsg {
+	float: right;
+	font-size: 10px;
+	color: #c9c9c9;
+	text-align: right;
+	padding-right: 10px;
+	width: 140px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 20px
+}
+
+.tipsHistory {
+	height: 25px;
+	line-height: 25px;
+	text-align: right;
+	font-size: 12px;
+	color: #c9c9c9;
+	padding-right: 20px
+}
+
+.con .left i,.today .sk .therm,.around span.move,.greatEvent p.time {
+	background-image: url("https://i.tq121.com.cn/i/weather2015/city/iconall.png");
+	background-repeat: no-repeat;
+	display: block
+}
+
+.today .t .sk {
+	border: 1px solid #d4d4d4;
+	float: left;
+	height: 296px;
+	position: relative;
+	width: 359px
+}
+
+.today .t .sk .time {
+	color: #7e7e7e;
+	font-size: 13px;
+	left: 26px;
+	position: absolute;
+	top: 13px
+}
+
+.today .t .sk .therm {
+	background-position: 0 0;
+	height: 132px;
+	left: 62px;
+	position: absolute;
+	top: 61px;
+	width: 76px
+}
+
+.today .t .sk .therm p {
+	bottom: 35px;
+	left: 35px;
+	position: absolute;
+	width: 15px
+}
+
+.today .t .sk .therm p .t {
+	background-position: -35px -137px;
+	height: 8px;
+	width: 15px
+}
+
+.today .t .sk .therm p .c {
+	background-position: -35px -142px;
+	height: 38px;
+	width: 15px
+}
+
+.today .t .sk .tem {
+	color: #2d76b6;
+	left: 149px;
+	position: absolute;
+	top: 102px
+}
+
+.today .t .sk .tem span {
+	font-size: 70px
+}
+
+.today .t .sk .tem em {
+	font-size: 55px
+}
+
+.today .t .sk .zs {
+	position: absolute
+}
+
+.today .t .sk .zs i {
+	float: left;
+	height: 24px;
+	margin-right: 8px;
+	width: 24px
+}
+
+.today .t .sk .zs span {
+	float: left;
+	font-size: 16px;
+	letter-spacing: 0;
+	margin-right: 8px
+}
+
+.today .t .sk .zs em {
+	float: left;
+	font-size: 16px
+}
+
+.today .t .sk .h {
+	left: 24px;
+	top: 214px
+}
+
+.today .t .sk .h i {
+	background-position: -2px -289px
+}
+
+.today .t .sk .w {
+	left: 200px;
+	top: 213px
+}
+
+.today .t .sk .w i {
+	background-position: -36px -291px
+}
+
+.today .t .sk .w em {
+	letter-spacing: 2px
+}
+
+.today .t .sk .pol {
+	left: 24px;
+	top: 250px;
+	z-index: 10
+}
+
+.today .t .sk .pol i {
+	background-position: -2px -314px
+}
+
+.today .t .sk .pol em {
+	margin-right: 8px
+}
+
+.today .t .sk .limit {
+	left: 200px;
+	top: 250px
+}
+
+.today .t .sk .limit i {
+	background-position: -36px -314px
+}
+
+.today .t .sk .limit em {
+	letter-spacing: 6px
+}
+
+.today .t .sk .sk_alarm {
+	position: absolute;
+	right: 31px;
+	top: 38px;
+	z-index: 5
+}
+
+.today .t .sk .sk_alarm a {
+	line-height: 26px;
+	height: 26px;
+	border-radius: 5px;
+	padding: 0 11px;
+	display: block;
+	color: #fff;
+	font-size: 16px
+}
+
+.today .t .sk .sk_alarm a.blue {
+	background: #1b54a4
+}
+
+.today .t .sk .sk_alarm a.yellow {
+	background: #e2c004
+}
+
+.today .t .sk .sk_alarm a.orange {
+	background: #ed832f
+}
+
+.today .t .sk .sk_alarm a.red {
+	background: #f00
+}
+
+.today .t .sk .sk_alarm a.white {
+	background: #fff
+}
+
+.today .t ul li {
+	border: 1px solid #d4d4d4;
+	float: left;
+	font-size: 14px;
+	height: 296px;
+	margin-left: 5px;
+	display: inline;
+	position: relative;
+	text-align: center;
+	width: 152px
+}
+
+.today .t ul li h1 {
+	font-size: 13px;
+	margin-top: 15px
+}
+
+.today .t ul li .wea {
+	height: 36px;
+	line-height: 18px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 7px;
+	width: 88%
+}
+
+.today .t ul li .tem {
+	color: #7f7f7f;
+	line-height: 40px;
+	margin-top: 10px
+}
+
+.today .t ul li .tem span {
+	font-size: 36px
+}
+
+.today .t ul li .tem em {
+	font-size: 24px
+}
+
+.today .t ul li .win {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 5px;
+	overflow: hidden;
+	text-align: center;
+	*position: relative;
+	*width: 100%
+}
+
+.today .t ul li .win span {
+	display: inline-block;
+	height: 34px;
+	*position: absolute;
+	*left: 65px;
+	*top: 1px;
+	*display: block
+}
+
+.today .t ul li .win i {
+	background-position: -84px -2px;
+	display: inline-block;
+	float: left;
+	height: 25px;
+	padding: 0;
+	width: 24px;
+	*position: absolute;
+	*left: 39px;
+	*top: 2px
+}
+
+.today .t ul li .win i.S {
+	background-position: -82px -22px
+}
+
+.today .t ul li .win i.N {
+	background-position: -83px -46px
+}
+
+.today .t ul li .win i.W {
+	background-position: -82px -91px
+}
+
+.today .t ul li .win i.E {
+	background-position: -82px -69px
+}
+
+.today .t ul li .win i.NE {
+	background-position: -81px -164px
+}
+
+.today .t ul li .win i.NW {
+	background-position: -82px -188px
+}
+
+.today .t ul li .win i.SE {
+	background-position: -83px -115px
+}
+
+.today .t ul li .win i.SW {
+	background-position: -82px -138px
+}
+
+.today .t ul li .win .winImg {
+	margin-top: 0
+}
+
+.today .t ul li .sun {
+	height: 24px;
+	margin-top: 2px;
+	position: relative;
+	text-align: center;
+	width: 100%
+}
+
+.today .t ul li .sun i {
+	display: block;
+	height: 22px;
+	left: 27px;
+	position: absolute;
+	top: 3px;
+	width: 22px
+}
+
+.today .t ul li .sun span {
+	left: 55px;
+	line-height: 24px;
+	position: absolute;
+	top: 3px;
+	color: #606060
+}
+
+.today .t ul li .sunUp i {
+	background-position: -33px -269px
+}
+
+.today .t ul li .sunDown i {
+	background-position: -2px -269px
+}
+
+.con .left .today {
+	margin-top: 6px
+}
+
+#adposter_6122 {
+	margin-top: 16px
+}
+
+#curve {
+	height: 256px;
+	margin-top: 33px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #d4d4d4
+}
+
+#curve em {
+	font-size: 13px;
+	line-height: 20px;
+	position: absolute;
+	text-align: center
+}
+
+#curve .time em {
+	top: 6px
+}
+
+#curve .tem em {
+	top: 118px
+}
+
+#curve .biggt {
+	height: 100px;
+	left: 0;
+	position: absolute;
+	top: 94px;
+	width: 100%
+}
+
+#curve .wpic div {
+	position: absolute;
+	top: 30px;
+	z-index: 9
+}
+
+#curve .wpic big {
+	cursor: pointer;
+	margin: 0 auto
+}
+
+#curve .winf em {
+	top: 185px
+}
+
+#curve .winl em {
+	top: 212px
+}
+
+#weatherChart {
+	padding-bottom: 10px
+}
+
+#weatherChart .split {
+	text-align: right;
+	height: 26px;
+	overflow: hidden;
+	margin-top: 6px;
+	padding-left: 20px
+}
+
+#weatherChart .split p {
+	display: none;
+	background: #8ec2f2;
+	float: left;
+	margin-right: 10px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 10px
+}
+
+#weatherChart .split p.on {
+	display: block
+}
+
+#weatherChart .tabs {
+	height: 40px;
+	margin-top: 15px;
+	line-height: 43px;
+	padding: 0 20px;
+	overflow: hidden
+}
+
+#weatherChart .tabs h2 {
+	color: #252525;
+	float: left;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 42px;
+	width: 250px
+}
+
+#weatherChart .tabs h2 i {
+	display: block;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 20px;
+	text-align: center
+}
+
+#weatherChart .second {
+	left: 131px;
+	padding-top: 0;
+	position: absolute;
+	top: 32px
+}
+
+#weatherChart .tabs ul {
+	float: right;
+	margin-right: -16px
+}
+
+#weatherChart .tabs ul li {
+	color: #6c6c6c;
+	cursor: pointer;
+	float: left;
+	font-size: 15px;
+	height: 27px;
+	line-height: 25px;
+	margin-top: 3px;
+	overflow: hidden;
+	text-align: center;
+	background: url("https://i.tq121.com.cn/i/weather2017/shuxian.png") no-repeat center right
+}
+
+#weatherChart .tabs ul li span {
+	display: block;
+	margin: 0 17px
+}
+
+#weatherChart .tabs ul li:last-child {
+	background: 0
+}
+
+#weatherChart .tabs ul li:hover {
+	color: #ee842f
+}
+
+#weatherChart .tabs ul li.on span,#history .tabs .wd_on span {
+	color: #f68d39;
+	border-bottom: 2px solid #f68d39
+}
+
+#weatherChart .chart {
+	margin-top: 20px;
+	position: relative
+}
+
+#weatherChart .chart em {
+	color: #8b8b8b;
+	font-size: 12px;
+	position: absolute;
+	right: 23px;
+	top: 130px
+}
+
+#weatherChart .chart b {
+	color: #7d7d7d;
+	display: none;
+	font-size: 12px;
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	top: 130px;
+	width: 45px;
+	font-weight: normal
+}
+
+#weatherChart .chart #hourHolder {
+	height: 139px;
+	padding-left: 19px;
+	padding-top: 7px;
+	position: relative
+}
+
+#hourHolder .xLabel {
+	bottom: 0;
+	left: 61px;
+	position: absolute;
+	width: 577px;
+	background: #fff
+}
+
+#hourHolder .xLabel span {
+	color: #8b8b8b;
+	display: block;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	width: 23px
+}
+
+#hourHolder .yLabel {
+	height: 140px;
+	left: 18px;
+	position: absolute;
+	text-align: right;
+	top: 1px
+}
+
+#hourHolder .yLabel span {
+	color: #7d7d7d;
+	display: block;
+	font-size: 12px;
+	height: 37px;
+	line-height: 25px;
+	width: 20px
+}
+
+#hourHolder .result {
+	color: #f58d39;
+	display: none;
+	left: 40%;
+	position: absolute;
+	top: 36%;
+	font-size: 18px;
+	background: #fff
+}
+
+#hourHolder .showData {
+	background-color: #f68d39;
+	color: #fff;
+	display: none;
+	left: 40%;
+	padding: 0 5px;
+	position: absolute;
+	top: 60%;
+	border-radius: 5px;
+	height: 22px;
+	line-height: 22px
+}
+
+#hourHolder .showData .tooltips {
+	background: url(https://i.tq121.com.cn/i/weather2017/tooltip.png) no-repeat;
+	width: 20px;
+	height: 10px;
+	position: absolute;
+	left: 5px;
+	top: 19px
+}
+
+#hourHolder .showData .tooltipsB {
+	background: url(https://i.tq121.com.cn/i/weather2017/tooltipB.png) no-repeat;
+	width: 20px;
+	height: 10px;
+	position: absolute;
+	left: 5px;
+	top: 19px
+}
+
+#hourHolder .data {
+	background-color: #076ea8;
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	text-align: center;
+	width: 50px
+}
+
+#hourHolder .date {
+	background-color: #076ea8;
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	text-align: center;
+	width: 150px
+}
+
+#weatherChart .chart .humidity,#weatherChart .chart .tem,#weatherChart .chart .pm10,#weatherChart .chart .air,#weatherChart .chart .temperature,#weatherChart .chart .rain,#weatherChart .chart .wind {
+	display: none;
+	padding-bottom: 11px
+}
+
+#weatherChart .chart .detail {
+	color: #999;
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	right: 20px;
+	top: -47px;
+	width: 300px;
+	font-size: 12px
+}
+
+#weatherChart .chart .detail img {
+	left: 20px;
+	position: absolute;
+	top: 10px
+}
+
+#weatherChart .chart .detail a {
+	color: #076ea8
+}
+
+#weatherChart .aqiColorExp {
+	margin-top: 25px;
+	float: right;
+	margin-right: 30px
+}
+
+#weatherChart .aqiColorExp span {
+	border-top-style: solid;
+	border-top-width: 4px;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 1px;
+	text-align: left;
+	width: 40px;
+	color: #999;
+	font-size: 10px
+}
+
+#weatherChart .aqiColorExp span i {
+	position: relative;
+	left: -20px;
+	font-style: normal;
+	width: 40px;
+	text-align: center;
+	display: block
+}
+
+#weatherChart .aqiColorExp .expType {
+	border-top-color: #fff;
+	width: auto;
+	margin-right: 10px
+}
+
+#weatherChart .aqiColorExp .tempSpan {
+	width: 30px;
+	border-top-color: #f7da64
+}
+
+#weatherChart .aqiColorExp .tempSpan i {
+	position: relative;
+	left: 15px;
+	font-style: normal;
+	width: 30px;
+	text-align: center;
+	display: block
+}
+
+.con .left .livezs {
+	border-top: 3px solid #076ea8;
+	margin-top: 12px
+}
+
+.con .left .livezs .t {
+	height: 38px;
+	overflow: hidden
+}
+
+.con .left .livezs .t h1 {
+	float: left;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 7px;
+	text-indent: 2px
+}
+
+.con .left .livezs .t input {
+	cursor: pointer;
+	background: 0;
+	border: 1px solid #fff;
+	float: right;
+	font-size: 15px;
+	height: 23px;
+	line-height: 18px;
+	margin-right: 11px;
+	margin-top: 10px;
+	width: 75px
+}
+
+.con .left .livezs .t input.on {
+	border: 1px solid #85b8d4;
+	color: #076ea8
+}
+
+.con .left .livezs ul li {
+	background: #daedff none repeat scroll 0 0;
+	float: left;
+	height: 120px;
+	margin-left: 1px;
+	margin-right: 2px;
+	margin-top: 5px;
+	overflow: hidden;
+	position: relative;
+	width: 223px
+}
+
+.con .left .livezs ul li em {
+	color: #1570a6;
+	display: block;
+	font-size: 13px;
+	left: 5px;
+	line-height: 22px;
+	position: absolute;
+	text-align: center;
+	top: 69px;
+	width: 80px
+}
+
+.con .left .livezs ul li span {
+	color: #187db6;
+	display: block;
+	font-size: 20px;
+	height: 24px;
+	left: 90px;
+	line-height: 24px;
+	position: absolute;
+	top: 20px;
+	width: 100px
+}
+
+.con .left .livezs ul li p {
+	color: #818181;
+	font-size: 13px;
+	left: 90px;
+	line-height: 21px;
+	position: absolute;
+	text-align: left;
+	top: 54px;
+	width: 129px
+}
+
+.left .around i {
+	background: 0
+}
+
+.left .hdImgs i {
+	background: 0
+}
+
+.pageflip {
+	right: 0;
+	float: right;
+	position: relative;
+	top: 0
+}
+
+.pageflip IMG {
+	z-index: 99;
+	right: -3px;
+	width: 30px;
+	position: absolute;
+	top: -1px;
+	height: 30px;
+	ms-interpolation-mode: bicubic
+}
+
+.pageflip .msg_block {
+	right: 0;
+	background: url(https://i.tq121.com.cn/i/weather2015/png/subscribe.png) no-repeat right top;
+	overflow: hidden;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	height: 25px
+}
+
+.dis {
+	display: none
+}
+
+.todayModel {
+	width: 1000px;
+	height: 370px;
+	background: #8ec2f2;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: relative
+}
+
+.todayModel .weatherBgAll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1000px;
+	height: 400px
+}
+
+.todayModel .weatherBgAll i {
+	float: left;
+	width: 30%;
+	height: 100%;
+	display: block
+}
+
+.todayModel .weatherBgAll i.weatherBgAll03 {
+	width: 40%
+}
+
+.weatherBg00 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg00.jpg) no-repeat center center
+}
+
+.weatherBg01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg01.jpg) no-repeat center center
+}
+
+.weatherBg02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg02.jpg) no-repeat center center
+}
+
+.weatherBg03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg03.jpg) no-repeat center center
+}
+
+.weatherBg04 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg04.jpg) no-repeat center center
+}
+
+.weatherBg05 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg05.jpg) no-repeat center center
+}
+
+.weatherBg06 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg06.jpg) no-repeat center center
+}
+
+.weatherBg07 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg07.jpg) no-repeat center center
+}
+
+.weatherBg08 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg08.jpg) no-repeat center center
+}
+
+.weatherBg09 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg09.jpg) no-repeat center center
+}
+
+.weatherBg10 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg10.jpg) no-repeat center center
+}
+
+.weatherBg00 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg00_01.jpg) no-repeat center center
+}
+
+.weatherBg00 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg00_02.jpg) no-repeat center center
+}
+
+.weatherBg00 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg00_03.jpg) no-repeat center center
+}
+
+.weatherBg01 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg01_01.jpg) no-repeat center center
+}
+
+.weatherBg01 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg01_02.jpg) no-repeat center center
+}
+
+.weatherBg01 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg01_03.jpg) no-repeat center center
+}
+
+.weatherBg02 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg02_01.jpg) no-repeat center center
+}
+
+.weatherBg02 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg02_02.jpg) no-repeat center center
+}
+
+.weatherBg02 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg02_03.jpg) no-repeat center center
+}
+
+.weatherBg03 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg03_01.jpg) no-repeat center center
+}
+
+.weatherBg03 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg03_02.jpg) no-repeat center center
+}
+
+.weatherBg03 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg03_03.jpg) no-repeat center center
+}
+
+.weatherBg04 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg04_01.jpg) no-repeat center center
+}
+
+.weatherBg04 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg04_02.jpg) no-repeat center center
+}
+
+.weatherBg04 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg04_03.jpg) no-repeat center center
+}
+
+.weatherBg05 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg05_01.jpg) no-repeat center center
+}
+
+.weatherBg05 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg05_02.jpg) no-repeat center center
+}
+
+.weatherBg05 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg05_03.jpg) no-repeat center center
+}
+
+.weatherBg06 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg06_01.jpg) no-repeat center center
+}
+
+.weatherBg06 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg06_02.jpg) no-repeat center center
+}
+
+.weatherBg06 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg06_03.jpg) no-repeat center center
+}
+
+.weatherBg07 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg07_01.jpg) no-repeat center center
+}
+
+.weatherBg07 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg07_02.jpg) no-repeat center center
+}
+
+.weatherBg07 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg07_03.jpg) no-repeat center center
+}
+
+.weatherBg08 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg08_01.jpg) no-repeat center center
+}
+
+.weatherBg08 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg08_02.jpg) no-repeat center center
+}
+
+.weatherBg08 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg08_03.jpg) no-repeat center center
+}
+
+.weatherBg09 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg09_01.jpg) no-repeat center center
+}
+
+.weatherBg09 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg09_02.jpg) no-repeat center center
+}
+
+.weatherBg09 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg09_03.jpg) no-repeat center center
+}
+
+.weatherBg10 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg10_01.jpg) no-repeat center center
+}
+
+.weatherBg10 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg10_02.jpg) no-repeat center center
+}
+
+.weatherBg10 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/weatherBg10_03.jpg) no-repeat center center
+}
+
+.blueBg01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg01.jpg) no-repeat center center
+}
+
+.blueBg02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg02.jpg) no-repeat center center
+}
+
+.blueBg03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg03.jpg) no-repeat center center
+}
+
+.blueBg04 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg04.jpg) no-repeat center center
+}
+
+.blueBg01 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg01_01.jpg) no-repeat center center
+}
+
+.blueBg01 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg01_02.jpg) no-repeat center center
+}
+
+.blueBg01 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg01_03.jpg) no-repeat center center
+}
+
+.blueBg02 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg02_01.jpg) no-repeat center center
+}
+
+.blueBg02 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg02_02.jpg) no-repeat center center
+}
+
+.blueBg02 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg02_03.jpg) no-repeat center center
+}
+
+.blueBg03 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg03_01.jpg) no-repeat center center
+}
+
+.blueBg03 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg03_02.jpg) no-repeat center center
+}
+
+.blueBg03 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg03_03.jpg) no-repeat center center
+}
+
+.blueBg04 .weatherBgAll i.weatherBgAll01 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg04_01.jpg) no-repeat center center
+}
+
+.blueBg04 .weatherBgAll i.weatherBgAll02 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg04_02.jpg) no-repeat center center
+}
+
+.blueBg04 .weatherBgAll i.weatherBgAll03 {
+	background: url(https://i.tq121.com.cn/i/weather2017/blueBg04_03.jpg) no-repeat center center
+}
+
+.todayLeft {
+	width: 210px;
+	height: 370px;
+	float: left;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 30px;
+	color: #fff;
+	position: relative
+}
+
+.topBar {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	float: left
+}
+
+.topBar .time {
+	width: 50%;
+	float: left;
+	height: 30px;
+	line-height: 30px
+}
+
+.topBar .time img {
+	margin-right: 10px
+}
+
+.topBar .time {
+	opacity: .5
+}
+
+.topBar .togetherWeather {
+	width: 50%;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer
+}
+
+.topBar .togetherWeather span {
+	text-decoration: underline
+}
+
+.topBar .togetherWeather .msgBtn {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll -600px -20px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 4px;
+	right: 0
+}
+
+.topBar .togetherWeather:hover .msgBtn {
+	background-position: -600px -51px
+}
+
+.todayLeft {
+	z-index: 9
+}
+
+.todayLeft .togetherWeatherBox {
+	position: absolute;
+	top: -16px;
+	right: -410px;
+	width: 345px;
+	height: 458px;
+	background: url(https://i.tq121.com.cn/i/weather2017/togetherWeatherBox.png) no-repeat;
+	z-index: 9
+}
+
+.todayLeft .togetherWeatherBox .cityBar {
+	width: 305px;
+	height: 60px;
+	position: relative;
+	top: 0;
+	left: 28px;
+	border-bottom: 1px solid #dfdfdf;
+	line-height: 60px;
+	float: left
+}
+
+.todayLeft .togetherWeatherBox .cityBar span {
+	float: left;
+	color: #043567;
+	font-size: 14px
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCity {
+	float: left;
+	color: #043567;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	width: 120px;
+	margin-top: 18px;
+	margin-left: 5px;
+	text-align: center;
+	padding-right: 20px;
+	border: 1px solid #dfdfdf;
+	position: relative;
+	cursor: pointer
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCity i {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll -945px -10px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCityList {
+	max-height: 96px;
+	width: 120px;
+	text-align: center;
+	padding-right: 20px;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	background: #fff;
+	left: 103px;
+	overflow: auto;
+	top: 44px;
+	z-index: 10
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCityList ul {
+	width: 120px;
+	float: left
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCityList a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color: #252525;
+	font-size: 14px
+}
+
+.todayLeft .togetherWeatherBox .cityBar .selectCityList a:hover {
+	color: #f3973c
+}
+
+.todayLeft .togetherWeatherBox .cityBar .closeBox {
+	background: url(https://i.tq121.com.cn/i/weather2017/closeBtn.png) no-repeat center center;
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	float: right;
+	cursor: pointer
+}
+
+.todayLeft .togetherWeatherBox .mostWeather {
+	width: 305px;
+	height: 55px;
+	position: relative;
+	left: 28px;
+	float: left;
+	font-size: 14px;
+	color: #666;
+	text-align: left
+}
+
+.todayLeft .togetherWeatherBox .mostWeather span {
+	font-size: 24px;
+	color: #1f6ebd
+}
+
+.todayLeft .togetherWeatherBox .weatherList {
+	width: 305px;
+	float: left;
+	position: relative;
+	left: 28px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li {
+	width: 72px;
+	height: 85px;
+	cursor: pointer;
+	float: left;
+	position: relative
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li.cur {
+	background: #efefef
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i {
+	background: url(https://i.tq121.com.cn/i/weather2017/togetherIcon.png) no-repeat center center;
+	background-position: 0 0;
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	top: 10px;
+	left: 16px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon01 {
+	background-position: 0 0
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon02 {
+	background-position: -70px 0
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon03 {
+	background-position: -140px 0
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon04 {
+	background-position: -208px 0
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon05 {
+	background-position: 0 -75px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon06 {
+	background-position: -70px -75px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon07 {
+	background-position: -140px -75px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon08 {
+	background-position: -210px -75px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon09 {
+	background-position: 0 -150px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon10 {
+	background-position: -70px -150px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li i.weatherIcon11 {
+	background-position: -140px -150px
+}
+
+.todayLeft .togetherWeatherBox .weatherList ul li span {
+	bottom: 10px;
+	color: #252525;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%
+}
+
+.todayLeft .togetherWeatherBox .commitBtn {
+	position: relative;
+	width: 160px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #1f6ebd;
+	color: #fff;
+	float: left;
+	left: 100px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer
+}
+
+.todayLeft .tempDiv {
+	float: left;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin-top: 10px
+}
+
+.todayLeft .tempDiv .temp {
+	font-size: 80px
+}
+
+.todayLeft .tempDiv .tempUnit {
+	font-size: 24px;
+	position: absolute;
+	top: 15px
+}
+
+.todayLeft .weather {
+	width: 50%;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	cursor: pointer;
+	margin-left: 25%
+}
+
+.todayLeft .weather span {
+	font-size: 14px;
+	float: left;
+	color: #fff
+}
+
+.todayLeft .weather i {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/radar.png) no-repeat center center;
+	margin-left: 15px;
+	position: relative;
+	top: 5px
+}
+
+.todayLeft .weather:hover i {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/radarCur.png) no-repeat center center;
+	margin-left: 15px;
+	position: relative;
+	top: 5px
+}
+
+.todayLeft .weather:hover span {
+	color: #f68d3b
+}
+
+.todayLeft .minMax {
+	width: 65%;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	margin-left: 20%
+}
+
+#maxTempDiv,#minTempDiv {
+	margin: 0 5px
+}
+
+.todayLeft .minMax span {
+	margin-left: 5px;
+	margin-right: 2px
+}
+
+.todayLeft .yujing {
+	width: 70%;
+	margin-left: 15%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	font-size: 12px;
+	margin-bottom: 8px
+}
+
+.todayLeft .yujing .level1 {
+	width: 50%;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/level_1.png) no-repeat scroll center center
+}
+
+#aqi a {
+	display: block
+}
+
+.todayLeft .yujing .level2 {
+	width: 50%;
+	float: left;
+	background: url(https://i.tq121.com.cn/i/weather2017/level_2.png) no-repeat scroll center center
+}
+
+.todayLeft .rainMsg {
+	position: absolute;
+	left: 0;
+	top: 120px
+}
+
+.closeRainMsg {
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: -5px;
+	width: 20px;
+	cursor: pointer
+}
+
+.todayLeft .rainMsg span {
+	position: relative;
+	top: -51px;
+	color: #033566
+}
+
+.todayLeft p {
+	width: 90%;
+	margin-left: 16%;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	text-align: left;
+	position: relative
+}
+
+.todayLeft p img {
+	margin-right: 15px
+}
+
+.todayLeft p .helpIcon {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll -637px -20px;
+	bottom: 15px;
+	position: absolute;
+	right: 15px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer
+}
+
+.todayLeft p .helpIcon:hover {
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll -637px -50px
+}
+
+.helpShow {
+	bottom: 0;
+	left: 189px;
+	position: absolute;
+	z-index: 9
+}
+
+.closeHelp {
+	height: 30px;
+	position: absolute;
+	right: 15px;
+	top: 28px;
+	width: 30px;
+	cursor: pointer
+}
+
+.todayRight {
+	width: 740px;
+	height: 370px;
+	float: left;
+	position: relative;
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.todayRight .rightTop {
+	height: 25px;
+	line-height: 25px;
+	width: 100%
+}
+
+.todayRight .chartTitle {
+	font-size: 18px;
+	color: #fff;
+	float: left;
+	margin-left: 18px
+}
+
+.todayRight .chartTitle span {
+	font-size: 12px;
+	margin-left: 15px
+}
+
+.todayRight .sunRiseSet {
+	float: right;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 33px;
+	margin-bottom: 25px;
+	width: 340px
+}
+
+.todayRight .sunRiseSet .sunSetIcon {
+	margin-left: 35px;
+	margin-right: 5px;
+	position: relative;
+	top: 0;
+	width: 30px;
+	height: 23px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -530px -95px;
+	float: left
+}
+
+.todayRight .sunRiseSet .sunRiseIcon {
+	margin-left: 35px;
+	margin-right: 5px;
+	position: relative;
+	top: 0;
+	width: 30px;
+	height: 23px;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -530px -58px;
+	float: left
+}
+
+.todayRight .sunRiseSet span {
+	float: left
+}
+
+.todayRight .sunRiseSet #sunSet {
+	margin-left: 3px
+}
+
+.todayRight .sunRiseSet #sunRise {
+	margin-left: 3px
+}
+
+.todayCharts {
+	float: left;
+	overflow: hidden;
+	width: 714px;
+	position: relative;
+	margin-left: 5px
+}
+
+.todayCharts ul {
+	width: 1320px;
+	height: 300px;
+	float: left;
+	position: relative;
+	left: 0
+}
+
+.todayCharts ul li {
+	width: 55px;
+	height: 300px;
+	float: left;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-right: 1px solid rgba(255,255,255,0.2);
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+.todayCharts ul li:hover {
+	background: url("https://i.tq121.com.cn/i/weather2017/todayLiCur.png") no-repeat scroll 0 bottom;
+	background-size: cover;
+	cursor: pointer
+}
+
+.todayCharts ul li .time {
+	width: 100%;
+	height: 30px;
+	line-height: 30px
+}
+
+.todayCharts ul li .weather {
+	display: block;
+	height: 35px;
+	margin: 20px auto 0;
+	width: 35px
+}
+
+.todayCharts ul li .charts {
+	width: 100%;
+	height: 150px
+}
+
+.todayCharts ul li .wind {
+	width: 100%;
+	height: 30px;
+	line-height: 30px
+}
+
+.todayCharts ul li .windL {
+	width: 100%;
+	height: 30px;
+	line-height: 30px
+}
+
+#chartLine {
+	width: 1320px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 100px
+}
+
+.leftBtn {
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	top: 145px;
+	left: -20px;
+	cursor: pointer;
+	opacity: .5;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -874px -200px
+}
+
+.leftBtn:hover {
+	background-position: -874px -300px
+}
+
+.rightBtn {
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	top: 145px;
+	right: 0;
+	cursor: pointer;
+	opacity: .5;
+	background: url("https://i.tq121.com.cn/i/weather2017/weather.png") no-repeat scroll;
+	background-position: -924px -200px
+}
+
+.rightBtn:hover {
+	background-position: -924px -300px
+}
+
+.todayLeft .yujing {
+	width: 100%!important;
+	margin-left: 0!important
+}
+
+.yujing .sk_alarm {
+	float: left;
+	margin-top: 15px;
+	margin-left: 0
+}
+
+.yujing .sk_alarm a {
+	line-height: 20px;
+	height: 20px;
+	border-radius: 10px;
+	padding: 0 11px;
+	display: block;
+	color: #fff;
+	font-size: 12px
+}
+
+.yujing .sk_alarm a.blue {
+	background: #1f6ebd
+}
+
+.yujing .sk_alarm a.blue:hover {
+	background: #0b5aa9
+}
+
+.yujing .sk_alarm a.yellow:hover {
+	background: #d8b100
+}
+
+.yujing .sk_alarm a.yellow {
+	background: #eec50b
+}
+
+.yujing .sk_alarm a.orange {
+	background: #ed832f
+}
+
+.yujing .sk_alarm a.orange:hover {
+	background: #f60
+}
+
+.yujing .sk_alarm a.red {
+	background: #f00
+}
+
+.yujing .sk_alarm a.red:hover {
+	background: #c00
+}
+
+.yujing .sk_alarm a.white {
+	background: #fff;
+	color: #000
+}
+
+#aqi a {
+	border-radius: 10px
+}
+
+#aqi a.lev1 {
+	background: #44cf12
+}
+
+#aqi a.lev2 {
+	background: #eec50b
+}
+
+#aqi a.lev3 {
+	background: #f6b42c
+}
+
+#aqi a.lev4 {
+	background: #fa5535
+}
+
+#aqi a.lev5 {
+	background: #e31b40
+}
+
+#aqi a.lev6 {
+	background: #8e0636
+}
+
+#aqi a.lev1:hover {
+	background: #30b500
+}
+
+#aqi a.lev2:hover {
+	background: #d5b006
+}
+
+#aqi a.lev3:hover {
+	background: #e3a31e
+}
+
+#aqi a.lev4:hover {
+	background: #e04021
+}
+
+#aqi a.lev5:hover {
+	background: #c20c2e
+}
+
+#aqi a.lev6:hover {
+	background: #630224
+}
+
+.city_40 {
+	background: #fff;
+	height: auto;
+	float: left;
+	width: 1000px;
+	margin-bottom: 10px
+}
+
+.city_40_s {
+	background: #fff;
+	height: auto;
+	float: left;
+	width: 680px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border: 1px solid #eee
+}
+
+.W_left .title .w_nian ul li a {
+	font-size: 12px;
+	color: #848b95
+}
+
+.W_left .title .w_nian ul li a:hover {
+	color: #ee842f
+}
+
+.W_left .title .w_nian ul li a.yue {
+	color: #c3c3c3
+}
+
+.W_left .title .w_nian ul li a:hover {
+	color: #ee842f
+}
+
+.W_left .title .w_nian ul li.ae a {
+	color: #ee842f;
+	font-weight: bold
+}
+
+.W_left .title .w_nian ul li {
+	text-align: center;
+	height: 20px;
+	line-height: 20px
+}
+
+.W_left .title .w_nian ul {
+	width: 60px;
+	float: left
+}
+
+.W_left .title .w_nian h1 span {
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color: #848b95;
+	width: 60px;
+	text-align: center;
+	font-size: 14px
+}
+
+.W_left .title .w_nian h1 {
+	height: 25px;
+	overflow: hidden
+}
+
+.W_left .title .w_nian {
+	display: none
+}
+
+#holder {
+	border-top: 2px solid #fff;
+	padding-left: 33px;
+	padding-top: 39px;
+	background: #fff;
+	color: #939393;
+	font-size: 12px;
+	height: 331px;
+	position: relative;
+	width: 960px
+}
+
+#holder vml,#holder svg {
+	background: #fff;
+	position: absolute;
+	z-index: 1
+}
+
+#holder span {
+	color: #939393
+}
+
+#holder .x {
+	left: 41px;
+	position: absolute;
+	top: 310px
+}
+
+#holder .x span {
+	line-height: 20px;
+	height: 20px;
+	color: #939393;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	width: 14px
+}
+
+#holder .x span.on {
+	color: #3e99d1
+}
+
+#holder .x span.today {
+	color: #206cbd
+}
+
+#holder .y {
+	left: 0;
+	position: absolute;
+	top: 48px;
+	width: 26px
+}
+
+#holder .y span {
+	display: block;
+	height: 60px;
+	text-align: right
+}
+
+#holder .dy {
+	color: #939393;
+	font-style: normal;
+	left: 15px;
+	position: absolute;
+	top: 311px;
+	top: 316px\9
+}
+
+#holder i {
+	display: none;
+	z-index: 11;
+	background-image: url("https://i.tq121.com.cn/i/weather2015/city/iconall.png");
+	width: 46px;
+	height: 73px;
+	position: absolute;
+	top: 127px;
+	cursor: pointer
+}
+
+#holder .turnLeft {
+	background: url(https://i.tq121.com.cn/i/weather2017/leftBtn.png) no-repeat;
+	left: 10px
+}
+
+#holder .turnLeft:hover {
+	background: url(https://i.tq121.com.cn/i/weather2017/leftBtn.png) no-repeat
+}
+
+#holder .turnRight {
+	background: url(https://i.tq121.com.cn/i/weather2017/rightBtn.png) no-repeat;
+	right: 0
+}
+
+#holder .turnRight:hover {
+	background: url(https://i.tq121.com.cn/i/weather2017/rightBtn.png) no-repeat
+}
+
+#holder:hover i {
+	display: block
+}
+
+#holder .stxt {
+	position: absolute;
+	top: 340px;
+	right: 20px
+}
+
+#holder .stxt li {
+	float: left;
+	margin-left: 15px
+}
+
+#holder .stxt li em {
+	width: 20px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	width: 20px;
+	height: 1px;
+	margin-top: 8px;
+	margin-top: 5px\9;
+	float: left
+}
+
+#holder .stxt li span {
+	float: left;
+	color: #666;
+	font-size: 12px;
+	margin-left: 5px
+}
+
+#holder .stxt li.li1 em {
+	border-top-color: #fd5123
+}
+
+#holder .stxt li.li2 em {
+	border-top-color: #37afd1
+}
+
+#holder .stxt li.li3 em {
+	border-top-color: #fca087;
+	border-top-style: dashed
+}
+
+#holder .stxt li.li4 em {
+	border-top-color: #7dd0e9;
+	border-top-style: dashed
+}
+
+#holder .stxt li.liSkH em {
+	border-top-color: #f7cf15
+}
+
+#holder .stxt li.liSkL em {
+	border-top-color: #4ad5f0
+}
+
+#holder .des {
+	position: absolute;
+	left: 13px;
+	top: 7px;
+	font-style: normal;
+	font-size: 16px;
+	color: #777
+}
+
+#holder0 {
+	border-top: 2px solid #fff;
+	padding-left: 33px;
+	padding-top: 10px;
+	background: #fff;
+	color: #939393;
+	font-size: 12px;
+	height: 243px;
+	position: relative;
+	width: 640px
+}
+
+#holder0 vml,#holder0 svg {
+	background: #fff;
+	position: absolute;
+	z-index: 1
+}
+
+#holder0 span {
+	color: #939393
+}
+
+#holder0 .x {
+	left: 41px;
+	position: absolute;
+	top: 200px
+}
+
+#holder0 .x span {
+	line-height: 20px;
+	height: 20px;
+	color: #939393;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	width: 14px
+}
+
+#holder0 .x span.on {
+	color: #3e99d1
+}
+
+#holder0 .x span.today {
+	color: #206cbd
+}
+
+#holder0 .y {
+	left: 0;
+	position: absolute;
+	top: 22px;
+	width: 26px
+}
+
+#holder0 .y span {
+	display: block;
+	height: 60px;
+	text-align: right
+}
+
+#holder0 .dy {
+	color: #939393;
+	font-style: normal;
+	left: 15px;
+	position: absolute;
+	top: 202px
+}
+
+#holder0 i {
+	display: none;
+	z-index: 11;
+	background-image: url("https://i.tq121.com.cn/i/weather2015/city/iconall.png");
+	width: 46px;
+	height: 73px;
+	position: absolute;
+	top: 75px;
+	cursor: pointer
+}
+
+#holder0 .turnLeft {
+	background: url(https://i.tq121.com.cn/i/weather2017/leftBtn.png) no-repeat;
+	left: 0
+}
+
+#holder0 .turnLeft:hover {
+	background: url(https://i.tq121.com.cn/i/weather2017/leftBtn.png) no-repeat
+}
+
+#holder0 .turnRight {
+	background: url(https://i.tq121.com.cn/i/weather2017/rightBtn.png) no-repeat;
+	right: -22px
+}
+
+#holder0 .turnRight:hover {
+	background: url(https://i.tq121.com.cn/i/weather2017/rightBtn.png) no-repeat
+}
+
+#holder0:hover i {
+	display: block
+}
+
+#holder0 .stxt {
+	position: absolute;
+	top: 232px;
+	right: 20px
+}
+
+#holder0 .stxt li {
+	float: left;
+	margin-left: 15px
+}
+
+#holder0 .stxt li em {
+	width: 20px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	width: 20px;
+	height: 1px;
+	margin-top: 8px;
+	margin-top: 5px\9;
+	float: left
+}
+
+#holder0 .stxt li span {
+	float: left;
+	color: #666;
+	font-size: 12px;
+	margin-left: 5px
+}
+
+#holder0 .stxt li.li1 em {
+	border-top-color: #fd5123
+}
+
+#holder0 .stxt li.li2 em {
+	border-top-color: #37afd1
+}
+
+#holder0 .stxt li.li3 em {
+	border-top-color: #fca087;
+	border-top-style: dashed
+}
+
+#holder0 .stxt li.li4 em {
+	border-top-color: #7dd0e9;
+	border-top-style: dashed
+}
+
+#holder0 .stxt li.liSkH em {
+	border-top-color: #f7cf15
+}
+
+#holder0 .stxt li.liSkL em {
+	border-top-color: #4ad5f0
+}
+
+#holder0 h1 {
+	position: absolute;
+	left: 13px;
+	top: -83px;
+	font-style: normal;
+	font-size: 18px;
+	color: #252525
+}
+
+#holder0 .des {
+	position: absolute;
+	left: 150px;
+	top: -80px;
+	font-style: normal;
+	font-size: 16px;
+	color: #7d7d7d
+}
+
+.W_left {
+	border-bottom: 0 solid #fff
+}
+
+.W_left .title a {
+	color: #000
+}
+
+.W_left .title input {
+	cursor: pointer
+}
+
+.W_left .title {
+	width: 680px;
+	margin: 0 auto;
+	height: 45px;
+	position: relative;
+	z-index: 1001;
+	display: none
+}
+
+.W_left .title .L_nian {
+	position: absolute;
+	left: 260px;
+	top: 8px
+}
+
+.W_left .title .L_nian .input_nian {
+	background: 0;
+	width: 90px;
+	height: 25px;
+	border: 0;
+	float: left;
+	text-indent: 10px;
+	font-size: 18px;
+	color: #454b4e
+}
+
+.W_left .title .L_yue {
+	position: absolute;
+	left: 313px;
+	top: 8px
+}
+
+.W_left .title .L_yue .input_yue {
+	background: 0;
+	width: 60px;
+	height: 25px;
+	border: 0;
+	text-align: center;
+	float: left;
+	text-indent: 10px;
+	font-size: 18px;
+	color: #454b4e
+}
+
+.W_left .title span.fhjt a {
+	color: #71b1d8;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	background: url(https://i.tq121.com.cn/i/weather2015/city/c_40d/h40d.png) no-repeat -1px -209px
+}
+
+.W_left .title .tab a {
+	display: block;
+	height: 36px;
+	color: #999;
+	float: left;
+	font-size: 14px;
+	width: 60px;
+	text-align: center;
+	line-height: 36px
+}
+
+.W_left .title .citys span em a {
+	text-align: center;
+	display: block;
+	float: left;
+	line-height: 25px;
+	width: 60px;
+	font-style: normal;
+	color: #fff;
+	font-size: 12px;
+	position: relative;
+	background: #3466bb;
+	margin-left: 5px;
+	height: 25px
+}
+
+.W_left .title .citys span em a img {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.W_left .title .citys span ul li a {
+	display: block;
+	float: left;
+	background: #3466bb;
+	line-height: 25px;
+	width: 60px;
+	height: 25px;
+	color: #fff;
+	text-align: center
+}
+
+.W_left .title .citys span ul li img {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.W_left .title .citys span ul li.first {
+	display: none
+}
+
+.W_left .monthDiv {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 45px
+}
+
+.W_left .monthDiv ul {
+	width: 912px;
+	margin: 0 auto;
+	float: left;
+	margin-left: 44px
+}
+
+.W_left .monthDiv ul li {
+	width: 76px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #666;
+	font-size: 14px
+}
+
+.W_left .monthDiv_s ul {
+	width: 680px;
+	margin: 0 auto;
+	float: left
+}
+
+.W_left .monthDiv_s ul li {
+	width: 56px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #666;
+	font-size: 14px
+}
+
+.W_left .monthDiv ul li:hover {
+	color: #f68d3b
+}
+
+.W_left .monthDiv ul li.cur {
+	background: url(https://i.tq121.com.cn/i/weather2017/monthCur.png) no-repeat center;
+	color: #fff
+}
+
+.explain {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 5px;
+	z-index: 11
+}
+
+.explain p {
+	text-align: right;
+	cursor: default;
+	padding-left: 33px;
+	color: #959da8;
+	position: relative;
+	font-size: 12px;
+	padding-right: 10px
+}
+
+.explain div {
+	display: none;
+	background: #f2f2f8;
+	z-index: 11;
+	border: 1px solid #dfdfdf;
+	display: none;
+	right: 1px;
+	top: 40px;
+	line-height: 24px;
+	padding: 11px 14px;
+	position: absolute;
+	width: 648px;
+	color: #666;
+	font-size: 12px
+}
+
+.explain:hover div {
+	display: block
+}
+
+.explain p i {
+	background: url(https://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat -176px -585px;
+	height: 25px;
+	right: 470px;
+	position: absolute;
+	top: 8px;
+	*left: 189px;
+	*top: -4px;
+	width: 25px
+}
+
+.explain p .sTips {
+	float: left
+}
+
+div#ab_zan {
+	visibility: inherit!important;
+	margin-right: -553px!important;
+	right: 50%!important;
+	top: 315px!important
+}
+
+#cyEmoji {
+	background: url("https://i.tq121.com.cn/i/weather2015/city/zan3.png") no-repeat!important;
+	margin-bottom: 7px!important
+}
+
+#cyEmoji .emoji-tip,#cyEmoji .emoji-name,#cyEmoji .emoji-num,#cyEmoji .emoji-item div img {
+	display: none!important
+}
+
+#cyEmoji .emoji-list {
+	padding: 0!important;
+	margin: 0!important
+}
+
+#cyEmoji .emoji-item {
+	margin: 0!important;
+	padding: 5px 0 0!important;
+	height: 45px!important;
+	width: 50px!important
+}
+
+#cyEmoji .emoji-hover {
+	border: 0!important;
+	border-radius: 0!important;
+	box-shadow: none!important
+}
+
+#cyEmoji .emoji-item div {
+	background: url(https://i.tq121.com.cn/i/weather2015/city/zan2.png) no-repeat;
+	width: 23px;
+	height: 22px;
+	margin-left: 14px
+}
+
+.webox {
+	z-index: 1000
+}
+
+.fourtydtiaozhuan {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	cursor: pointer
+}
+
+.fourtydtiaozhuan img {
+	vertical-align: sub;
+	padding-left: 5px
+}
