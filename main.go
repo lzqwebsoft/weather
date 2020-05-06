@@ -126,6 +126,9 @@ func GetWeather(cityCode string) {
 	}
 }
 
+// 城市码
+// 来源：https://apip.weatherdt.com/float/static/js/city.js
+
 func main() {
-	GetWeather("101200805")
+	GetWeather("101020200")
 }
