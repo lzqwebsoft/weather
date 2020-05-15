@@ -4,6 +4,12 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"image"
+	"image/draw"
+	"image/png"
+	"log"
+	"net/http"
+	"os"
 	"regexp"
 	"strings"
 
@@ -25,6 +31,11 @@ func GetWeather(cityCode string) {
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	// 获取更新时间
+	updateTime, _ := doc.Find("input#update_time").Attr("value")
+	fmt.Println("更新时间" + updateTime)
+
 	// doc.Find("title").Text().SubStgrin   // title里面有位置信息
 	weathers := make([]*model.DailyItem, 0)
 	doc.Find("div.weather_7d > div > ul.blue-container.sky li.blue-item").Each(func(i int, s *goquery.Selection) {
@@ -129,6 +140,26 @@ func GetWeather(cityCode string) {
 // 城市码
 // 来源：https://apip.weatherdt.com/float/static/js/city.js
 
+func welcome(resp http.ResponseWriter, reqs *http.Request) {
+	fmt.Fprintf(resp, "<h1>Weclome!</h1>")
+}
+
+func weatherIcon(resp http.ResponseWriter, reqs *http.Request) {
+	resp.Header().Set("Content-Type", "image/png")
+	bgfile, _ := os.Open("./images/weather_icon_w.png")
+	defer bgfile.Close()
+	bgimg, _ := png.Decode(bgfile)
+	weatherIcon := image.NewRGBA(image.Rect(0, 0, 35, 35))
+	draw.Draw(weatherIcon, bgimg.Bounds().Add(image.Pt(-78, 0)), bgimg, bgimg.Bounds().Min, draw.Src)
+
+	png.Encode(resp, weatherIcon)
+
+}
+
 func main() {
-	GetWeather("101020200")
+	// GetWeather("101020200")
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", welcome)
+	mux.HandleFunc("/icon", weatherIcon)
+	log.Fatal(http.ListenAndServe("127.0.0.1:9000", mux))
 }
