@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"image"
@@ -10,156 +9,91 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"regexp"
-	"strings"
+	"path"
 
 	"websoft.club/weather/model"
 	"websoft.club/weather/util"
-
-	"github.com/PuerkitoBio/goquery"
 )
-
-// GetWeather 请求中央气象台获取天气数据
-// 例 http://www.weather.com.cn/weathern/101200208.shtml
-func GetWeather(cityCode string) {
-	urlPath := fmt.Sprintf("http://www.weather.com.cn/weathern/%s.shtml", cityCode)
-	result, err := util.Get(urlPath, nil, nil)
-	if err != nil {
-		fmt.Println(err)
-	}
-	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(result))
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	// 获取更新时间
-	updateTime, _ := doc.Find("input#update_time").Attr("value")
-	fmt.Println("更新时间" + updateTime)
-
-	// doc.Find("title").Text().SubStgrin   // title里面有位置信息
-	weathers := make([]*model.DailyItem, 0)
-	doc.Find("div.weather_7d > div > ul.blue-container.sky li.blue-item").Each(func(i int, s *goquery.Selection) {
-		item := new(model.DailyItem)
-		item.WeatherInfo = s.Find("p.weather-info").Text() // 天气
-		windSelection := s.Find("div.wind-container")
-		WindDirection01, _ := windSelection.Find("i.wind-icon").First().Attr("title")
-		WindDirection02, _ := windSelection.Find("i.wind-icon").Last().Attr("title")
-		item.WindDirection = WindDirection01 + "转" + WindDirection02 // 风向
-		item.WindLevel = s.Find("p.wind-info").Text()                // 风级
-		weathers = append(weathers, item)
-	})
-	// 获取温度与太阳升起与落下时间
-	jsscript := doc.Find("div.weather_7d > div.blueFor-container > script").Text()
-	jsVarRegexp := regexp.MustCompile("var ([0-9A-Za-z_ ]+)?=([\\[\\]:0-9a-zA-Z\",\\{\\}]+);?")
-	for _, match := range jsVarRegexp.FindAllSubmatch([]byte(jsscript), -1) {
-		// fmt.Println(string(match[1]) + "--------" + string(match[2]))
-		if len(match) != 3 {
-			continue
-		}
-		varname := strings.TrimSpace(string(match[1]))
-		if varname == "eventDay" {
-			// 最高温度
-			var maxTemps []string
-			err = json.Unmarshal(match[2], &maxTemps)
-			for idx, temp := range maxTemps {
-				weathers[idx].MaxTemp = temp
-			}
-		} else if varname == "eventNight" {
-			// 最低温度
-			var minTemps []string
-			json.Unmarshal(match[2], &minTemps)
-			for idx, value := range minTemps {
-				weathers[idx].MinTemp = value
-			}
-		} else if varname == "sunup" {
-			// 太阳升起时间，从今天开始
-			var upTimes []string
-			json.Unmarshal(match[2], &upTimes)
-			for idx, value := range upTimes {
-				weathers[idx+1].SunUpTime = value
-			}
-		} else if varname == "sunset" {
-			// 太阳落下时间，从今天开始
-			var downTimes []string
-			json.Unmarshal(match[2], &downTimes)
-			for idx, value := range downTimes {
-				weathers[idx+1].SunDownTime = value
-			}
-		}
-	}
-	// 各种指数
-	doc.Find("div.weather_shzs > div.lv").Each(func(d int, s *goquery.Selection) {
-		s.Find("dl").Each(func(i int, selection *goquery.Selection) {
-			if i == 0 {
-				// 紫外线
-				weathers[d+1].Ultraviolet = selection.Find("dt > em").Text()
-				weathers[d+1].UltravioletTxt = selection.Find("dd").Text()
-			} else if i == 1 {
-				// 减肥
-				weathers[d+1].LoseWeight = selection.Find("dt > em").Text()
-				weathers[d+1].LoseWeightTxt = selection.Find("dd").Text()
-			} else if i == 2 {
-				// 血糖
-				weathers[d+1].BloodSugar = selection.Find("dt > em").Text()
-				weathers[d+1].BloodSugarTxt = selection.Find("dd").Text()
-			} else if i == 3 {
-				// 穿衣
-				weathers[d+1].Dressing = selection.Find("dt > em").Text()
-				weathers[d+1].DressingTxt = selection.Find("dd").Text()
-			} else if i == 4 {
-				// 洗车
-				weathers[d+1].CarWash = selection.Find("dt > em").Text()
-				weathers[d+1].CarWashTxt = selection.Find("dd").Text()
-			} else if i == 5 {
-				// 空气污染扩散
-				weathers[d+1].AirPollutionSpread = selection.Find("dt > em").Text()
-				weathers[d+1].AirPollutionSpreadTxt = selection.Find("dd").Text()
-			}
-		})
-	})
-	// 分时天气预报
-	hours3JSScript := doc.Find("div.weather_7d > div > div > script").Text()
-	for _, match := range jsVarRegexp.FindAllSubmatch([]byte(hours3JSScript), -1) {
-		// fmt.Println(string(match[1]) + "--------" + string(match[2]))
-		varname := strings.TrimSpace(string(match[1]))
-		if varname == "hour3data" {
-			var hour3data [][]model.HourData
-			json.Unmarshal(match[2], &hour3data)
-			for idx, value := range hour3data {
-				weathers[idx+1].Hours3Data = value
-				// 解码分时天天气预报
-				weathers[idx+1].DecodeHours3Data()
-			}
-		}
-	}
-	for _, item := range weathers {
-		fmt.Println(item)
-	}
-}
 
 // 城市码
 // 来源：https://apip.weatherdt.com/float/static/js/city.js
 
+// 欢迎页面
 func welcome(resp http.ResponseWriter, reqs *http.Request) {
-	fmt.Fprintf(resp, "<h1>Weclome!</h1>")
+	basePath := path.Base(reqs.URL.Path)
+	if basePath == "." || basePath == "/" {
+		fmt.Fprintf(resp, "<h1>Weclome!</h1>")
+		return
+	}
+	resp.WriteHeader(404)
+	fmt.Fprintf(resp, "<h1>404 Not Found!<h1>")
 }
 
+// 天气图标
 func weatherIcon(resp http.ResponseWriter, reqs *http.Request) {
 	resp.Header().Set("Content-Type", "image/png")
-	bgfile, _ := os.Open("./images/weather_icon_w.png")
+
+	size := reqs.URL.Query().Get("size")   // 图标大小及模式
+	wcode := reqs.URL.Query().Get("wcode") // 天气代码
+	if wcode == "" {
+		wcode = "n99"
+	}
+	wiconData := util.GetWeatherIcon(size, wcode)
+	bgfile, _ := os.Open(wiconData.FatherIconsLocation)
 	defer bgfile.Close()
 	bgimg, _ := png.Decode(bgfile)
-	weatherIcon := image.NewRGBA(image.Rect(0, 0, 35, 35))
-	draw.Draw(weatherIcon, bgimg.Bounds().Add(image.Pt(-78, 0)), bgimg, bgimg.Bounds().Min, draw.Src)
+	weatherIcon := image.NewRGBA(image.Rect(0, 0, wiconData.Width, wiconData.Height))
+	draw.Draw(weatherIcon, bgimg.Bounds().Add(wiconData.Position), bgimg, bgimg.Bounds().Min, draw.Src)
 
 	png.Encode(resp, weatherIcon)
 
 }
 
+// 城市天气结果JSON对象
+type weatherResult struct {
+	Code    int            `json:"code"`
+	Message string         `json:"message"`
+	Weather *model.Weather `json:"weather,omitempty"`
+}
+
+// 根据城市码获取天气信息
+func weather(resp http.ResponseWriter, reqs *http.Request) {
+	resp.Header().Set("Content-Type", "application/json;charset=UTF-8")
+	datas := weatherResult{
+		Code:    500,
+		Message: "获取失败",
+		Weather: nil,
+	}
+	citycode := path.Base(reqs.URL.Path)
+	if citycode != "/" && citycode != "." && citycode != "weather" {
+		result, err := util.GetCNWeather(citycode)
+		if err != nil {
+			datas.Message = err.Error()
+		} else {
+			datas.Code = 200
+			datas.Message = "获取成功"
+			datas.Weather = result
+		}
+	} else {
+		datas.Message = "请指定有效的城市码！"
+	}
+	jsonStr, _ := json.Marshal(datas)
+	fmt.Fprintln(resp, string(jsonStr))
+}
+
+// 查找对应的城市编码
+func searchCity(resp http.ResponseWriter, reqs *http.Request) {
+	resp.Header().Set("Content-Type", "application/json;charset=UTF-8")
+	citys := util.LoadAllCitys()
+	jsonStr, _ := json.Marshal(citys)
+	fmt.Fprintln(resp, string(jsonStr))
+}
+
 func main() {
-	// GetWeather("101020200")
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", welcome)
-	mux.HandleFunc("/icon", weatherIcon)
+	mux.HandleFunc("/icon.png", weatherIcon)
+	mux.HandleFunc("/weather/", weather)
+	mux.HandleFunc("/city/search", searchCity)
 	log.Fatal(http.ListenAndServe("127.0.0.1:9000", mux))
 }
