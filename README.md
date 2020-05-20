@@ -10,7 +10,9 @@ Go语言编写的简易天气预报服务端小程序。
 
 `citycode`为城市编码，例获取北京天气：[http://localhost:9000/weahter/101010100](http://localhost:9000/weahter/101010100)
 
-结果:
+
+<details>
+  <summary>示例结果</summary>
 ```json
 {
 	"code": 200,
@@ -997,6 +999,7 @@ Go语言编写的简易天气预报服务端小程序。
 	}
 }
 ```
+</details>
 
 ### 2. 获取城市编码
 
@@ -1004,7 +1007,8 @@ Go语言编写的简易天气预报服务端小程序。
 
 `cityname`为城市名称，搜索获取对应城市的城市编码，例：[http://localhost:9000/city/search?name=北京](http://localhost:9000/city/search?name=%E5%8C%97%E4%BA%AC) 获取北京北京的城市码
 
-结果：
+<details>
+  <summary>示例结果</summary>
 ```json
 {
 	"code": 200,
@@ -1080,6 +1084,7 @@ Go语言编写的简易天气预报服务端小程序。
 	}]
 }
 ```
+</details>
 
 ### 3. 天气图标
 
