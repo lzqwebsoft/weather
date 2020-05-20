@@ -81,11 +81,31 @@ func weather(resp http.ResponseWriter, reqs *http.Request) {
 	fmt.Fprintln(resp, string(jsonStr))
 }
 
+// 搜索城市结果JSON对象
+type cityResult struct {
+	Code    int                    `json:"code"`
+	Message string                 `json:"message"`
+	Citys   []*util.SearchCityName `json:"citys,omitempty"`
+}
+
 // 查找对应的城市编码
 func searchCity(resp http.ResponseWriter, reqs *http.Request) {
 	resp.Header().Set("Content-Type", "application/json;charset=UTF-8")
-	citys := util.LoadAllCitys()
-	jsonStr, _ := json.Marshal(citys)
+	datas := cityResult{
+		Code:    500,
+		Message: "未找到结果",
+		Citys:   nil,
+	}
+
+	name := reqs.URL.Query().Get("name")
+	if name != "" {
+		if citys := util.SearchCity(name); citys != nil && len(citys) > 0 {
+			datas.Code = 200
+			datas.Message = "找到结果"
+			datas.Citys = citys
+		}
+	}
+	jsonStr, _ := json.Marshal(datas)
 	fmt.Fprintln(resp, string(jsonStr))
 }
 

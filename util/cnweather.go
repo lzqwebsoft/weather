@@ -321,3 +321,51 @@ func LoadAllCitys() []*model.Provice {
 	}
 	return nil
 }
+
+// SearchCityName 城市结果集
+type SearchCityName struct {
+	Parent string `json:"parent"`
+	Name   string `json:"name"`
+	Code   string `json:"code"`
+}
+
+// SearchCity 查找城市
+func SearchCity(name string) []*SearchCityName {
+	provinces := LoadAllCitys()
+	matchCitys := make([]*SearchCityName, 0)
+	for _, provice := range provinces {
+		for _, city := range provice.Children {
+			if provice.ZH != city.ZH && (strings.Contains(name, provice.ZH) || name == provice.EN ||
+				strings.Contains(name, provice.HK)) {
+				result := new(SearchCityName)
+				result.Parent = provice.ZH
+				result.Name = city.Children[0].ZH
+				result.Code = city.Children[0].ID
+				matchCitys = append(matchCitys, result)
+				continue
+			}
+			for _, district := range city.Children {
+				if strings.Contains(name, city.ZH) || name == city.EN ||
+					strings.Contains(name, city.HK) || strings.Contains(name, district.ZH) ||
+					strings.Contains(name, district.ZH) || name == district.EN ||
+					strings.Contains(district.ZH, name) || strings.Contains(district.HK, name) {
+					parents := make([]string, 0)
+					if district.ZH != city.ZH {
+						parents = append(parents, city.ZH)
+					}
+					if city.ZH != provice.ZH {
+						parents = append(parents, provice.ZH)
+					}
+					result := new(SearchCityName)
+					if len(parents) > 0 {
+						result.Parent = strings.Join(parents, ",")
+					}
+					result.Name = district.ZH
+					result.Code = district.ID
+					matchCitys = append(matchCitys, result)
+				}
+			}
+		}
+	}
+	return matchCitys
+}
