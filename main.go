@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"html/template"
 	"image"
 	"image/draw"
 	"image/png"
@@ -22,7 +23,18 @@ import (
 func welcome(resp http.ResponseWriter, reqs *http.Request) {
 	basePath := path.Base(reqs.URL.Path)
 	if basePath == "." || basePath == "/" {
-		fmt.Fprintf(resp, "<h1>Weclome!</h1>")
+		citycode := reqs.URL.Query().Get("code")
+		if citycode == "" {
+			citycode = "101200805" // 默认为监利
+		}
+		result, err := util.GetCNWeather(citycode)
+		if err == nil && result != nil {
+			templates := template.Must(template.ParseFiles("templates/index.html"))
+			templates.Execute(resp, result)
+			return
+		}
+		templates := template.Must(template.ParseFiles("templates/error.html"))
+		templates.Execute(resp, err)
 		return
 	}
 	resp.WriteHeader(404)
@@ -112,6 +124,9 @@ func searchCity(resp http.ResponseWriter, reqs *http.Request) {
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", welcome)
+	// 静态文件处理
+	files := http.FileServer(http.Dir("public"))
+	mux.Handle("/resources/", http.StripPrefix("/resources/", files))
 	mux.HandleFunc("/icon.png", weatherIcon)
 	mux.HandleFunc("/weather/", weather)
 	mux.HandleFunc("/city/search", searchCity)

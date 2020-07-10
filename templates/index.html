@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>天气预报</title>
+    <link href="/resources/css/basic.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="topbar">
+            <div class="cityname">{{.Now.CityName}}</div>
+        </div>
+        <div class="weather-title">
+            <div class="realtime">时况天气: {{.Now.Time}}</div>
+            <div><img src="/icon.png?wcode={{.Now.WeatherCode}}&size=large_b" /></div>
+            {{if .Now.AQITxt}}
+            <div class="aqi-txt">{{.Now.AQITxt}}</div>
+            {{end}}
+            <div class="info">{{.Now.Weather}} {{.Now.Temp}}°C</div>
+        </div>
+        <div class="hour3-datas">
+            <div class="info">
+                <div class="date">{{.Now.DateLabel}}</div>
+                <div class="rainfall">降雨概率：<span>{{.Now.Rain}}</span></div>
+            </div>
+            <ul>
+                {{range (index .Daily 1).Hours3Data}}
+                <li>
+                    <label>{{.CNTime}}</label>
+                    <div><img src="/icon.png?wcode={{.IconCode}}&size=normal_b" title="{{.Weather}}" /></div>
+                    <label>{{.Tempe}}</label>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+        <div class="next7days-weahter">
+            <ul>
+                {{range .Daily}}
+                <li>
+                    <div class="week">{{.Week}}</div>
+                    <div class="icon"><img src="/icon.png?wcode={{index .WeatherCode 0}}&size=medium_b" title="{{.WeatherInfo}}" /></div>
+                    <div class="temp"><span>{{.MaxTemp}}</span><span>{{.MinTemp}}</span></div>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+
+        <div class="life-style">
+            <ul>
+                {{range (index .Daily 1).LifeStyles}}
+                <li>
+                    <label class="item">{{.Name}}</label>
+                    <label class="level">{{.Grading}}</label>
+                    <label class="detail">{{.Description}}</label>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+
+        <div class="data-description">
+            <div clss="source">数据来源：{{.DataSource}}</div>
+            <div clss="update">更新时间：{{.UpdateTime}}</div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            // 格式化显示日期
+            var dateElm = document.querySelector(".hour3-datas .info .date")
+            var date = dateElm.innerHTML;
+            var datas = date.split("(");
+            dateElm.innerHTML = "<span>" + datas[0] + "</span><span>(" + datas[1] + "</span>";
+            // 格式化显示降雨率
+            var rainElm = document.querySelector(".hour3-datas .info .rainfall span");
+            rainElm.innerHTML = Number(rainElm.innerHTML) * 10 + "%"
+        };
+    </script>
+</body>
+
+</html>

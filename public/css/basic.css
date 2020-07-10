@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.main {
+    width: 40em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.main .topbar {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1em;
+    background-color: #EEE;
+    box-shadow: 0 2px 5px #DDD;
+}
+
+.main .cityname {
+    font-size: 1.5em;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main .weather-title {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.main .weather-title .realtime {
+    position: relative;
+    float: left;
+    top: -1.5em;
+    margin-bottom: -1.5em;
+    z-index: 10;
+    font-size: 12px;
+    color: #DDD;
+}
+
+.main .weather-title .aqi-txt {
+    width: 3em;
+    height: 24px;
+    line-height: 24px;
+    margin: 0.5em auto;
+    background-color: #a3d765;
+    color: #FFF;
+    padding: 0.2em;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.main .weather-title .info {
+    font-size: 1.8em;
+}
+
+.main .hour3-datas .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em 0;
+}
+
+.main .hour3-datas .info .date span {
+    font-size: larger;
+}
+
+.main .hour3-datas ul {
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.main .hour3-datas ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.main .hour3-datas ul li label {
+    display: block;
+}
+
+.main .hour3-datas ul li div {
+    flex-grow: 2;
+    padding: 0;
+}
+
+.main .hour3-datas ul li img {
+    display: block;
+}
+
+.main .next7days-weahter {
+    margin: 1em 0;
+}
+
+.main .next7days-weahter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .next7days-weahter ul li {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.main .next7days-weahter ul li .week {
+    margin: 1em;
+}
+
+.main .next7days-weahter ul li .icon {
+    flex-grow: 2;
+}
+
+.main .next7days-weahter ul li .temp span {
+    margin: 1em;
+}
+
+.main .next7days-weahter ul li .temp span:last-of-type {
+    color: #AAA;
+}
+
+.main .life-style ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.main .life-style ul li {
+    width: 45%;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    border: 1px dashed #DDD;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.main .data-description {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #DDD;
+    font-size: 14px;
+}

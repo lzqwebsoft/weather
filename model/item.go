@@ -79,8 +79,10 @@ func (live *Live) GetDateDetail() time.Time {
 
 // DailyItem 单天的天气信息
 type DailyItem struct {
-	Date          string       `json:"date"`                  // 天气日期YYYYMMDD
+	Date          string       `json:"date"`                  // Date 天气日期YYYYMMDD
+	Week          string       `json:"week"`                  // Week 星期几
 	WeatherInfo   string       `json:"weather_info"`          // WeatherInfo 天气信息
+	WeatherCode   []string     `json:"weather_code"`          // WeatherCode 天气图标，两个为白天与夜晚
 	WindDirection string       `json:"wind_direction"`        // WindDirection 风向
 	WindLevel     string       `json:"wind_level"`            // WindLevel 风级
 	MaxTemp       string       `json:"max_temp"`              // MaxTemp 最高温度 单位摄氏
@@ -100,6 +102,12 @@ func (daily *DailyItem) DecodeHours3Data() {
 	}
 }
 
+// GetCNWeekday 获取星期几
+func (daily *DailyItem) GetCNWeekday(weakday *time.Time) string {
+	week := []string{"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"}
+	return week[int(weakday.Weekday())]
+}
+
 // LifeStyle 生活指数
 type LifeStyle struct {
 	Name        string `json:"name"`        // 生活指数名称
@@ -113,13 +121,14 @@ func (lifeStyle *LifeStyle) String() string {
 
 // HourData 分段天气最小单元
 type HourData struct {
-	IconCode string `json:"ja"`  // 天气图标码
-	Weather  string `json:"txt"` // 天气说明
-	Tempe    string `json:"jb"`  // 温度
-	WindDY   string `json:"jd"`  // 风向
-	WindJB   string `json:"jc"`  // 风级
-	Time     string `json:"jf"`  // 天气时刻
-	IsDecode bool   `json:"-"`   // 判断信息是否解码
+	IconCode string `json:"ja"`    // 天气图标码
+	Weather  string `json:"txt"`   // 天气说明
+	Tempe    string `json:"jb"`    // 温度
+	WindDY   string `json:"jd"`    // 风向
+	WindJB   string `json:"jc"`    // 风级
+	Time     string `json:"jf"`    // 天气时刻YYYYMMDDHH
+	CNTime   string `json:"cn_jf"` // 中文天气时刻：例上午08时
+	IsDecode bool   `json:"-"`     // 判断信息是否解码
 }
 
 // String 格式化数据
@@ -140,8 +149,12 @@ var allWeatherInfo = map[string]string{
 	"n01":  "多云",
 	"n02":  "阴",
 	"n03":  "阵雨",
+	"n04":  "雷阵雨",
+	"n05":  "雷阵雨伴有冰雹",
+	"n06":  "雨夹雪",
 	"n07":  "小雨",
 	"n08":  "中雨",
+	"n09":  "大雨",
 	"n10":  "暴雨",
 	"n11":  "大暴雨",
 	"n12":  "特大暴雨",
@@ -181,9 +194,12 @@ var allWeatherInfo = map[string]string{
 	"d01":  "多云",
 	"d02":  "阴",
 	"d03":  "阵雨",
+	"d04":  "雷阵雨",
+	"d05":  "雷阵雨伴有冰雹",
 	"d06":  "雨夹雪",
 	"d07":  "小雨",
 	"d08":  "中雨",
+	"d09":  "大雨",
 	"d10":  "暴雨",
 	"d11":  "大暴雨",
 	"d12":  "特大暴雨",
@@ -265,11 +281,17 @@ func (hdata *HourData) decodeHourData() bool {
 	}
 
 	// 解码时间 r.jf.slice(8, 10);l.time = n
-	// wtime, err := time.Parse("2006010215", hdata.Time)
-	// if err != nil {
-	// 	return false
-	// }
-	// hdata.Time = wtime.Format("15:04")
+	wtime, err := time.Parse("2006010215", hdata.Time)
+	if err != nil {
+		return false
+	}
+	hour, _, _ := wtime.Clock()
+	if hour > 12 {
+		hour = hour - 12
+		hdata.CNTime = fmt.Sprintf("下午%02d时", hour)
+	} else {
+		hdata.CNTime = fmt.Sprintf("上午%02d时", hour)
+	}
 
 	// 解码温度 l.template = r.jb
 	hdata.Tempe += "°C"

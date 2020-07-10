@@ -72,12 +72,19 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	doc.Find("div.weather_7d > div > ul.blue-container.sky li.blue-item").Each(func(i int, s *goquery.Selection) {
 		item := new(model.DailyItem)
 		item.WeatherInfo = s.Find("p.weather-info").Text() // 天气
+		// 天气图标，这里正常情况下有两个
+		s.Find("i.item-icon").Each(func(j int, icon *goquery.Selection) {
+			wcode, _ := icon.RemoveClass("item-icon", "icons_bg", "icons_bg_t").Attr("class")
+			item.WeatherCode = append(item.WeatherCode, wcode)
+		})
 		windSelection := s.Find("div.wind-container")
 		WindDirection01, _ := windSelection.Find("i.wind-icon").First().Attr("title")
 		WindDirection02, _ := windSelection.Find("i.wind-icon").Last().Attr("title")
-		item.WindDirection = WindDirection01 + "转" + WindDirection02  // 风向
-		item.WindLevel = s.Find("p.wind-info").Text()                 // 风级
-		item.Date = currentDate.AddDate(0, 0, i-1).Format("20060102") // 解析时间
+		item.WindDirection = WindDirection01 + "转" + WindDirection02 // 风向
+		item.WindLevel = s.Find("p.wind-info").Text()                // 风级
+		idxDate := currentDate.AddDate(0, 0, i-1)
+		item.Date = idxDate.Format("20060102")  // 解析时间
+		item.Week = item.GetCNWeekday(&idxDate) // 得到星期
 		weathers = append(weathers, item)
 	})
 	// 获取温度与太阳升起与落下时间
@@ -218,7 +225,7 @@ func GetWeatherIcon(size, wcode string) *WeatherIcon {
 // weatherIconsPoint 天气图标位置
 var weatherIconsPoint = map[string]image.Point{
 	"d00":  image.Pt(0, 0),
-	"d01":  image.Pt(-78, 0),
+	"d01":  image.Pt(-80, 0),
 	"d02":  image.Pt(-160, 0),
 	"d03":  image.Pt(-240, 0),
 	"d04":  image.Pt(-320, 0),
