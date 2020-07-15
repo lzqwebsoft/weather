@@ -4,6 +4,8 @@ Go语言编写的简易天气预报服务端小程序。
 
 项目运行后直接在浏览器中访问:[http://localhost:9001](http://localhost:9001)
 
+[在线Demo](http://tq.websoft.club/)
+
 ### 1. 获取天气
 
 `/weather/[citycode]`
