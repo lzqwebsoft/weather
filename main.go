@@ -24,9 +24,22 @@ func welcome(resp http.ResponseWriter, reqs *http.Request) {
 	basePath := path.Base(reqs.URL.Path)
 	if basePath == "." || basePath == "/" {
 		citycode := reqs.URL.Query().Get("code")
+		// 没有城市码则读取IP地址对应的地址
 		if citycode == "" {
 			citycode = "101200805" // 默认为监利
+			ipaddr := util.ClientIP(reqs)
+			datas, err := util.GetCityByIP(ipaddr)
+			if err == nil {
+				// 由IP地址对应的城市名，找到对应的天气城市码
+				if country, ok := datas["country_name"]; ok && country == "中国" {
+					cityname := datas["city_name"]
+					if citys := util.SearchCity(cityname); citys != nil && len(citys) > 0 {
+						citycode = citys[0].Code
+					}
+				}
+			}
 		}
+		// 由城市码查询对应的城市天气
 		result, err := util.GetCNWeather(citycode)
 		if err == nil && result != nil {
 			templates := template.Must(template.ParseFiles("templates/index.html"))
