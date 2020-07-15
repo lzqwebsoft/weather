@@ -143,5 +143,5 @@ func main() {
 	mux.HandleFunc("/icon.png", weatherIcon)
 	mux.HandleFunc("/weather/", weather)
 	mux.HandleFunc("/city/search", searchCity)
-	log.Fatal(http.ListenAndServe("127.0.0.1:9000", mux))
+	log.Fatal(http.ListenAndServe("127.0.0.1:9001", mux))
 }

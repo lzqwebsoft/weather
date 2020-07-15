@@ -2,13 +2,13 @@
 
 Go语言编写的简易天气预报服务端小程序。
 
-项目运行后直接在浏览器中访问:[http://localhost:9000](http://localhost:9000)
+项目运行后直接在浏览器中访问:[http://localhost:9001](http://localhost:9001)
 
 ### 1. 获取天气
 
 `/weather/[citycode]`
 
-`citycode`为城市编码，例获取北京天气：[http://localhost:9000/weather/101010100](http://localhost:9000/weather/101010100)
+`citycode`为城市编码，例获取北京天气：[http://localhost:9001/weather/101010100](http://localhost:9001/weather/101010100)
 
 
 <details>
@@ -1007,7 +1007,7 @@ Go语言编写的简易天气预报服务端小程序。
 
 `/city/search?name=[cityname]`
 
-`cityname`为城市名称，搜索获取对应城市的城市编码，例：[http://localhost:9000/city/search?name=北京](http://localhost:9000/city/search?name=%E5%8C%97%E4%BA%AC) 获取北京北京的城市码
+`cityname`为城市名称，搜索获取对应城市的城市编码，例：[http://localhost:9001/city/search?name=北京](http://localhost:9001/city/search?name=%E5%8C%97%E4%BA%AC) 获取北京北京的城市码
 
 <details>
   <summary>示例结果</summary>
