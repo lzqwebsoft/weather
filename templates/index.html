@@ -12,6 +12,7 @@
 <body>
     <div class="main">
         <div class="topbar">
+            <div class="doclink"><a href="https://github.com/lzqwebsoft/weather#%E5%A4%A9%E6%B0%94" target="_blank">关于</a></div>
             <div class="cityname">{{.Now.CityName}}</div>
         </div>
         <div class="weather-title">
@@ -36,6 +37,10 @@
                 </li>
                 {{end}}
             </ul>
+            <div class="sunrise-reset">
+                <div>日出: {{(index .Daily 1).SunUpTime}}</div>
+                <div>日落: {{(index .Daily 1).SunDownTime}}</div>
+            </div>
         </div>
         <div class="next7days-weahter">
             <ul>

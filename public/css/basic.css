@@ -1,69 +1,63 @@
 body {
-    margin          : 0;
-    padding         : 0;
+    margin: 0;
+    padding: 0;
     background-color: white;
 }
 
 .main {
-    width  : 40%;
-    margin : 0 auto;
+    width: 40%;
+    margin: 0 auto;
     padding: 0 1em;
 }
 
-@media screen and (max-width: 600px) {
-    .main {
-        width  : 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 960px) and (min-width: 600px) {
-    .main {
-        width: 80%;
-    }
-}
-
 .main .topbar {
-    height          : 50px;
-    line-height     : 50px;
-    margin-bottom   : 1em;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1em;
     background-color: #EEE;
-    box-shadow      : 0 2px 5px #DDD;
+    box-shadow: 0 2px 5px #DDD;
+}
+
+.main .topbar .doclink {
+    float: left;
+    position: relative;
+    z-index: 10;
+    margin-left: 0.5em;
+    font-size: 12px;
 }
 
 .main .cityname {
-    font-size : 1.5em;
-    width     : 70%;
-    margin    : 0 auto;
+    font-size: 1.5em;
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
 }
 
 .main .weather-title {
-    width     : 100%;
     text-align: center;
-    margin    : 2em 0;
+    margin: 2em 0;
 }
 
 .main .weather-title .realtime {
-    position     : relative;
-    float        : left;
-    top          : -1.5em;
+    position: relative;
+    float: left;
+    top: -1.5em;
     margin-bottom: -1.5em;
-    z-index      : 10;
-    font-size    : 12px;
-    color        : #DDD;
+    z-index: 10;
+    font-size: 12px;
+    color: #DDD;
 }
 
 .main .weather-title .aqi-txt {
-    width           : 3em;
-    height          : 24px;
-    line-height     : 24px;
-    margin          : 0.5em auto;
+    width: 3em;
+    height: 24px;
+    line-height: 24px;
+    margin: 0.5em auto;
     background-color: #a3d765;
-    color           : #FFF;
-    padding         : 0.2em;
-    border-radius   : 5px;
-    font-size       : 14px;
+    color: #FFF;
+    padding: 0.2em;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 .main .weather-title .info {
@@ -71,9 +65,9 @@ body {
 }
 
 .main .hour3-datas .info {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
-    padding        : 0.3em 0;
+    padding: 0.3em 0;
 }
 
 .main .hour3-datas .info .date span {
@@ -81,23 +75,23 @@ body {
 }
 
 .main .hour3-datas ul {
-    border-top    : 1px dashed #DDD;
-    border-bottom : 1px dashed #DDD;
-    list-style    : none;
-    margin        : 0;
-    padding       : 0;
-    height        : 10%;
-    display       : flex;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    display: flex;
     flex-direction: row;
-    overflow      : hidden;
+    overflow: hidden;
 }
 
 .main .hour3-datas ul li {
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding        : 0.5em;
+    padding: 0.5em;
 }
 
 .main .hour3-datas ul li label {
@@ -106,7 +100,7 @@ body {
 
 .main .hour3-datas ul li div {
     flex-grow: 2;
-    padding  : 0;
+    padding: 0;
 }
 
 .main .hour3-datas ul li img {
@@ -118,21 +112,21 @@ body {
 }
 
 .main .next7days-weahter ul {
-    list-style    : none;
-    margin        : 0;
-    padding       : 0;
-    width         : 100%;
-    display       : flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
     flex-direction: column;
 }
 
 .main .next7days-weahter ul li {
-    display      : flex;
-    width        : 100%;
-    text-align   : center;
-    font-size    : 1.2em;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
     justify-items: space-between;
-    align-items  : center;
+    align-items: center;
 }
 
 .main .next7days-weahter ul li .week {
@@ -151,33 +145,62 @@ body {
     color: #AAA;
 }
 
-.main .life-style ul {
-    list-style     : none;
-    margin         : 0;
-    padding        : 0;
-    display        : flex;
+.main .sunrise-reset {
+    display: flex;
     justify-content: space-between;
-    width          : 100%;
-    flex-flow      : row wrap;
+    padding: 0.3em 0;
+}
+
+.main .life-style ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
 }
 
 .main .life-style ul li {
-    width          : 45%;
-    height         : 5em;
-    display        : flex;
-    flex-direction : column;
-    float          : left;
+    width: 45%;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    float: left;
     justify-content: center;
-    border         : 1px dashed #DDD;
-    padding        : 0.5em;
-    margin         : 0.5em 0;
+    border: 1px dashed #DDD;
+    padding: 0.5em;
+    margin: 0.5em 0;
 }
 
 .main .data-description {
-    margin         : 3em 0;
-    display        : flex;
-    flex-direction : row;
+    margin: 3em 0;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    color          : #DDD;
-    font-size      : 14px;
+    color: #DDD;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+    .main .weather-title,
+    .main .hour3-datas,
+    .main .next7days-weahter,
+    .main .life-style,
+    .main .data-description {
+        padding: 0 1em;
+    }
+    .main .life-style ul li {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px) {
+    .main {
+        width: 80%;
+    }
 }
