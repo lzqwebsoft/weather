@@ -96,7 +96,33 @@
                 }
             });
             // 设置第一个时刻为当前时间
-            document.querySelector(".hour3-datas ul li label:first-of-type").innerHTML = "当前时间";
+            // document.querySelector(".hour3-datas ul li label:first-of-type").innerHTML = "当前时间";
+            // 设置手势滑动时刻天气列表
+            var hour3ULElm = document.querySelector(".main .hour3-datas ul");
+            var startX = 0;
+            hour3ULElm.addEventListener("touchstart", function(e) {
+                startX = e.touches[0].pageX;
+            }, false);
+            hour3ULElm.addEventListener("touchmove", function(e) {
+                let moveX = e.touches[0].pageX - startX;
+                hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
+                startX = e.touches[0].pageX;
+            }, false);
+            hour3ULElm.addEventListener("touchend", function(e) {
+                startX = 0;
+            }, false);
+            // hour3ULElm.addEventListener("mousedown", function(e) {
+            //     var startX = e.clientX;
+            //     console.log(e);
+            // }, false);
+            // hour3ULElm.addEventListener("mousemove", function(e) {
+            //     let moveX = e.clientX - startX;
+            //     hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
+            //     startX = e.clientX;
+            // }, false);
+            // hour3ULElm.addEventListener("mouseup", function(e) {
+            //     startX = 0;
+            // }, false);
         };
     </script>
 </body>
