@@ -7,22 +7,26 @@ body {
 .main {
     width: 40%;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 4em 1em 0 1em;
 }
 
 .main .topbar {
-    height: 50px;
-    line-height: 50px;
+    height: 3.4em;
+    line-height: 3.4em;
     margin-bottom: 1em;
     background-color: #EEE;
     box-shadow: 0 2px 5px #DDD;
+    position: fixed;
+    top: 0;
+    width: inherit;
+    z-index: 10;
 }
 
 .main .topbar .doclink {
     float: left;
     position: relative;
     z-index: 10;
-    margin-left: 0.5em;
+    margin-left: 1em;
     font-size: 12px;
 }
 
@@ -185,7 +189,7 @@ body {
 @media screen and (max-width: 600px) {
     .main {
         width: 100%;
-        padding: 0;
+        padding: 4em 0 0 0;
     }
     .main .weather-title,
     .main .hour3-datas,

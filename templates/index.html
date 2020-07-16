@@ -17,7 +17,7 @@
         </div>
         <div class="weather-title">
             <div class="realtime">时况天气: {{.Now.Time}}</div>
-            <div><img src="/icon.png?wcode={{.Now.WeatherCode}}&size=large_b" /></div>
+            <div class="weather-icon"><img src="/icon.png?wcode={{.Now.WeatherCode}}&size=large_b" /></div>
             {{if .Now.AQITxt}}
             <div class="aqi-txt">{{.Now.AQITxt}}</div>
             {{end}}
@@ -30,7 +30,7 @@
             </div>
             <ul>
                 {{range (index .Daily 1).Hours3Data}}
-                <li>
+                <li data-time="{{.Time}}">
                     <label>{{.CNTime}}</label>
                     <div><img src="/icon.png?wcode={{.IconCode}}&size=normal_b" title="{{.Weather}}" /></div>
                     <label>{{.Tempe}}</label>
@@ -44,13 +44,13 @@
         </div>
         <div class="next7days-weahter">
             <ul>
-                {{range .Daily}}
+                {{range $i, $v := .Daily}} {{if gt $i 1 }}
                 <li>
-                    <div class="week">{{.Week}}</div>
-                    <div class="icon"><img src="/icon.png?wcode={{index .WeatherCode 0}}&size=medium_b" title="{{.WeatherInfo}}" /></div>
-                    <div class="temp"><span>{{.MaxTemp}}</span><span>{{.MinTemp}}</span></div>
+                    <div class="week">{{$v.Week}}</div>
+                    <div class="icon"><img src="/icon.png?wcode={{index $v.WeatherCode 0}}&size=medium_b" title="{{$v.WeatherInfo}}" /></div>
+                    <div class="temp"><span>{{$v.MaxTemp}}</span><span>{{$v.MinTemp}}</span></div>
                 </li>
-                {{end}}
+                {{end}} {{end}}
             </ul>
         </div>
 
@@ -73,6 +73,10 @@
     </div>
 
     <script>
+        // 小于10的数补零
+        function SupplementZero(data) {
+            return data > 10 ? data : "0" + data;
+        }
         window.onload = function() {
             // 格式化显示日期
             var dateElm = document.querySelector(".hour3-datas .info .date")
@@ -81,7 +85,18 @@
             dateElm.innerHTML = "<span>" + datas[0] + "</span><span>(" + datas[1] + "</span>";
             // 格式化显示降雨率
             var rainElm = document.querySelector(".hour3-datas .info .rainfall span");
-            rainElm.innerHTML = Number(rainElm.innerHTML) * 10 + "%"
+            rainElm.innerHTML = Number(rainElm.innerHTML) * 10 + "%";
+            // 删除过期的时刻天气预报
+            var current = new Date(); // 转化时间为YYYYMMDDHH
+            var currentTime = parseInt(`${current.getFullYear()}${SupplementZero(current.getMonth() + 1)}${SupplementZero(current.getDate())}${SupplementZero(current.getHours())}`)
+            document.querySelectorAll(".hour3-datas ul li").forEach(function(elm) {
+                var time = parseInt(elm.dataset.time);
+                if (time < currentTime) {
+                    elm.remove();
+                }
+            });
+            // 设置第一个时刻为当前时间
+            document.querySelector(".hour3-datas ul li label:first-of-type").innerHTML = "当前时间";
         };
     </script>
 </body>
