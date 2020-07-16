@@ -101,16 +101,20 @@
             var hour3ULElm = document.querySelector(".main .hour3-datas ul");
             var startX = 0;
             hour3ULElm.addEventListener("touchstart", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 startX = e.touches[0].pageX;
             }, false);
             hour3ULElm.addEventListener("touchmove", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 let moveX = e.touches[0].pageX - startX;
                 hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
                 startX = e.touches[0].pageX;
             }, false);
-            hour3ULElm.addEventListener("touchend", function(e) {
-                startX = 0;
-            }, false);
+            // hour3ULElm.addEventListener("touchend", function(e) {
+            //     startX = 0;
+            // }, false);
             // hour3ULElm.addEventListener("mousedown", function(e) {
             //     var startX = e.clientX;
             //     console.log(e);
