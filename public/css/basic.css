@@ -64,6 +64,30 @@ body {
     font-size: 14px;
 }
 
+.main .weather-title .aqi-txt.lev1 {
+    background-color: #44cf12
+}
+
+.main .weather-title .aqi-txt.lev2 {
+    background-color: #eec50b
+}
+
+.main .weather-title .aqi-txt.lev3 {
+    background-color: #f6b42c
+}
+
+.main .weather-title .aqi-txt.lev4 {
+    background-color: #fa5535
+}
+
+.main .weather-title .aqi-txt.lev5 {
+    background-color: #e31b40
+}
+
+.main .weather-title .aqi-txt.lev6 {
+    background-color: #8e0636
+}
+
 .main .weather-title .info {
     font-size: 1.8em;
 }

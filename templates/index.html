@@ -26,7 +26,7 @@
         <div class="hour3-datas">
             <div class="info">
                 <div class="date">{{.Now.DateLabel}}</div>
-                <div class="rainfall">降雨概率：<span>{{.Now.Rain}}</span></div>
+                <div class="rainfall">相对湿度: <span>{{.Now.RelativeHumidity}}</span></div>
             </div>
             <ul>
                 {{range (index .Daily 1).Hours3Data}}
@@ -75,7 +75,7 @@
     <script>
         // 小于10的数补零
         function SupplementZero(data) {
-            return data > 10 ? data : "0" + data;
+            return data >= 10 ? data : "0" + data;
         }
         window.onload = function() {
             // 格式化显示日期
@@ -83,9 +83,18 @@
             var date = dateElm.innerHTML;
             var datas = date.split("(");
             dateElm.innerHTML = "<span>" + datas[0] + "</span><span>(" + datas[1] + "</span>";
+            // 空气质量颜色标记
+            var aqiElm = document.querySelector(".main .weather-title .aqi-txt");
+            if (aqiElm) {
+                var levels = ["优", "良", "轻度污染", "中度污染", "重度污染", "严重污染"];
+                var level = levels.indexOf(aqiElm.innerHTML.trim())
+                if (level != -1) {
+                    aqiElm.classList.add("lev" + (level + 1));
+                }
+            }
             // 格式化显示降雨率
-            var rainElm = document.querySelector(".hour3-datas .info .rainfall span");
-            rainElm.innerHTML = Number(rainElm.innerHTML) * 10 + "%";
+            // var rainElm = document.querySelector(".hour3-datas .info .rainfall span");
+            // rainElm.innerHTML = Number(rainElm.innerHTML) * 10 + "%";
             // 删除过期的时刻天气预报
             var current = new Date(); // 转化时间为YYYYMMDDHH
             var currentTime = parseInt(`${current.getFullYear()}${SupplementZero(current.getMonth() + 1)}${SupplementZero(current.getDate())}${SupplementZero(current.getHours())}`)
@@ -100,33 +109,38 @@
             // 设置手势滑动时刻天气列表
             var hour3ULElm = document.querySelector(".main .hour3-datas ul");
             var startX = 0;
+            var isMouseDown = false;
             hour3ULElm.addEventListener("touchstart", function(e) {
-                e.preventDefault();
                 e.stopPropagation();
                 startX = e.touches[0].pageX;
             }, false);
             hour3ULElm.addEventListener("touchmove", function(e) {
-                e.preventDefault();
                 e.stopPropagation();
                 let moveX = e.touches[0].pageX - startX;
                 hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
                 startX = e.touches[0].pageX;
             }, false);
-            // hour3ULElm.addEventListener("touchend", function(e) {
-            //     startX = 0;
-            // }, false);
-            // hour3ULElm.addEventListener("mousedown", function(e) {
-            //     var startX = e.clientX;
-            //     console.log(e);
-            // }, false);
-            // hour3ULElm.addEventListener("mousemove", function(e) {
-            //     let moveX = e.clientX - startX;
-            //     hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
-            //     startX = e.clientX;
-            // }, false);
-            // hour3ULElm.addEventListener("mouseup", function(e) {
-            //     startX = 0;
-            // }, false);
+            hour3ULElm.addEventListener("mousedown", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                startX = e.clientX;
+                isMouseDown = true;
+            }, false);
+            hour3ULElm.addEventListener("mousemove", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (isMouseDown) {
+                    let moveX = e.clientX - startX;
+                    hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
+                    startX = e.clientX;
+                }
+            }, false);
+            hour3ULElm.addEventListener("mouseup", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                startX = 0;
+                isMouseDown = false;
+            }, false);
         };
     </script>
 </body>
