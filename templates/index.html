@@ -12,7 +12,8 @@
 <body>
     <div class="main">
         <div class="topbar">
-            <div class="doclink"><a href="https://github.com/lzqwebsoft/weather#%E5%A4%A9%E6%B0%94" target="_blank">关于</a></div>
+            <div class="doclink"><a href="https://github.com/lzqwebsoft/weather#%E5%A4%A9%E6%B0%94"
+                    target="_blank">关于</a></div>
             <div class="cityname">{{.Now.CityName}}</div>
         </div>
         <div class="weather-title">
@@ -47,7 +48,8 @@
                 {{range $i, $v := .Daily}} {{if gt $i 1 }}
                 <li>
                     <div class="week">{{$v.Week}}</div>
-                    <div class="icon"><img src="/icon.png?wcode={{index $v.WeatherCode 0}}&size=medium_b" title="{{$v.WeatherInfo}}" /></div>
+                    <div class="icon"><img src="/icon.png?wcode={{index $v.WeatherCode 0}}&size=medium_b"
+                            title="{{$v.WeatherInfo}}" /></div>
                     <div class="temp"><span>{{$v.MaxTemp}}</span><span>{{$v.MinTemp}}</span></div>
                 </li>
                 {{end}} {{end}}
@@ -77,7 +79,7 @@
         function SupplementZero(data) {
             return data >= 10 ? data : "0" + data;
         }
-        window.onload = function() {
+        window.onload = function () {
             // 格式化显示日期
             var dateElm = document.querySelector(".hour3-datas .info .date")
             var date = dateElm.innerHTML;
@@ -98,7 +100,7 @@
             // 删除过期的时刻天气预报
             var current = new Date(); // 转化时间为YYYYMMDDHH
             var currentTime = parseInt(`${current.getFullYear()}${SupplementZero(current.getMonth() + 1)}${SupplementZero(current.getDate())}${SupplementZero(current.getHours())}`)
-            document.querySelectorAll(".hour3-datas ul li").forEach(function(elm) {
+            document.querySelectorAll(".hour3-datas ul li").forEach(function (elm) {
                 var time = parseInt(elm.dataset.time);
                 if (time < currentTime) {
                     elm.remove();
@@ -110,36 +112,86 @@
             var hour3ULElm = document.querySelector(".main .hour3-datas ul");
             var startX = 0;
             var isMouseDown = false;
-            hour3ULElm.addEventListener("touchstart", function(e) {
+            var startTime = 0;
+            var endTime = 0;
+            var speed = 1;
+            var direction = 0;
+            hour3ULElm.addEventListener("touchstart", function (e) {
+                e.preventDefault();
                 e.stopPropagation();
                 startX = e.touches[0].pageX;
+                startTime = new Date().getTime();
             }, false);
-            hour3ULElm.addEventListener("touchmove", function(e) {
+            hour3ULElm.addEventListener("touchmove", function (e) {
+                e.preventDefault();
                 e.stopPropagation();
                 let moveX = e.touches[0].pageX - startX;
                 hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
                 startX = e.touches[0].pageX;
+                endTime = new Date().getTime();
+                speed = Math.abs(moveX / (endTime - startTime) * 16);
+                direction = moveX > 0 ? 1 : -1;  // 1为左，-1为右
+                startTime = endTime;
             }, false);
-            hour3ULElm.addEventListener("mousedown", function(e) {
+            hour3ULElm.addEventListener("touchend", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                // 小于10的速度就没有惯性了
+                if (speed < 10) {
+                    return;
+                }
+                // 惯性动画
+                var timer = setInterval(function () {
+                    var f = Math.min(speed / 32, 0.5); // 由速度得到摩擦力,减速用
+                    if (speed > 0.2) {
+                        speed -= f;
+                        hour3ULElm.scrollLeft -= speed * direction;
+                    } else {
+                        // 停止动画
+                        window.clearInterval(timer);
+                    }
+                }, 100);
+            }, false);
+            hour3ULElm.addEventListener("mousedown", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 startX = e.clientX;
                 isMouseDown = true;
+                startTime = new Date().getTime();   // 计录开始时间
             }, false);
-            hour3ULElm.addEventListener("mousemove", function(e) {
+            hour3ULElm.addEventListener("mousemove", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 if (isMouseDown) {
                     let moveX = e.clientX - startX;
                     hour3ULElm.scrollLeft = hour3ULElm.scrollLeft - moveX;
                     startX = e.clientX;
+                    endTime = new Date().getTime();
+                    speed = Math.abs(moveX / (endTime - startTime) * 16);
+                    direction = moveX > 0 ? 1 : -1;  // 1为左，-1为右
+                    startTime = endTime;
                 }
             }, false);
-            hour3ULElm.addEventListener("mouseup", function(e) {
+            hour3ULElm.addEventListener("mouseup", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 startX = 0;
                 isMouseDown = false;
+                // 小于10的速度就没有惯性了
+                if (speed < 10) {
+                    return;
+                }
+                // 惯性动画
+                var timer = setInterval(function () {
+                    var f = Math.min(speed / 32, 0.5); // 由速度得到摩擦力,减速用
+                    if (speed > 0.2) {
+                        speed -= f;
+                        hour3ULElm.scrollLeft -= speed * direction;
+                    } else {
+                        // 停止动画
+                        window.clearInterval(timer);
+                    }
+                }, 100);
             }, false);
         };
     </script>
