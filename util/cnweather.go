@@ -89,7 +89,7 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	})
 	// 获取温度与太阳升起与落下时间
 	jsscript := doc.Find("div.weather_7d > div.blueFor-container > script").Text()
-	jsVarRegexp := regexp.MustCompile("var ([0-9A-Za-z_ ]+)?=([\\[\\]:0-9a-zA-Z\",\\{\\}]+);?")
+	jsVarRegexp := regexp.MustCompile("var ([0-9A-Za-z_ ]+)?=([\\[\\]:0-9a-zA-Z\"\\-,\\{\\}]+);?")
 	for _, match := range jsVarRegexp.FindAllSubmatch([]byte(jsscript), -1) {
 		// fmt.Println(string(match[1]) + "--------" + string(match[2]))
 		if len(match) != 3 {
