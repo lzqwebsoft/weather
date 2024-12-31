@@ -14,7 +14,13 @@
         <div class="topbar">
             <div class="doclink"><a href="https://github.com/lzqwebsoft/weather#%E5%A4%A9%E6%B0%94"
                     target="_blank">关于</a></div>
+            <div class="citylink"><a href="javascript:void(0);">城市</a></div>
             <div class="cityname">{{.Now.CityName}}</div>
+            <div class="dropdown">
+                <div class="dropdown-list" id="province"></div>
+                <div class="dropdown-list" id="city"></div>
+                <div class="dropdown-list" id="district"></div>
+            </div>
         </div>
         <div class="weather-title">
             <div class="realtime">时况天气: {{.Now.Time}}</div>
@@ -79,7 +85,110 @@
         function SupplementZero(data) {
             return data >= 10 ? data : "0" + data;
         }
+
+        // 点击城市，弹出选择城市菜单
+        const trigger = document.querySelector('.citylink');
+        const dropdown = document.querySelector('.dropdown');
+        const provinceList = document.getElementById('province');
+        const cityList = document.getElementById('city');
+        const districtList = document.getElementById('district');
+
+        // 省份数据
+        window.areaData = {};
+
+        function renderProvinces() {
+            provinceList.innerHTML = areaData.map(province => `<div class="dropdown-item" onclick="selectProvince('${province.zh}')">${province.zh}</div>`)
+                .join('');
+            cityList.innerHTML = '';
+            districtList.innerHTML = '';
+        }
+
+        function selectProvince(province) {
+            clearActive(provinceList);
+            const provinceItem = provinceList.querySelector(`[onclick="selectProvince('${province}')"]`);
+            provinceItem.classList.add('active');
+
+            renderCities(province);
+        }
+
+        function renderCities(province) {
+            cityList.innerHTML = areaData.find(item => item.zh === province).children
+                .map(city => `<div class="dropdown-item" onclick="selectCity('${province}', '${city.zh}')">${city.zh}</div>`)
+                .join('');
+            districtList.innerHTML = '';
+        }
+
+        function selectCity(province, city) {
+            clearActive(cityList);
+            const cityItem = cityList.querySelector(`[onclick="selectCity('${province}', '${city}')"]`);
+            cityItem.classList.add('active');
+
+            renderDistricts(province, city);
+        }
+
+        function renderDistricts(province, city) {
+            var provices = areaData.find(item => item.zh === province).children;
+            var cityItem = provices.find(item2 => item2.zh === city);
+            if(cityItem!=undefined && cityItem.children.length > 0) {
+                districtList.innerHTML = cityItem.children
+                .map(district => `<div class="dropdown-item" onclick="selectDistrict('${district.zh}', '${district.id}')">${district.zh}</div>`)
+                .join('');
+            } else {
+                window.location.href = "/?code=" + city.id
+            }
+        }
+
+        function selectDistrict(district, id) {
+            clearActive(districtList);
+            const districtItem = districtList.querySelector(`[onclick="selectDistrict('${district}', '${id}')"]`);
+            districtItem.classList.add('active');
+
+            const province = provinceList.querySelector('.active').textContent;
+            const city = cityList.querySelector('.active').textContent;
+
+            window.location.href = "/?code=" + id
+
+            setTimeout(() => {
+                trigger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }, 300);
+        }
+
+        function clearActive(element) {
+            element.querySelectorAll('.dropdown-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+
+        function getAllCitys() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', '/provices', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        const data = JSON.parse(xhr.responseText);
+                        areaData = data.provices;
+                    } else {
+                        console.error('Error:', xhr.status);
+                    }
+                }
+            };
+
+            xhr.send();
+        }
         window.onload = function () {
+            getAllCitys()
+            
+            trigger.addEventListener('click', (e) => {
+                trigger.classList.toggle('active');
+                dropdown.classList.toggle('active');
+                if (dropdown.classList.contains('active')) {
+                    renderProvinces();
+                }
+            });
+
             // 格式化显示日期
             var dateElm = document.querySelector(".hour3-datas .info .date")
             var date = dateElm.innerHTML;

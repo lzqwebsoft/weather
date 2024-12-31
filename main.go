@@ -134,6 +134,29 @@ func searchCity(resp http.ResponseWriter, reqs *http.Request) {
 	fmt.Fprintln(resp, string(jsonStr))
 }
 
+// 获取所有的城市编码
+type proviceResult struct {
+	Code     int              `json:"code"`
+	Message  string           `json:"message"`
+	Provices []*model.Provice `json:"provices,omitempty"`
+}
+
+func allProvices(resp http.ResponseWriter, reqs *http.Request) {
+	resp.Header().Set("Content-Type", "application/json;charset=UTF-8")
+	datas := proviceResult{
+		Code:     500,
+		Message:  "未找到结果",
+		Provices: nil,
+	}
+	if citys := util.LoadAllCitys(); citys != nil && len(citys) > 0 {
+		datas.Code = 200
+		datas.Message = "找到结果"
+		datas.Provices = citys
+	}
+	jsonStr, _ := json.Marshal(datas)
+	fmt.Fprintln(resp, string(jsonStr))
+}
+
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", welcome)
@@ -143,5 +166,6 @@ func main() {
 	mux.HandleFunc("/icon.png", weatherIcon)
 	mux.HandleFunc("/weather/", weather)
 	mux.HandleFunc("/city/search", searchCity)
+	mux.HandleFunc("/provices", allProvices)
 	log.Fatal(http.ListenAndServe("127.0.0.1:9001", mux))
 }

@@ -24,7 +24,7 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	liveReferer := fmt.Sprintf("http://www.weather.com.cn/weather1dn/%s.shtml", cityCode)
 	headers := map[string]string{
 		"referer":    liveReferer,
-		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
 	}
 	// ============================================================================
 	//                            获取实时天气预报

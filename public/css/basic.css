@@ -37,7 +37,97 @@ body {
     text-align: center;
 }
 
+.main .topbar .citylink {
+    float: right;
+    position: relative;
+    z-index: 10;
+    margin-right: 1em;
+    font-size: 12px;
+}
+
+.main .topbar .dropdown {
+    line-height: normal;
+    position: relative;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+}
+
+.main .topbar .dropdown.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.main .topbar .dropdown-list {
+    width: 140px;
+    max-height: 320px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f7fafc;
+    border-radius: 8px;
+    background: #f8fafc;
+    padding: 4px;
+}
+
+.main .topbar .dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main .topbar .dropdown-list::-webkit-scrollbar-track {
+    background: #f7fafc;
+    border-radius: 3px;
+}
+
+.main .topbar .dropdown-list::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 3px;
+}
+
+.main .topbar .dropdown-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    color: #4a5568;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .topbar .dropdown-item:hover {
+    background: #edf2f7;
+    color: #2b6cb0;
+}
+
+.main .topbar .dropdown-item.active {
+    background: #ebf8ff;
+    color: #2b6cb0;
+    font-weight: 500;
+}
+
+.main .topbar .dropdown-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #4299e1;
+    border-radius: 0 2px 2px 0;
+    animation: slideIn 0.2s ease;
+}
+
 .main .weather-title {
+    clear: both;
     text-align: center;
     margin: 2em 0;
 }

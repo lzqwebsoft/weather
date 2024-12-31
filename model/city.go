@@ -21,5 +21,5 @@ type Provice struct {
 	HK       string `json:"hk"`       // 繁体字城市名称
 	ZH       string `json:"zh"`       // 简体字城市名称
 	EN       string `json:"en"`       // 英文城市名称
-	Children []City `json:"children"` //  省份下面的地区行政单位
+	Children []City `json:"children"` // 省份下面的地区行政单位
 }
