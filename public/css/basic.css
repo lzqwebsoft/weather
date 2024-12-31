@@ -137,7 +137,7 @@ body {
     float: left;
     top: -1.5em;
     margin-bottom: -1.5em;
-    z-index: 10;
+    z-index: 1;
     font-size: 12px;
     color: #DDD;
 }
@@ -315,10 +315,18 @@ body {
     .main .life-style ul li {
         width: 44%;
     }
+
+    .main .topbar .dropdown-list {
+        width: 7em;
+    }
 }
 
 @media screen and (max-width: 960px) and (min-width: 600px) {
     .main {
         width: 80%;
+    }
+
+    .main .topbar .dropdown-list {
+        width: 140px;
     }
 }
