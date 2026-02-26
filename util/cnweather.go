@@ -5,13 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"image"
-	"io/ioutil"
+	"os"
 	"regexp"
 	"strings"
 	"time"
 
 	"golang.org/x/net/html"
-	"websoft.club/weather/model"
+	"zqluo.com/weather/model"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -32,11 +32,11 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	liveURL := fmt.Sprintf("http://d1.weather.com.cn/sk_2d/%s.html", cityCode)
 	liveResult, err := Get(liveURL, nil, headers)
 	if err != nil {
-		return nil, fmt.Errorf("获取实时天气失败: " + err.Error())
+		return nil, fmt.Errorf("获取实时天气失败: %w", err)
 	}
 	liveVarRegexp := regexp.MustCompile("^var ([0-9A-Za-z_ ]+)?=(.+);?$")
 	currentDate := time.Now()
-	if matches := liveVarRegexp.FindAllSubmatch(liveResult, 1); matches != nil && len(matches) == 1 {
+	if matches := liveVarRegexp.FindAllSubmatch(liveResult, 1); len(matches) == 1 {
 		live := new(model.Live)
 		if err = json.Unmarshal(matches[0][2], live); err == nil {
 			live.AQITxt = live.GetAQIText()
@@ -45,7 +45,7 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 			live.WindSpeed = html.UnescapeString(live.WindSpeed)
 			weather.Now = live
 		} else {
-			return nil, fmt.Errorf("解析实时天气失败: " + err.Error())
+			return nil, fmt.Errorf("解析实时天气失败: %w", err)
 		}
 	} else {
 		return nil, fmt.Errorf("解析实时天气失败。")
@@ -56,11 +56,11 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	urlPath := fmt.Sprintf("http://www.weather.com.cn/weathern/%s.shtml", cityCode)
 	result, err := Get(urlPath, nil, headers)
 	if err != nil {
-		return nil, fmt.Errorf("获取七天天气预报失败: %s", err.Error())
+		return nil, fmt.Errorf("获取七天天气预报失败: %w", err)
 	}
 	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(result))
 	if err != nil {
-		return nil, fmt.Errorf("解析七天天气预报HTML失败: %s", err.Error())
+		return nil, fmt.Errorf("解析七天天气预报HTML失败: %w", err)
 	}
 
 	// 获取更新时间
@@ -96,28 +96,29 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 			continue
 		}
 		varname := strings.TrimSpace(string(match[1]))
-		if varname == "eventDay" {
+		switch varname {
+		case "eventDay":
 			// 最高温度
 			var maxTemps []string
 			err = json.Unmarshal(match[2], &maxTemps)
 			for idx, temp := range maxTemps {
 				weathers[idx].MaxTemp = temp
 			}
-		} else if varname == "eventNight" {
+		case "eventNight":
 			// 最低温度
 			var minTemps []string
 			json.Unmarshal(match[2], &minTemps)
 			for idx, value := range minTemps {
 				weathers[idx].MinTemp = value
 			}
-		} else if varname == "sunup" {
+		case "sunup":
 			// 太阳升起时间，从今天开始
 			var upTimes []string
 			json.Unmarshal(match[2], &upTimes)
 			for idx, value := range upTimes {
 				weathers[idx+1].SunUpTime = value
 			}
-		} else if varname == "sunset" {
+		case "sunset":
 			// 太阳落下时间，从今天开始
 			var downTimes []string
 			json.Unmarshal(match[2], &downTimes)
@@ -130,22 +131,23 @@ func GetCNWeather(cityCode string) (*model.Weather, error) {
 	doc.Find("div.weather_shzs > div.lv").Each(func(d int, s *goquery.Selection) {
 		s.Find("dl").Each(func(i int, selection *goquery.Selection) {
 			lifeStyle := new(model.LifeStyle)
-			if i == 0 {
+			switch i {
+			case 0:
 				// 紫外线
 				lifeStyle.Name = "紫外线"
-			} else if i == 1 {
+			case 1:
 				// 减肥
 				lifeStyle.Name = "减肥"
-			} else if i == 2 {
+			case 2:
 				// 血糖
 				lifeStyle.Name = "血糖"
-			} else if i == 3 {
+			case 3:
 				// 穿衣
 				lifeStyle.Name = "穿衣"
-			} else if i == 4 {
+			case 4:
 				// 洗车
 				lifeStyle.Name = "洗车"
-			} else if i == 5 {
+			case 5:
 				// 空气污染扩散
 				lifeStyle.Name = "空气污染扩散"
 			}
@@ -318,9 +320,9 @@ var weatherIconsPoint = map[string]image.Point{
 
 // LoadAllCitys 加载所有的城市列表
 func LoadAllCitys() []*model.Provice {
-	jsCityBytes, _ := ioutil.ReadFile("./sources/city.js")
+	jsCityBytes, _ := os.ReadFile("./sources/city.js")
 	citysRegexp := regexp.MustCompile("^([0-9A-Za-z_. ]+)?=(.+);?$")
-	if match := citysRegexp.FindAllSubmatch(jsCityBytes, 1); match != nil && len(match) == 1 {
+	if match := citysRegexp.FindAllSubmatch(jsCityBytes, 1); len(match) == 1 {
 		citys := make([]*model.Provice, 0)
 		if err := json.Unmarshal(match[0][2], &citys); err == nil {
 			return citys

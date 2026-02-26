@@ -2,13 +2,12 @@ package util
 
 import (
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
 	"time"
 
-	"websoft.club/weather/conf"
+	"zqluo.com/weather/conf"
 )
 
 // Get Http Get请求，接受URL, params url.Values 参数, headers 请求头
@@ -23,10 +22,10 @@ func Post(path string, params url.Values, headers map[string]string) ([]byte, er
 }
 
 /*
-  fetch 统一的底层的HTTP请求方法，本项目的所用向外请求都经过这个方法
-  method 请求的方法GET POST等等
-  params 请求参数
-  headers 请求头设置为map[string]string类型
+fetch 统一的底层的HTTP请求方法，本项目的所用向外请求都经过这个方法
+method 请求的方法GET POST等等
+params 请求参数
+headers 请求头设置为map[string]string类型
 */
 func fetch(method, path string, params io.Reader, headers map[string]string, timeOut int) (body []byte, err error) {
 	if timeOut == 0 {
@@ -52,7 +51,7 @@ func fetch(method, path string, params io.Reader, headers map[string]string, tim
 		return
 	}
 	defer resp.Body.Close()
-	body, err = ioutil.ReadAll(resp.Body)
+	body, err = io.ReadAll(resp.Body)
 	if err != nil {
 		return
 	}

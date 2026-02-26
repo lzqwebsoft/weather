@@ -12,8 +12,8 @@ import (
 	"os"
 	"path"
 
-	"websoft.club/weather/model"
-	"websoft.club/weather/util"
+	"zqluo.com/weather/model"
+	"zqluo.com/weather/util"
 )
 
 // 城市码

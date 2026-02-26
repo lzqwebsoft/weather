@@ -6,7 +6,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"websoft.club/weather/ipdb"
+
+	"zqluo.com/weather/ipdb"
 )
 
 // ClientIP 尽最大努力实现获取客户端 IP 的算法。
